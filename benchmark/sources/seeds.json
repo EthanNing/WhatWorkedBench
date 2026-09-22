@@ -1,0 +1,53 @@
+{
+  "source": {
+    "source_name": "Seeds",
+    "source_url": "https://archive.ics.uci.edu/static/public/236/seeds.zip",
+    "repository_url": "https://archive.ics.uci.edu/dataset/236/seeds",
+    "license": "CC-BY-4.0",
+    "license_authority": "https://archive.ics.uci.edu/dataset/236/seeds",
+    "raw_data_sha256": "5033bd71b24592fa70d9b3cc5be02332dc6d03d0b27e6655e6d553f39afab323",
+    "metadata_sha256": "0aff53b471071753cd64a4b1c063562f6bb1b0c32904c614792175d259657f73",
+    "raw_rows": 210,
+    "rows": 210,
+    "removed_duplicate_feature_label_rows": 0,
+    "features": [
+      "area",
+      "perimeter",
+      "compactness",
+      "kernel_length",
+      "kernel_width",
+      "asymmetry_coefficient",
+      "groove_length"
+    ],
+    "target": "class",
+    "target_labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "no_id_or_target_features": true,
+    "instance": "seeds",
+    "family": "clustering",
+    "source_catalog_sha256": "f72c02df48b5007a70157ae20d33e9fb9892ebdd832e8eb9357350250f4e3f6a"
+  },
+  "factors": {
+    "A": "sign(x)*log1p(abs(x)) feature transform",
+    "B": "feature-only standard scaling",
+    "C": "PCA retaining 95 percent variance instead of all original features",
+    "D": "10 KMeans initializations instead of 1"
+  },
+  "source_code_sha256": {
+    "whatworked/phase4_expansion.py": "bd6c79b46bb3703da56e853a7d5e1eb7db7a13ffc2b851f98ff6a125f0f23dc0",
+    "whatworked/phase4_sources.py": "b7817b7b70e26bba8ea0071c600b75813c77a2f358a147d845af42ce9e7e6cce",
+    "whatworked/phase4_workflows.py": "e96816fe3f747a4967a9dc38bd575c6b37b0da50450e2267532a1684d2607916"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "pillow": "12.3.0"
+  },
+  "native_threads": 1,
+  "native_timeout_seconds": 180,
+  "state": "construction development evidence; no model evaluation on new instances"
+}

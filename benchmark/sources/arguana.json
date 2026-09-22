@@ -1,0 +1,55 @@
+{
+  "source": {
+    "source_name": "ArguAna original-author pairs, audited source",
+    "license": {
+      "authority": "https://zenodo.org/api/records/3973258",
+      "caution": "Author-deposited original corpus terms; HF/BEIR code licenses do not replace this source license.",
+      "id": "CC-BY-4.0",
+      "local_metadata_sha256": "342766748600744b80d53f300733dfc839f334db0be233ddb719274eb4d6bac6",
+      "official_record": "https://zenodo.org/records/3973258"
+    },
+    "source_url": "https://www.arguana.com/data",
+    "original_manifest_sha256": "2e8835a15362f741ea6b97331e5e72bcef00941e5466af8432e04761f77919d1",
+    "corpus_documents": 8567,
+    "evaluation_queries": 64,
+    "query_ids_sha256": "fa61b114f0136bb82cb1617953e294df353dd2336ca178f29f96118dad3a967c",
+    "cohort": "first 64 prepared G queries; original training split; known development data",
+    "self_exclusion": "all normalized query text copies excluded under every mask",
+    "split_integrity": {
+      "Q_A_debate_overlap": 0,
+      "largest_test_block_queries": 10,
+      "pre_subsample_bucket_sizes": {
+        "A": 275,
+        "Q": 275
+      },
+      "query_or_counter_text_overlap": 0,
+      "query_text_overlap": 0,
+      "reversed_pair_overlap": 0,
+      "shared_retrieval_corpus_is_intentional": true,
+      "test_component_blocks": 74
+    },
+    "instance": "arguana",
+    "family": "retrieval",
+    "source_catalog_sha256": "f72c02df48b5007a70157ae20d33e9fb9892ebdd832e8eb9357350250f4e3f6a"
+  },
+  "factors": {
+    "A": "unigrams plus bigrams instead of unigrams",
+    "B": "sklearn English stop words removed",
+    "C": "sublinear term frequency instead of raw counts",
+    "D": "IDF weighting instead of none"
+  },
+  "source_code_sha256": {
+    "whatworked/phase4_expansion.py": "bd6c79b46bb3703da56e853a7d5e1eb7db7a13ffc2b851f98ff6a125f0f23dc0",
+    "whatworked/phase4_sources.py": "b7817b7b70e26bba8ea0071c600b75813c77a2f358a147d845af42ce9e7e6cce",
+    "whatworked/phase4_workflows.py": "e96816fe3f747a4967a9dc38bd575c6b37b0da50450e2267532a1684d2607916"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "pillow": "12.3.0"
+  },
+  "native_threads": 1,
+  "native_timeout_seconds": 180,
+  "state": "construction development evidence; no model evaluation on new instances"
+}

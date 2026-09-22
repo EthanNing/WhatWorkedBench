@@ -1,0 +1,66 @@
+{
+  "instance": "spambase__d6",
+  "family": "classification",
+  "source_name": "Spambase",
+  "factor_order": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "factors": {
+    "A": "sign(x)*log1p(abs(x)) feature transform",
+    "B": "train-fitted standard scaling",
+    "C": "balanced instead of uniform class weights",
+    "D": "LogisticRegression C=0.05 instead of C=1",
+    "E": "SelectPercentile(f_classif, percentile=50), fitted on training labels, after optional scaling",
+    "F": "PCA retaining 95 percent variance after optional feature selection"
+  },
+  "utility": "balanced accuracy (mean class recall)",
+  "data": {
+    "training": {
+      "rows": 2947,
+      "features": 57,
+      "negative_value_fraction": 0.0,
+      "feature_std_quantiles": [
+        0.08703200857917447,
+        0.2988957401042546,
+        0.448766440407368,
+        0.7447524495994527,
+        577.6065734364341
+      ],
+      "constant_feature_count": 0
+    },
+    "evaluation_rows": 1263,
+    "training_target_quantiles": [
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "training_class_counts": {
+      "0": 1771,
+      "1": 1176
+    }
+  },
+  "source_code": "def signed_log(x):return np.sign(x)*np.log1p(np.abs(x))\n\ndef switches(mask):\n    if not isinstance(mask,str) or len(mask)!=6 or set(mask)-{'0','1'}:\n        raise ValueError('Expected six-bit configuration')\n    return tuple(v=='1' for v in mask)\n\ndef supervised_pipeline(family,mask):\n    a,b,c,d,e,f=switches(mask); steps=[]\n    if family=='classification' and a:\n        steps.append(('signed_log',FunctionTransformer(signed_log)))\n    if b:\n        steps.append(('scale',RobustScaler() if family=='regression' and f else StandardScaler()))\n    if family=='classification':\n        if e:steps.append(('selection',SelectPercentile(f_classif,percentile=50)))\n        if f:steps.append(('pca',PCA(n_components=.95,svd_solver='full')))\n        steps.append(('model',LogisticRegression(C=.05 if d else 1.,class_weight='balanced' if c else None,\n                                                      solver='lbfgs',max_iter=3000,random_state=17)))\n        return Pipeline(steps)\n    if c:steps.append(('poly',PolynomialFeatures(2,include_bias=False,interaction_only=e)))\n    steps.append(('model',Ridge(alpha=10. if d else 1.,solver='svd')))\n    model=Pipeline(steps)\n    return TransformedTargetRegressor(regressor=model,func=np.log1p,inverse_func=np.expm1) if a else model\n",
+  "shared_code": "numpy is np; sklearn/scipy operation names use their standard imports; SelectPercentile and f_classif are from sklearn.feature_selection; RobustScaler is from sklearn.preprocessing. Native fitting and metric boundaries are the same as the paired four-factor source.",
+  "options_origin": "authored native-library configurations; not generated improvements or mined patches",
+  "reference_scope": "effects on this fixed finite evaluation cohort, without a population causal claim",
+  "free_observations": [
+    {
+      "mask": "000000",
+      "utility": 0.9193196086638067
+    },
+    {
+      "mask": "111111",
+      "utility": 0.9299466359736319
+    }
+  ],
+  "source_instance": "spambase",
+  "dimensions": 6,
+  "condition": "paired six-factor variant; same prepared source as the four-factor instance"
+}

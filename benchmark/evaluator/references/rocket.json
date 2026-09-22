@@ -1,0 +1,137 @@
+{
+  "instance": "rocket",
+  "family": "image_restoration",
+  "truth": {
+    "0000": 0.5083411545088529,
+    "0001": 0.43013095324066125,
+    "0010": 0.7426400626488688,
+    "0011": 0.7146848523679736,
+    "0100": 0.7162112733190567,
+    "0101": 0.6881545190074173,
+    "0110": 0.7599293028768836,
+    "0111": 0.7607078400836917,
+    "1000": 0.679091727311213,
+    "1001": 0.6397859196069555,
+    "1010": 0.7424157100336223,
+    "1011": 0.7357167232194253,
+    "1100": 0.7260663723575109,
+    "1101": 0.7159378820910134,
+    "1110": 0.7448539409020066,
+    "1111": 0.7458202578851357
+  },
+  "native_measurements": {
+    "0000": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.09671828478380357,
+      "wall_seconds": 0.012573786996654235,
+      "prediction_sha256": "ffb41db608141532e644851e3382bc43f0aeee5a9aa5050a2c227012206478f9",
+      "warnings": []
+    },
+    "0001": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.13248733727853648,
+      "wall_seconds": 0.011858730998937972,
+      "prediction_sha256": "c43f248b20bd5a40284d7d28eed22d8cba8cb7d8b7f11b926a215febf315f661",
+      "warnings": []
+    },
+    "0010": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.03465473387379248,
+      "wall_seconds": 0.013316673008375801,
+      "prediction_sha256": "f63da2b6a9430b6e1ad58cb0d0f77b01a340284a35654c505863795eef5ef87f",
+      "warnings": []
+    },
+    "0011": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.03992181262645884,
+      "wall_seconds": 0.013555136989452876,
+      "prediction_sha256": "7a08d3840a6f6c3fdec3d4e455eac40c279228844cbed2ac4028e60a7fcfd772",
+      "warnings": []
+    },
+    "0100": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.0396236051082823,
+      "wall_seconds": 0.012103996996302158,
+      "prediction_sha256": "bc12871730fee64be11417adb2cb08d945d39aa5c713e1288eb6dd76362dd097",
+      "warnings": []
+    },
+    "0101": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.04531620041417202,
+      "wall_seconds": 0.012337210006080568,
+      "prediction_sha256": "f3373bf9b1f0fddf0b7e4823719c04d4e3879f2991f888108296610ef86d7572",
+      "warnings": []
+    },
+    "0110": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.031591188313738486,
+      "wall_seconds": 0.014019612004631199,
+      "prediction_sha256": "b68e41d8d69b16c9525a909cb75caf5430e8229985bf30dba459afa6ec3f4ea3",
+      "warnings": []
+    },
+    "0111": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.03145651290907975,
+      "wall_seconds": 0.014715204990352504,
+      "prediction_sha256": "c6ea1e8cbf3d4991e738a52fdb5674684fffb463b897524c134584584748f2d0",
+      "warnings": []
+    },
+    "1000": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.04725551199973927,
+      "wall_seconds": 0.011913471011212096,
+      "prediction_sha256": "d44d512f108ebe34f5d126916d26ddb787ab1ce66b11bc3f5abaa2747a04fa27",
+      "warnings": []
+    },
+    "1001": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.056302283209723886,
+      "wall_seconds": 0.01620716499746777,
+      "prediction_sha256": "b77a07866d749cb32782feeff2872403f375c8d38ff8c3faccbc2e01fa051374",
+      "warnings": []
+    },
+    "1010": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.034695425552715264,
+      "wall_seconds": 0.018701945009524934,
+      "prediction_sha256": "9ccc133fb4e4a126a8a58e49d93f37b9b656e6e47b473f9fce2fa8393190f68d",
+      "warnings": []
+    },
+    "1011": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.03592187977243423,
+      "wall_seconds": 0.018997430001036264,
+      "prediction_sha256": "69b21216aef69784424906641dfeef85788af7b7913e61c2ef7ccec801a71a25",
+      "warnings": []
+    },
+    "1100": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.037728455423852864,
+      "wall_seconds": 0.016180425009224564,
+      "prediction_sha256": "08b899cae67ed6f13e3049a9f8518d72577fe937e7596f065ee80300bf192f83",
+      "warnings": []
+    },
+    "1101": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.03967692239993459,
+      "wall_seconds": 0.01664184799301438,
+      "prediction_sha256": "b31efbf34dac862c9ad83d7b34db464aeefc5e20b291b6527184bdb35c02a112",
+      "warnings": []
+    },
+    "1110": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.034254508848945,
+      "wall_seconds": 0.018659503999515437,
+      "prediction_sha256": "34993ef7aa6f6e21fe1af1a33896618bc36f0057c1b33c0f5e59901d957ed9f6",
+      "warnings": []
+    },
+    "1111": {
+      "native_metric": "pixel_RMSE",
+      "native_value": 0.034080562900721145,
+      "wall_seconds": 0.02051959499658551,
+      "prediction_sha256": "a420b322175a615d217c20821fe7368c26272f54b448ebc9296f28c731a2a936",
+      "warnings": []
+    }
+  },
+  "source_table_file_sha256": "84d1c2bdd267044afd8c360cc89288c969cc2e8f15e4144024fd80eabb00bfa7"
+}

@@ -1,0 +1,320 @@
+{
+  "original_workflow_sha256": "e96816fe3f747a4967a9dc38bd575c6b37b0da50450e2267532a1684d2607916",
+  "original_normalization_function_sha256": "7f57e0a4aa5cf5cf7090c34e47159c28cdab9f627daa7f210789303781f84c01",
+  "normalization_import_inlined": true,
+  "all_inputs_evaluator_only": true,
+  "n_task_conditions": 36,
+  "n_distinct_source_instances": 30,
+  "six_factor_construction_plan_sha256": "b4642f22b48ab5fb7681b3e3747cd2e66e88a02a2432049f2aa734e80f934063",
+  "six_factor_code_sha256": {
+    "whatworked/phase4_scale.py": "b803becec9bd6880e8f00b5debce72b424e00f1d12463d06b70b95f21dc8b71a",
+    "whatworked/phase4_workflows.py": "e96816fe3f747a4967a9dc38bd575c6b37b0da50450e2267532a1684d2607916",
+    "whatworked/phase4_sources.py": "b7817b7b70e26bba8ea0071c600b75813c77a2f358a147d845af42ce9e7e6cce",
+    "whatworked/phase4_expansion_audit.py": "b6b1b2e98818d15e21df229ffdcba6395629016e0b7d7e96ccf73a1218177e59",
+    "whatworked/phase4_numeric_helpers.py": "cb7ac328a23c39fd3c8610d7b50543bb2c6a8fb1143b370f88ff45106fa897fb",
+    "whatworked/phase4_portable.py": "82343623e1c4d771058f4cb89901d97d14a988257bd8792488d7c374ad8e5037"
+  },
+  "original_pack_manifest_sha256": "9dfca3e3df8b530cca02865ba245840ab63249ec12a4fdacfdea9271ffbaa630",
+  "version": "prepared_native_replay_3",
+  "instances": [
+    "spambase",
+    "banknote",
+    "ionosphere",
+    "breast_diagnostic",
+    "concrete",
+    "airfoil",
+    "yacht",
+    "energy_efficiency",
+    "wine",
+    "seeds",
+    "glass",
+    "dry_bean",
+    "co2",
+    "elnino",
+    "sunspots",
+    "nile",
+    "astronaut",
+    "coffee",
+    "hubble_deep_field",
+    "rocket",
+    "scifact",
+    "arguana",
+    "spambase__d6",
+    "concrete__d6",
+    "wine__d6",
+    "co2__d6",
+    "astronaut__d6",
+    "scifact__d6",
+    "mitdb_100__d6",
+    "mitdb_101__d6",
+    "mitdb_102__d6",
+    "mitdb_103__d6",
+    "graph_lesmis__d6",
+    "graph_adjnoun__d6",
+    "graph_football__d6",
+    "graph_dolphins__d6"
+  ],
+  "conditions": {
+    "spambase": {
+      "source_instance": "spambase",
+      "dimensions": 4
+    },
+    "banknote": {
+      "source_instance": "banknote",
+      "dimensions": 4
+    },
+    "ionosphere": {
+      "source_instance": "ionosphere",
+      "dimensions": 4
+    },
+    "breast_diagnostic": {
+      "source_instance": "breast_diagnostic",
+      "dimensions": 4
+    },
+    "concrete": {
+      "source_instance": "concrete",
+      "dimensions": 4
+    },
+    "airfoil": {
+      "source_instance": "airfoil",
+      "dimensions": 4
+    },
+    "yacht": {
+      "source_instance": "yacht",
+      "dimensions": 4
+    },
+    "energy_efficiency": {
+      "source_instance": "energy_efficiency",
+      "dimensions": 4
+    },
+    "wine": {
+      "source_instance": "wine",
+      "dimensions": 4
+    },
+    "seeds": {
+      "source_instance": "seeds",
+      "dimensions": 4
+    },
+    "glass": {
+      "source_instance": "glass",
+      "dimensions": 4
+    },
+    "dry_bean": {
+      "source_instance": "dry_bean",
+      "dimensions": 4
+    },
+    "co2": {
+      "source_instance": "co2",
+      "dimensions": 4
+    },
+    "elnino": {
+      "source_instance": "elnino",
+      "dimensions": 4
+    },
+    "sunspots": {
+      "source_instance": "sunspots",
+      "dimensions": 4
+    },
+    "nile": {
+      "source_instance": "nile",
+      "dimensions": 4
+    },
+    "astronaut": {
+      "source_instance": "astronaut",
+      "dimensions": 4
+    },
+    "coffee": {
+      "source_instance": "coffee",
+      "dimensions": 4
+    },
+    "hubble_deep_field": {
+      "source_instance": "hubble_deep_field",
+      "dimensions": 4
+    },
+    "rocket": {
+      "source_instance": "rocket",
+      "dimensions": 4
+    },
+    "scifact": {
+      "source_instance": "scifact",
+      "dimensions": 4
+    },
+    "arguana": {
+      "source_instance": "arguana",
+      "dimensions": 4
+    },
+    "spambase__d6": {
+      "source_instance": "spambase",
+      "dimensions": 6
+    },
+    "concrete__d6": {
+      "source_instance": "concrete",
+      "dimensions": 6
+    },
+    "wine__d6": {
+      "source_instance": "wine",
+      "dimensions": 6
+    },
+    "co2__d6": {
+      "source_instance": "co2",
+      "dimensions": 6
+    },
+    "astronaut__d6": {
+      "source_instance": "astronaut",
+      "dimensions": 6
+    },
+    "scifact__d6": {
+      "source_instance": "scifact",
+      "dimensions": 6
+    },
+    "mitdb_100__d6": {
+      "source_instance": "mitdb_100",
+      "dimensions": 6
+    },
+    "mitdb_101__d6": {
+      "source_instance": "mitdb_101",
+      "dimensions": 6
+    },
+    "mitdb_102__d6": {
+      "source_instance": "mitdb_102",
+      "dimensions": 6
+    },
+    "mitdb_103__d6": {
+      "source_instance": "mitdb_103",
+      "dimensions": 6
+    },
+    "graph_lesmis__d6": {
+      "source_instance": "graph_lesmis",
+      "dimensions": 6
+    },
+    "graph_adjnoun__d6": {
+      "source_instance": "graph_adjnoun",
+      "dimensions": 6
+    },
+    "graph_football__d6": {
+      "source_instance": "graph_football",
+      "dimensions": 6
+    },
+    "graph_dolphins__d6": {
+      "source_instance": "graph_dolphins",
+      "dimensions": 6
+    }
+  },
+  "n_families": 8,
+  "n_configuration_records": 1248,
+  "replay_versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "threadpoolctl": "3.6.0",
+    "networkx": "3.6.1"
+  },
+  "additional_construction_plan_sha256": "71f6cd07464f4ebe3d6dc9dfa45e6a9df0c93ae5950771ddeae4f6c1314cd2d0",
+  "files_sha256": {
+    "README.md": "4682ac26b7d00706dfa92251f4313c0832fc03f70f1ffc5ea43f970270dd84f2",
+    "inputs/airfoil/arrays.npz": "ce8e5d4a05073873c8b6a604d6b8677c3b433cf22dd2594321c37c9de063a67b",
+    "inputs/airfoil/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/arguana/arrays.npz": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+    "inputs/arguana/metadata.json.gz": "c9c26034efe4f55814d1549cf4f08414b299db97b84260882823ae1db02f42e5",
+    "inputs/astronaut/arrays.npz": "8ca64b6d1bca74b21f2e7ae102fe313c0498bc1a06d79a47a64be232144c15eb",
+    "inputs/astronaut/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/banknote/arrays.npz": "b9dc8c223b08d00a92a570bbcee238e6c7c06937a75afd5912543ce93d8545bc",
+    "inputs/banknote/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/breast_diagnostic/arrays.npz": "4e1f67358b631cbcf5c5608406d8c23d3e7c0aa9f26dd14fc7a94c17c2f95944",
+    "inputs/breast_diagnostic/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/co2/arrays.npz": "5a3b8bc71bfee8dbdb94b9dd047acc0366014a6b884cd09049f38a9d83007712",
+    "inputs/co2/metadata.json.gz": "642044306ef24b84578ecdb916b81b6c86cb0b6f6b5555c7b98b6ed3e9f1a6a1",
+    "inputs/coffee/arrays.npz": "3fae5a39678a10fae5e6007172fe2a627d4c04aa9303b481a6c4eed66c8f1f53",
+    "inputs/coffee/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/concrete/arrays.npz": "4bd47282a9383d1c7c399b68e7dc5ba31c9f7d3ccaf5286b7275fc34c3bc5b22",
+    "inputs/concrete/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/dry_bean/arrays.npz": "de2d22d326ded262e005fdcae245695ec2160e89d138e2e164ca0d77eecc5bce",
+    "inputs/dry_bean/metadata.json.gz": "9b36a33c11ded12864e85adaa39c6710120fec51a4d9d7175c61f60abf2b36f9",
+    "inputs/elnino/arrays.npz": "52096efce46a2b2cf3a9457c7edf337618b1cd003e9ed0f974a2d3fea39b922f",
+    "inputs/elnino/metadata.json.gz": "704cd40bf9df1cdcbf909d99f8072881ea989eaeca6c12cc7f8aa2b02aed0147",
+    "inputs/energy_efficiency/arrays.npz": "03dd828f4a04dddaea94f5868ba37fa55dee9c52e717d900ea34b2171f168701",
+    "inputs/energy_efficiency/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/glass/arrays.npz": "baf0599b3e6e9c3a3fd2352c40f8ce5c2549d2fb0a1033683c4d8b9e844ca953",
+    "inputs/glass/metadata.json.gz": "a5493dfef6edda757b78ab4f2c14dad7480b56d848f4b853211dfa94a5da2500",
+    "inputs/graph_adjnoun/arrays.npz": "852e8a92f80cb5393de84efec1e85ee12bcfba20d479f0f77dc61f6c6f0b533d",
+    "inputs/graph_adjnoun/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/graph_dolphins/arrays.npz": "37fd7e6c0528619db1bf163429e4e10f115d81764b475a6f6b66c2003492c396",
+    "inputs/graph_dolphins/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/graph_football/arrays.npz": "211b4e74742592f4c59db385336bb88d65f6da6936a5504d47858b7565176bd2",
+    "inputs/graph_football/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/graph_lesmis/arrays.npz": "10151e22e40baa16b0d1006015b70923c5b6e74a7769b2d0afec7b82c73d0850",
+    "inputs/graph_lesmis/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/hubble_deep_field/arrays.npz": "ec8195333f2c55d799bb83060c3020c066fa2915ddb75b72db5f741100eb895b",
+    "inputs/hubble_deep_field/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/ionosphere/arrays.npz": "caa3bbad08aae9f25fab55685945aaaf866bb6b1583928d16530f62896f26fc3",
+    "inputs/ionosphere/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/mitdb_100/arrays.npz": "4ff0b526d9f33e73f9e890f7cda82aad28af342017ed5a5b7cf8083c2d2fac26",
+    "inputs/mitdb_100/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/mitdb_101/arrays.npz": "b731c23e9e8c123846caef7c03bbf3eece2a99603cb76cb7b002bd4c70aad3b5",
+    "inputs/mitdb_101/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/mitdb_102/arrays.npz": "811a08f4f21f7c64c459bf61f64361b8a9516a1da4fc742bd0ecc771b2ec4cf7",
+    "inputs/mitdb_102/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/mitdb_103/arrays.npz": "33077a4ba4a447c2726637d065dbbdd01ca09fcd734eef861413b0b00a12a2d4",
+    "inputs/mitdb_103/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/nile/arrays.npz": "2c19ce5229b6ca15591aaf18c06e44d2d36f427163b4aba1854e5976fa2f29b0",
+    "inputs/nile/metadata.json.gz": "dd5c8077f875de976c46697b611f4b99c6ebf231d8b55e7164b69c10a9491179",
+    "inputs/rocket/arrays.npz": "96e6cdf0c52bb436c29b823144edaa21d484538f4ed918c775b2b35aedad8663",
+    "inputs/rocket/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/scifact/arrays.npz": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+    "inputs/scifact/metadata.json.gz": "4e15fa1cc9313b3d4e9cf47840a088ce465b37689aa20c2093aabbcf6ef23df2",
+    "inputs/seeds/arrays.npz": "28df7231d0c3ce0ce35accd9a9dd727e9e587c25a3e230807b9d7fe29909af98",
+    "inputs/seeds/metadata.json.gz": "c7023ca4a6bff5ee07cbc2a5ee74e84a561418a0ff6c14f92fa551074cb1dae4",
+    "inputs/spambase/arrays.npz": "3f70371842e583e8bb036093db328b31e536cf1025872544c215eb13bf2a5fa9",
+    "inputs/spambase/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "inputs/sunspots/arrays.npz": "d08183a64e8dbf21d7219a9a514dff28d34f0b99d6ede5fc896e77c18eb63887",
+    "inputs/sunspots/metadata.json.gz": "8e30c3d74e75bf48d32176c87b30831e1b67aa5c1fdc4acdde311d28676cfb5e",
+    "inputs/wine/arrays.npz": "5e11274f074c64a8a009a2c95d4abe307d89a31349617a9eae24e3d82312ad20",
+    "inputs/wine/metadata.json.gz": "c7023ca4a6bff5ee07cbc2a5ee74e84a561418a0ff6c14f92fa551074cb1dae4",
+    "inputs/yacht/arrays.npz": "083d3281195eb1e5c9c617ebb48f7118ce67c407b9924c7910f57a69dbdc0a92",
+    "inputs/yacht/metadata.json.gz": "694735d2026dd25f1fcedb44649393c5ae6c3644b717e84d9cc9f44750c50e2a",
+    "metric_extra.py": "e3ca314b6990a0802c7533a4d45bfe22b374d4228d6f36e07b06431c24764f10",
+    "metric_reference.py": "c315d855479e024b6307986ea48fe8d2d6dc43e0bc82ee8ad3117a6491c14c79",
+    "native_extra.py": "288b30fc5e367c4619c32a330a37e6fc15795be9474fc2e8f52f31e72c06bfdb",
+    "native_six.py": "43d1ed8f27b00b52219839f48bf40e0aaf614dd2ca4141efee2705650f6c4bd0",
+    "native_workflows.py": "a6322cb9f3d163ce6e8ab7a9efc3f000f92ba1a87270d30451febc01412a3e59",
+    "references/airfoil.json": "5926f97fdeb1911827b7c8e24aa1abcf83d2356a8770f5fdb7634763b8a9034e",
+    "references/arguana.json": "891e971ec6f63583d7127039787b6e5db1fdca771e9ca6de811cbe98da5efaa6",
+    "references/astronaut.json": "b8e7476f5b017624327fd4cb31835e69230a2aa2da570a74976f5466bf7e4347",
+    "references/astronaut__d6.json": "38977d258fd6d907b230cd447862ee78e0df85897d9b78887a58ada80691b61b",
+    "references/banknote.json": "c553e703391421c375de836eab95b013045dcf33f6b59b181d02ee48e702452d",
+    "references/breast_diagnostic.json": "2c5f9320015a7cdb715f41e6ecc5de233104ce50711bec61d9f118b161d17558",
+    "references/co2.json": "6887adb854a66aa6792e6c5e41657e236d6aba62e6cc256961fb828ce073895a",
+    "references/co2__d6.json": "7b22f7a755876108a971aaaaea1e53c3847dff5233ca80718e7eaaeb8697259b",
+    "references/coffee.json": "c488ea0b787c58a06fe0334e5e3ad20ec9c86443660ffde16deb75ae37d5ea84",
+    "references/concrete.json": "35702797c5b382d1ebaec87002c1cbac3118c8c1aff4d8ff4fe59f3338ab68c0",
+    "references/concrete__d6.json": "98cb282ea224c279ccc67dd7217e6cf88699546e431a10122fe0c93bd2731c88",
+    "references/dry_bean.json": "624204efaae5a5c45e43a62555af4c781035fea741094bf2b923ced70e47fc6b",
+    "references/elnino.json": "b94546ba38e3a59b27458e237af9d379a794b448ac4a35525d2afa56be76484a",
+    "references/energy_efficiency.json": "ec54bc856b1277c85735ede79581383e3fee6ddf63bf9eef87a88f11cdb2700d",
+    "references/glass.json": "6a04dbd16fbb9349d21fd81ce66be0c03a49bd98638c682bebc81570c26a90c1",
+    "references/graph_adjnoun__d6.json": "6dbf92e5a0dbbfe4ea855692f2f32807258ac0a1b7f5c807990b0fafc88fa260",
+    "references/graph_dolphins__d6.json": "24efaa37091c87662ec83e0f6f2f7cade90557dd0c8b19edd3320a338d4a6966",
+    "references/graph_football__d6.json": "562281ede4519709de74a8c43eabdadaf46835d59e907be93aef85aaba5bc101",
+    "references/graph_lesmis__d6.json": "6835e6f939bb18d7ba535a6367478e7d4fa1305e28ff9fda7c4c17860f0396cb",
+    "references/hubble_deep_field.json": "275a0424ad8e034b967604f9ab9d0ac7fbfecd056d34ce7a04994a71728b42b8",
+    "references/ionosphere.json": "ab0da9185d3ec938b04f8008a6a674aa3bd1cb41ac984a270ae71988b16c9bd8",
+    "references/mitdb_100__d6.json": "1dc5e76d8968d7b18a833ce478c182b9433b97978c9b68b041417443276e52ee",
+    "references/mitdb_101__d6.json": "94c99f7275460ea94625e4d03839cdecd9297b25f7716d19de15a8b514ac0c0b",
+    "references/mitdb_102__d6.json": "f1e004d6545068c53f35190e32b258843dfea3891a00508cb72a80d328b79a8a",
+    "references/mitdb_103__d6.json": "93f5f03e05355e762ca8a71bc9715e5571b4ed3154976ad7f6fc63dfe3f62a53",
+    "references/nile.json": "4d55113aa8810adfcdab5fc797bcf5a82bdaeb9f21ca25fcf7052d3a0dbe2be2",
+    "references/rocket.json": "84d1c2bdd267044afd8c360cc89288c969cc2e8f15e4144024fd80eabb00bfa7",
+    "references/scifact.json": "9ce98d0ba38c9406c7ef21ef5d1c1f5b952f559049e2fbdc209e1de85b22b0a5",
+    "references/scifact__d6.json": "27494ea48dbda2a28837a7a4adc94891d89866d3395d44e79429c7489c9fdad7",
+    "references/seeds.json": "c178830e35256e00670e2ff9b51f079b9c69898118a78d8b98e0446468913151",
+    "references/spambase.json": "c698e430d804685ffd92ba490e7bd6c48b00f55bcd860d6283fd8c8d16f31f72",
+    "references/spambase__d6.json": "3c83a92157fc169b78203eeed6e3e3449c12454b9835de16f134842e7386a859",
+    "references/sunspots.json": "c676e225f20198e4bdd0b1a4f204ae3db84e9098ad6925a2666e4ceec1999f8e",
+    "references/wine.json": "28c491cc4e09d9ca4b339cd9ad38084a38e416190a7aaa6400c8ea9ae6d4b5e0",
+    "references/wine__d6.json": "e8411d2a9e4e9ba0dfac53fdebe3c8556789e8b280820ef324addbf16498db69",
+    "references/yacht.json": "f1ec5082c08ea0d6d8c7c7df05156ea7b724b92bb0a145d9c9cbc081094b009e",
+    "replay.py": "a8fdbde6fe8df3627adc5ccfd0a548ab5014f5ea471c43471c7ddaa9adc55cce",
+    "requirements.txt": "cb8435a8b3dd3d2105a1756cd19cddf6ab0a7dd98f235c529fa919ad9fdc25de"
+  },
+  "previous_pack_manifest_sha256": "919738211fbe25eb7bda1b7c3d4a169d80a364364620aab948aad8b0d8960f56"
+}

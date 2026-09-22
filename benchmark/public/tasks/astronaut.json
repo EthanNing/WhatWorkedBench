@@ -1,0 +1,48 @@
+{
+  "instance": "astronaut",
+  "family": "image_restoration",
+  "source_name": "astronaut",
+  "factor_order": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "factors": {
+    "A": "3x3 median filtering",
+    "B": "Gaussian filtering with sigma=0.8",
+    "C": "local Wiener filtering with a 5x5 neighborhood and automatically estimated noise power",
+    "D": "unsharp masking, Gaussian sigma=1 and amount=0.5"
+  },
+  "utility": "1/(1+pixel_RMSE / 0.1), relative to the private uncorrupted image",
+  "data": {
+    "shape": [
+      256,
+      256
+    ],
+    "input_intensity_quantiles": [
+      0.0,
+      0.18220820718893505,
+      0.49651048723611113,
+      0.7034116771852835,
+      1.0
+    ],
+    "input_mean_absolute_neighbor_difference": 0.11514165747212785,
+    "corruption": "synthetic independent Gaussian pixel noise, std=0.1, seed=20260907, clipped to [0,1]",
+    "reference": "private uncorrupted version of the same real photograph"
+  },
+  "source_code": "def restore(noisy,mask):\n    a,b,c,d=switches(mask);image=np.array(noisy,copy=True)\n    if a:image=median_filter(image,size=3,mode='reflect')\n    if b:image=gaussian_filter(image,sigma=.8,mode='reflect')\n    if c:image=wiener(image,mysize=(5,5))\n    if d:image=image+.5*(image-gaussian_filter(image,sigma=1.,mode='reflect'))\n    return np.clip(image,0,1)\n",
+  "shared_code": "switches(mask) returns tuple(v == \"1\" for v in mask); numpy is np; standard sklearn/scipy imports",
+  "options_origin": "authored native-library configurations; not generated improvements or mined patches",
+  "reference_scope": "effects on this fixed finite evaluation cohort, without a population causal claim",
+  "free_observations": [
+    {
+      "mask": "0000",
+      "utility": 0.5159895969976079
+    },
+    {
+      "mask": "1111",
+      "utility": 0.6106867081458555
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "instance": "arguana",
+  "family": "retrieval",
+  "source_name": "ArguAna original-author pairs, audited source",
+  "factor_order": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "factors": {
+    "A": "unigrams plus bigrams instead of unigrams",
+    "B": "sklearn English stop words removed",
+    "C": "sublinear term frequency instead of raw counts",
+    "D": "IDF weighting instead of none"
+  },
+  "utility": "mean NDCG@10, binary original relevance, log2(rank+1) discounts",
+  "data": {
+    "corpus_documents": 8567,
+    "evaluation_queries": 64,
+    "document_character_length_quantiles": [
+      5.0,
+      650.0,
+      940.0,
+      1303.0,
+      7164.0
+    ],
+    "query_character_length_quantiles": [
+      383.0,
+      858.5,
+      1262.0,
+      1725.25,
+      3402.0
+    ],
+    "self_exclusion": true,
+    "relevance": "private original binary relevance annotations"
+  },
+  "source_code": "def retrieve(documents,queries,exclude_self,mask):\n    a,b,c,d=switches(mask)\n    docs=sorted(documents,key=lambda r:r['doc_id'])\n    vectorizer=TfidfVectorizer(ngram_range=(1,2) if a else (1,1),stop_words='english' if b else None,\n                               sublinear_tf=c,use_idf=d,norm='l2',dtype=np.float64)\n    matrix=vectorizer.fit_transform([r['text'] for r in docs])\n    query_matrix=vectorizer.transform([text for _,text in queries])\n    similarities=(query_matrix@matrix.T).toarray()\n    normalized=[normalized_text(r['text']) for r in docs] if exclude_self else None\n    result={}\n    for (qid,text),row in zip(queries,similarities):\n        if not np.isfinite(row).all():raise ValueError('Nonfinite retrieval scores')\n        order=np.argsort(-row,kind='stable')\n        if exclude_self:\n            query=normalized_text(text);order=[i for i in order if normalized[i]!=query]\n        result[qid]=[docs[i]['doc_id'] for i in order[:10]]\n    return result\n",
+  "shared_code": "switches(mask) returns tuple(v == \"1\" for v in mask); numpy is np; standard sklearn/scipy imports",
+  "options_origin": "authored native-library configurations; not generated improvements or mined patches",
+  "reference_scope": "effects on this fixed finite evaluation cohort, without a population causal claim",
+  "free_observations": [
+    {
+      "mask": "0000",
+      "utility": 0.10634296089296032
+    },
+    {
+      "mask": "1111",
+      "utility": 0.48935679224276063
+    }
+  ]
+}

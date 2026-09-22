@@ -1,0 +1,56 @@
+{
+  "source": {
+    "dataset": "scifact",
+    "workflow": "scientific_retrieval",
+    "factors": {
+      "A": "unigrams plus bigrams instead of unigrams",
+      "B": "remove sklearn's built-in English stop words instead of retaining them",
+      "C": "sublinear term frequency 1+log(tf) instead of raw term frequency",
+      "D": "inverse document frequency weighting instead of no IDF weighting"
+    },
+    "source_name": "BEIR SciFact",
+    "repository_url": "https://github.com/allenai/scifact",
+    "license": {
+      "claims_and_annotations": "CC-BY-4.0",
+      "corpus": "ODC-By-1.0"
+    },
+    "license_authority": "https://github.com/allenai/scifact/blob/master/LICENSE.md",
+    "data_sha256": {
+      "corpus.jsonl": "dec31c8182f3d744c7d2c09423756fd1d17cbef75808db13ba01cc0aab4d1ac6",
+      "queries.jsonl": "8ff84a7c903f722981cd8d595c022660140c51867b27608a6d4910db86080313",
+      "qrels/train.tsv": "a53f2114831916c096b6c37d9e54da68cef4efdcdbd5ed46533601af972acf1d",
+      "qrels/test.tsv": "0864bb985e0ca2367ba217977e72004d549054b2b06666ed9d4825ac7c21284c"
+    },
+    "corpus_rows": 5183,
+    "evaluation_rows": 64,
+    "query_cohort": "hash-first 64 original train queries; development only",
+    "query_ids_sha256": "f909a6475226117b4aa9ff7b072f88009d94cc6942047d83909d37aefc22f188",
+    "sklearn_version": "1.6.1",
+    "numpy_version": "2.2.6",
+    "source_code_sha256": "40a4a6f6070a769ed379519ff891b64dbf98e6971bfe064684572c693ffbca72",
+    "construction_only": true,
+    "instance": "scifact",
+    "family": "retrieval",
+    "source_catalog_sha256": "f72c02df48b5007a70157ae20d33e9fb9892ebdd832e8eb9357350250f4e3f6a"
+  },
+  "factors": {
+    "A": "unigrams plus bigrams instead of unigrams",
+    "B": "sklearn English stop words removed",
+    "C": "sublinear term frequency instead of raw counts",
+    "D": "IDF weighting instead of none"
+  },
+  "source_code_sha256": {
+    "whatworked/phase4_expansion.py": "bd6c79b46bb3703da56e853a7d5e1eb7db7a13ffc2b851f98ff6a125f0f23dc0",
+    "whatworked/phase4_sources.py": "b7817b7b70e26bba8ea0071c600b75813c77a2f358a147d845af42ce9e7e6cce",
+    "whatworked/phase4_workflows.py": "e96816fe3f747a4967a9dc38bd575c6b37b0da50450e2267532a1684d2607916"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "pillow": "12.3.0"
+  },
+  "native_threads": 1,
+  "native_timeout_seconds": 180,
+  "state": "construction development evidence; no model evaluation on new instances"
+}

@@ -1,0 +1,66 @@
+{
+  "source": {
+    "source_name": "Dry Bean",
+    "source_url": "https://archive.ics.uci.edu/static/public/602/data.csv",
+    "repository_url": "https://archive.ics.uci.edu/dataset/602/dry+bean+dataset",
+    "license": "CC-BY-4.0",
+    "license_authority": "https://archive.ics.uci.edu/dataset/602/dry+bean+dataset",
+    "raw_data_sha256": "c91a086bb4357e69409d23287ec22be1be9512145cead1d8ca988c918be38fcb",
+    "metadata_sha256": "f04017533472eaddb94f051310d5561dd068a829d325fbc78842f214a2e9edf9",
+    "raw_rows": 13611,
+    "rows": 13543,
+    "removed_duplicate_feature_label_rows": 68,
+    "features": [
+      "Area",
+      "Perimeter",
+      "MajorAxisLength",
+      "MinorAxisLength",
+      "AspectRatio",
+      "Eccentricity",
+      "ConvexArea",
+      "EquivDiameter",
+      "Extent",
+      "Solidity",
+      "Roundness",
+      "Compactness",
+      "ShapeFactor1",
+      "ShapeFactor2",
+      "ShapeFactor3",
+      "ShapeFactor4"
+    ],
+    "target": "Class",
+    "target_labels": [
+      "BARBUNYA",
+      "BOMBAY",
+      "CALI",
+      "DERMASON",
+      "HOROZ",
+      "SEKER",
+      "SIRA"
+    ],
+    "no_id_or_target_features": true,
+    "instance": "dry_bean",
+    "family": "clustering",
+    "source_catalog_sha256": "f72c02df48b5007a70157ae20d33e9fb9892ebdd832e8eb9357350250f4e3f6a"
+  },
+  "factors": {
+    "A": "sign(x)*log1p(abs(x)) feature transform",
+    "B": "feature-only standard scaling",
+    "C": "PCA retaining 95 percent variance instead of all original features",
+    "D": "10 KMeans initializations instead of 1"
+  },
+  "source_code_sha256": {
+    "whatworked/phase4_expansion.py": "bd6c79b46bb3703da56e853a7d5e1eb7db7a13ffc2b851f98ff6a125f0f23dc0",
+    "whatworked/phase4_sources.py": "b7817b7b70e26bba8ea0071c600b75813c77a2f358a147d845af42ce9e7e6cce",
+    "whatworked/phase4_workflows.py": "e96816fe3f747a4967a9dc38bd575c6b37b0da50450e2267532a1684d2607916"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "pillow": "12.3.0"
+  },
+  "native_threads": 1,
+  "native_timeout_seconds": 180,
+  "state": "construction development evidence; no model evaluation on new instances"
+}

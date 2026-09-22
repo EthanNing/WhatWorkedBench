@@ -1,0 +1,20 @@
+Reconstruct the utility of all 16 configurations of this real CPU workflow. Four mask positions from left to right represent A,B,C,D; 1 enables each displayed option. All masks are legal. Utility is deterministic on one fixed evaluation cohort and lies in [0,1].
+
+You have {budget} new measurement credits, plus the two free observations below. observe_many measures your selected configurations; duplicates are free. Your PRIMARY objective is accurate component effects in EVERY background of the other components: the grader compares all 32 edge differences from your completed prediction table to the fully executed reference table. It also reports mean pair interactions and which configuration you choose. Selecting the best configuration alone does not complete attribution.
+
+You have 1800 seconds (30 minutes) for the session, including model deliberation, tool calls and final submission. Every tool receipt exposes elapsed and remaining time. Aim to submit with at least 120 seconds left. There are up to 20 calculation calls, each with a 30 CPU-second/45 wall-second limit. Those are ceilings, not targets: you can complete this task with a few numerical calls.
+
+Public numerical helpers are available immediately. In calculate_python, use:
+    from wwb_helpers import fit_surface, suggest_experiments
+    fit_surface(observations, degree=1)  # main effects
+    fit_surface(observations, degree=2)  # main effects and pair interactions
+    suggest_experiments(observations, count=1, degree=1)
+Fits return predictions, selected regularization and leave-one-observation-out diagnostics. The helpers use ONLY your provided observations, have no hidden outcomes, and match the numerical reference baselines. You can inspect/compare them, choose different experiments, make code-informed corrections or implement another estimator using numpy/scipy/sklearn. Do not try to retrieve hidden labels or reconstruct the source dataset; network and bundled dataset labels are unavailable.
+
+Finish through submit_diagnosis. Supply either predictions_json containing all 16 finite utility predictions, OR estimator="ridge_main"/"ridge_pair" to submit that public helper directly on your measurements. Both are valid final artifacts, and helper use is recorded. Observed utility cells are replaced with their measured values before scoring. Your final prose is not graded.
+
+FREE OBSERVATIONS:
+{anchors}
+
+PUBLIC WORKFLOW:
+{task}

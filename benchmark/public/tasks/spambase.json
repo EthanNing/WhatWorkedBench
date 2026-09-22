@@ -1,0 +1,59 @@
+{
+  "instance": "spambase",
+  "family": "classification",
+  "source_name": "Spambase",
+  "factor_order": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "factors": {
+    "A": "sign(x)*log1p(abs(x)) feature transform",
+    "B": "train-fitted standard scaling",
+    "C": "balanced instead of uniform class weights",
+    "D": "LogisticRegression C=0.05 instead of C=1"
+  },
+  "utility": "balanced accuracy (mean class recall)",
+  "data": {
+    "training": {
+      "rows": 2947,
+      "features": 57,
+      "negative_value_fraction": 0.0,
+      "feature_std_quantiles": [
+        0.08703200857917447,
+        0.2988957401042546,
+        0.448766440407368,
+        0.7447524495994527,
+        577.6065734364341
+      ],
+      "constant_feature_count": 0
+    },
+    "evaluation_rows": 1263,
+    "training_target_quantiles": [
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "training_class_counts": {
+      "0": 1771,
+      "1": 1176
+    }
+  },
+  "source_code": "def signed_log(x):return np.sign(x)*np.log1p(np.abs(x))\n\ndef supervised_pipeline(family,mask):\n    a,b,c,d=switches(mask);steps=[]\n    if family=='classification' and a:steps.append(('signed_log',FunctionTransformer(signed_log)))\n    if b:steps.append(('scale',StandardScaler()))\n    if family=='classification':\n        steps.append(('model',LogisticRegression(C=.05 if d else 1.,class_weight='balanced' if c else None,\n                                                  solver='lbfgs',max_iter=3000,random_state=17)))\n        return Pipeline(steps)\n    if c:steps.append(('poly',PolynomialFeatures(2,include_bias=False)))\n    steps.append(('model',Ridge(alpha=10. if d else 1.,solver='svd')))\n    model=Pipeline(steps)\n    return TransformedTargetRegressor(regressor=model,func=np.log1p,inverse_func=np.expm1) if a else model\n",
+  "shared_code": "switches(mask) returns tuple(v == \"1\" for v in mask); numpy is np; standard sklearn/scipy imports",
+  "options_origin": "authored native-library configurations; not generated improvements or mined patches",
+  "reference_scope": "effects on this fixed finite evaluation cohort, without a population causal claim",
+  "free_observations": [
+    {
+      "mask": "0000",
+      "utility": 0.9193196086638067
+    },
+    {
+      "mask": "1111",
+      "utility": 0.9408810296118029
+    }
+  ]
+}

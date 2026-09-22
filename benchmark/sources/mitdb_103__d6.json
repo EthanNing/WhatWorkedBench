@@ -1,0 +1,76 @@
+{
+  "source_manifest": {
+    "instance": "mitdb_103",
+    "family": "beat_detection",
+    "source_files": [
+      {
+        "url": "https://physionet.org/files/mitdb/1.0.0/103.hea",
+        "bytes": 142,
+        "sha256": "3da9706fc27cc5d627a31b04b74b908ac0b6e061843a87cbd57801e5ea0fed7b"
+      },
+      {
+        "url": "https://physionet.org/files/mitdb/1.0.0/103.dat",
+        "bytes": 1950000,
+        "sha256": "f7994f0bd196730779998b4bddf26cb47f396599fb370a08b5cb29a3ac4d555d"
+      },
+      {
+        "url": "https://physionet.org/files/mitdb/1.0.0/103.atr",
+        "bytes": 4196,
+        "sha256": "392ce37fbc7e89b3f14998e197a844f23cce6a3db6edaa71b4b49bf3ca5b6596"
+      }
+    ],
+    "prepared_path": "private/phase4_diversity/prepared/mitdb_103.npz",
+    "prepared_sha256": "33077a4ba4a447c2726637d065dbbdd01ca09fcd734eef861413b0b00a12a2d4",
+    "public_summary": {
+      "samples": 108000,
+      "sample_rate_hz": 360,
+      "seconds": 300,
+      "channel": "MLII",
+      "units": "mV",
+      "signal_quantiles": [
+        -0.56,
+        -0.37,
+        -0.29,
+        -0.2,
+        1.645
+      ]
+    },
+    "host_only": {
+      "reference_events": 355,
+      "qrs_label_codes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        25,
+        30,
+        31,
+        34,
+        35,
+        38,
+        41
+      ]
+    },
+    "license": "Open Data Commons Attribution License v1.0",
+    "source_url": "https://physionet.org/content/mitdb/1.0.0/"
+  },
+  "construction_plan_sha256": "71f6cd07464f4ebe3d6dc9dfa45e6a9df0c93ae5950771ddeae4f6c1314cd2d0",
+  "native_code_sha256": {
+    "whatworked/phase4_diversity_sources.py": "9376ae8d87b9ff48b2b503058250f5d5dd4390769356befbd732145a4a2ab110",
+    "whatworked/phase4_diversity_workflows.py": "288b30fc5e367c4619c32a330a37e6fc15795be9474fc2e8f52f31e72c06bfdb",
+    "whatworked/phase4_diversity_construct.py": "319d7f0ad659088eaf6d7a6cc1f805cab282da2ed997a8cc9ad0141a580019ae",
+    "whatworked/phase4_numeric_helpers.py": "cb7ac328a23c39fd3c8610d7b50543bb2c6a8fb1143b370f88ff45106fa897fb",
+    "whatworked/phase4_kernel_controls.py": "aceaa69802e813517386db778e4cc57d425bfb188daf2e4a929a2c8de4a68510",
+    "whatworked/phase4_portable.py": "82343623e1c4d771058f4cb89901d97d14a988257bd8792488d7c374ad8e5037",
+    "whatworked/phase4_scale_controls.py": "0bf44e6e4c0ac02f145f50e3f7987505f079720b136f6a50b27f4c78db2ad6c3"
+  }
+}

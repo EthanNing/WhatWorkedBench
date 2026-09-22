@@ -1,0 +1,137 @@
+{
+  "instance": "scifact",
+  "family": "retrieval",
+  "truth": {
+    "0000": 0.37270262738981463,
+    "0001": 0.6094634528102678,
+    "0010": 0.4895441058375042,
+    "0011": 0.6791859432466931,
+    "0100": 0.5246495779519533,
+    "0101": 0.6158943234389972,
+    "0110": 0.6401647801011296,
+    "0111": 0.6821214136920579,
+    "1000": 0.40789532147187346,
+    "1001": 0.6212547598637264,
+    "1010": 0.5222612764301704,
+    "1011": 0.6674581581093648,
+    "1100": 0.5469629089126593,
+    "1101": 0.6173120164955426,
+    "1110": 0.6246799376892718,
+    "1111": 0.6794501242916556
+  },
+  "native_measurements": {
+    "0000": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.37270262738981463,
+      "wall_seconds": 0.418527740999707,
+      "prediction_sha256": "98644e515451c99aa886c291fbe3bc252d010269772fb423d4ea90e64b6f09cb",
+      "warnings": []
+    },
+    "0001": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.6094634528102678,
+      "wall_seconds": 0.41904803000215907,
+      "prediction_sha256": "b514071e81a5a5e746d955c62e7f03188e8b0c5be4a7f12ee33a1c0958d7e5eb",
+      "warnings": []
+    },
+    "0010": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.4895441058375042,
+      "wall_seconds": 0.41495265800040215,
+      "prediction_sha256": "f226e01cc5592dcc59d2a3113f1367201773270da4dffc47d616e97b0bfdc93a",
+      "warnings": []
+    },
+    "0011": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.6791859432466931,
+      "wall_seconds": 0.42872532999899704,
+      "prediction_sha256": "833897fb31cd2cbee584d5879f61c052135e9b434fb5242d179e033cf3ad27fa",
+      "warnings": []
+    },
+    "0100": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.5246495779519533,
+      "wall_seconds": 0.3933954050007742,
+      "prediction_sha256": "010f966b615f3ee3997891ac6545917becd79ddfd6209d6f02db7c5c1a46ee82",
+      "warnings": []
+    },
+    "0101": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.6158943234389972,
+      "wall_seconds": 0.38400929199997336,
+      "prediction_sha256": "0dd7af96e82c59b43edeeae35285720674231194b7774281ac9accbed5b9062e",
+      "warnings": []
+    },
+    "0110": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.6401647801011296,
+      "wall_seconds": 0.39270850000320934,
+      "prediction_sha256": "fba5fd8ca36cf45e692652ba5ba0ba9c134c61e6874dc5ee958e2361b21be617",
+      "warnings": []
+    },
+    "0111": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.6821214136920579,
+      "wall_seconds": 0.3964699700009078,
+      "prediction_sha256": "bc53c41161deeb0ec8da42a548d09521d57461b09cede33291d37173c2dd4c4f",
+      "warnings": []
+    },
+    "1000": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.40789532147187346,
+      "wall_seconds": 1.98908338000183,
+      "prediction_sha256": "54fa2fd4033e94208c682ada98b95c9454366631cc3b5f74504bf78554e3993f",
+      "warnings": []
+    },
+    "1001": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.6212547598637264,
+      "wall_seconds": 2.021866534007131,
+      "prediction_sha256": "a9f70acd53ba987a2b2ab5671dd282c3a5cdf151c70a69cada1649562634e04d",
+      "warnings": []
+    },
+    "1010": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.5222612764301704,
+      "wall_seconds": 2.001709092000965,
+      "prediction_sha256": "a7a5ce4c255bcb90b2ec4429d70e00ea08a18825e9cbdac16e9b30ed6b047983",
+      "warnings": []
+    },
+    "1011": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.6674581581093648,
+      "wall_seconds": 2.0160896410088753,
+      "prediction_sha256": "532da1ea5b8d0244156f85731e630aab8a918eca7bdc9bb19a990a2caf36d52c",
+      "warnings": []
+    },
+    "1100": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.5469629089126593,
+      "wall_seconds": 1.7962394460046198,
+      "prediction_sha256": "f68d7c0f114bc698a6727e606850c5d970406464813f7f816348892d6461333e",
+      "warnings": []
+    },
+    "1101": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.6173120164955426,
+      "wall_seconds": 1.8433072960033314,
+      "prediction_sha256": "d104a8b74ea580ec37703fb8aa6c813aee614b5607ab4062e69d9089df262c58",
+      "warnings": []
+    },
+    "1110": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.6246799376892718,
+      "wall_seconds": 1.8162327940081013,
+      "prediction_sha256": "ff2df8492c92037324d5422f8119f47e332394fbcba7d49d606846199c56fa4e",
+      "warnings": []
+    },
+    "1111": {
+      "native_metric": "NDCG@10",
+      "native_value": 0.6794501242916556,
+      "wall_seconds": 1.818133017004584,
+      "prediction_sha256": "e36bde9cda358e876a789ba7cb2a6376c5f6c6aaec5d699bce56392773b1547c",
+      "warnings": []
+    }
+  },
+  "source_table_file_sha256": "9ce98d0ba38c9406c7ef21ef5d1c1f5b952f559049e2fbdc209e1de85b22b0a5"
+}

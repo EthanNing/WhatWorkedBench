@@ -1,0 +1,137 @@
+{
+  "instance": "yacht",
+  "family": "regression",
+  "truth": {
+    "0000": 0.6237071542720739,
+    "0001": 0.5311665690665313,
+    "0010": 0.619796558572199,
+    "0011": 0.6211246681391436,
+    "0100": 0.6162860970093433,
+    "0101": 0.6197379766269202,
+    "0110": 0.7577767461338685,
+    "0111": 0.7614214375460573,
+    "1000": 0.6646381011498231,
+    "1001": 0.5552457804333163,
+    "1010": 0.8030836192348151,
+    "1011": 0.762041511128517,
+    "1100": 0.8002902327396718,
+    "1101": 0.7795105280890876,
+    "1110": 0.9158654021240814,
+    "1111": 0.8978786434496997
+  },
+  "native_measurements": {
+    "0000": {
+      "native_metric": "MAE",
+      "native_value": 7.01053825887512,
+      "wall_seconds": 0.002916937999543734,
+      "prediction_sha256": "424c0f651bf8567de1e5ae7f8c6a45be519ebdea3ee9308cbac0d5ecdd04fa53",
+      "warnings": []
+    },
+    "0001": {
+      "native_metric": "MAE",
+      "native_value": 10.25637678406778,
+      "wall_seconds": 0.0026597270043566823,
+      "prediction_sha256": "1560180f54e44ec0de123efaac27f2cccb0d71185814d1846fb0aeaf48f6f449",
+      "warnings": []
+    },
+    "0010": {
+      "native_metric": "MAE",
+      "native_value": 7.128087318794635,
+      "wall_seconds": 0.002859857995645143,
+      "prediction_sha256": "dc00b0ba473ab12f515867c44b2bd9698d21d749c0ab77004169aa2dd555b7d5",
+      "warnings": []
+    },
+    "0011": {
+      "native_metric": "MAE",
+      "native_value": 7.087999530614202,
+      "wall_seconds": 0.0022762670123483986,
+      "prediction_sha256": "1df976470c17fb2d7e663f532803f0b2ac54d19a40df5d26b5995da18d08d6cf",
+      "warnings": []
+    },
+    "0100": {
+      "native_metric": "MAE",
+      "native_value": 7.234879343195425,
+      "wall_seconds": 0.002220795999164693,
+      "prediction_sha256": "aaaa923ad25ee55397063788c83400c796be1db66e733f0f0f0db5408e165e67",
+      "warnings": []
+    },
+    "0101": {
+      "native_metric": "MAE",
+      "native_value": 7.12985951844483,
+      "wall_seconds": 0.0021146169892745093,
+      "prediction_sha256": "d05e9ae6ea9d778f9af0fc2b2b65e6f9a121e819821bea5fe2e27b13184b2b14",
+      "warnings": []
+    },
+    "0110": {
+      "native_metric": "MAE",
+      "native_value": 3.7143317267051863,
+      "wall_seconds": 0.0026977659872500226,
+      "prediction_sha256": "7d130d6e81be8aa4aebba72255b3ef5ecd6db2188f7bdacc82c93fa6449d7050",
+      "warnings": []
+    },
+    "0111": {
+      "native_metric": "MAE",
+      "native_value": 3.6409309733246413,
+      "wall_seconds": 0.0025099579943343997,
+      "prediction_sha256": "1b268040a0d7678d6e08e09ee97096f91cb08e4bfce876aafce92e2d8faf6223",
+      "warnings": []
+    },
+    "1000": {
+      "native_metric": "MAE",
+      "native_value": 5.86319872107454,
+      "wall_seconds": 0.002808755001751706,
+      "prediction_sha256": "0bcfa05459d8102f0ec3fdfa5822b08695aec8d9348d907b6ddfb151b658639e",
+      "warnings": []
+    },
+    "1001": {
+      "native_metric": "MAE",
+      "native_value": 9.307669168294625,
+      "wall_seconds": 0.0023675489937886596,
+      "prediction_sha256": "1dfd51a8341aeef2fe39a9b94ad9e14b3bf014d01bbb92c3c0c8354dc3dc1b9d",
+      "warnings": []
+    },
+    "1010": {
+      "native_metric": "MAE",
+      "native_value": 2.849228012733761,
+      "wall_seconds": 0.002691087996936403,
+      "prediction_sha256": "4daf97e68a90fec9b52894de0dccf45824ec61ac3827e04552b3500bcfae6383",
+      "warnings": []
+    },
+    "1011": {
+      "native_metric": "MAE",
+      "native_value": 3.6285131456838795,
+      "wall_seconds": 0.002769526996416971,
+      "prediction_sha256": "43ee1f2ef54e36fc05c4c5c7a8e06f81a8b99dbfa6c8c86a6f38893f9d05c30a",
+      "warnings": []
+    },
+    "1100": {
+      "native_metric": "MAE",
+      "native_value": 2.899732372867652,
+      "wall_seconds": 0.0025327589974040166,
+      "prediction_sha256": "0fd0d099d53039d146811248b070a423c20e99709abc3f0f25ef7f5c2c7af806",
+      "warnings": []
+    },
+    "1101": {
+      "native_metric": "MAE",
+      "native_value": 3.286790327111516,
+      "wall_seconds": 0.002666457003215328,
+      "prediction_sha256": "9686b1ca74323713b850155d1e80f86d409cc50215c835d1ccce8232c607ae2b",
+      "warnings": []
+    },
+    "1110": {
+      "native_metric": "MAE",
+      "native_value": 1.0674538256940544,
+      "wall_seconds": 0.0035596679954323918,
+      "prediction_sha256": "4ea9d93228ee08274f000d8cf5ad235863bd7d6b6b0cbed39c1a49edaeefa81c",
+      "warnings": []
+    },
+    "1111": {
+      "native_metric": "MAE",
+      "native_value": 1.3216153115696276,
+      "wall_seconds": 0.0029201599973021075,
+      "prediction_sha256": "75865169e1af2770d18ccc747a2947ffbfba76922e4031c44d515d184734f7a8",
+      "warnings": []
+    }
+  },
+  "source_table_file_sha256": "f1ec5082c08ea0d6d8c7c7df05156ea7b724b92bb0a145d9c9cbc081094b009e"
+}

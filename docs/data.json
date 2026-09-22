@@ -1,0 +1,364 @@
+{
+  "catalog": [
+    {
+      "instance": "airfoil",
+      "family": "regression",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "airfoil",
+      "condition": "original_four_factors",
+      "source_name": "Airfoil Self-Noise"
+    },
+    {
+      "instance": "arguana",
+      "family": "retrieval",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "arguana",
+      "condition": "original_four_factors",
+      "source_name": "ArguAna original-author pairs, audited source"
+    },
+    {
+      "instance": "astronaut",
+      "family": "image_restoration",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "astronaut",
+      "condition": "original_four_factors",
+      "source_name": "astronaut"
+    },
+    {
+      "instance": "banknote",
+      "family": "classification",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "banknote",
+      "condition": "original_four_factors",
+      "source_name": "Banknote Authentication"
+    },
+    {
+      "instance": "breast_diagnostic",
+      "family": "classification",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "breast_diagnostic",
+      "condition": "original_four_factors",
+      "source_name": "Breast Cancer Wisconsin (Diagnostic)"
+    },
+    {
+      "instance": "co2",
+      "family": "forecasting",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "co2",
+      "condition": "original_four_factors",
+      "source_name": "co2"
+    },
+    {
+      "instance": "coffee",
+      "family": "image_restoration",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "coffee",
+      "condition": "original_four_factors",
+      "source_name": "coffee"
+    },
+    {
+      "instance": "concrete",
+      "family": "regression",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "concrete",
+      "condition": "original_four_factors",
+      "source_name": "Concrete Compressive Strength"
+    },
+    {
+      "instance": "dry_bean",
+      "family": "clustering",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "dry_bean",
+      "condition": "original_four_factors",
+      "source_name": "Dry Bean"
+    },
+    {
+      "instance": "elnino",
+      "family": "forecasting",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "elnino",
+      "condition": "original_four_factors",
+      "source_name": "elnino"
+    },
+    {
+      "instance": "energy_efficiency",
+      "family": "regression",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "energy_efficiency",
+      "condition": "original_four_factors",
+      "source_name": "Energy Efficiency"
+    },
+    {
+      "instance": "glass",
+      "family": "clustering",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "glass",
+      "condition": "original_four_factors",
+      "source_name": "Glass Identification"
+    },
+    {
+      "instance": "hubble_deep_field",
+      "family": "image_restoration",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "hubble_deep_field",
+      "condition": "original_four_factors",
+      "source_name": "hubble_deep_field"
+    },
+    {
+      "instance": "ionosphere",
+      "family": "classification",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "ionosphere",
+      "condition": "original_four_factors",
+      "source_name": "Ionosphere"
+    },
+    {
+      "instance": "nile",
+      "family": "forecasting",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "nile",
+      "condition": "original_four_factors",
+      "source_name": "nile"
+    },
+    {
+      "instance": "rocket",
+      "family": "image_restoration",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "rocket",
+      "condition": "original_four_factors",
+      "source_name": "rocket"
+    },
+    {
+      "instance": "scifact",
+      "family": "retrieval",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "scifact",
+      "condition": "original_four_factors",
+      "source_name": "BEIR SciFact"
+    },
+    {
+      "instance": "seeds",
+      "family": "clustering",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "seeds",
+      "condition": "original_four_factors",
+      "source_name": "Seeds"
+    },
+    {
+      "instance": "spambase",
+      "family": "classification",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "spambase",
+      "condition": "original_four_factors",
+      "source_name": "Spambase"
+    },
+    {
+      "instance": "sunspots",
+      "family": "forecasting",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "sunspots",
+      "condition": "original_four_factors",
+      "source_name": "sunspots"
+    },
+    {
+      "instance": "wine",
+      "family": "clustering",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "wine",
+      "condition": "original_four_factors",
+      "source_name": "Wine"
+    },
+    {
+      "instance": "yacht",
+      "family": "regression",
+      "dimensions": 4,
+      "configurations": 16,
+      "source_instance": "yacht",
+      "condition": "original_four_factors",
+      "source_name": "Yacht Hydrodynamics"
+    },
+    {
+      "instance": "spambase__d6",
+      "source_instance": "spambase",
+      "family": "classification",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "paired_six_factors",
+      "source_name": "Spambase"
+    },
+    {
+      "instance": "concrete__d6",
+      "source_instance": "concrete",
+      "family": "regression",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "paired_six_factors",
+      "source_name": "Concrete Compressive Strength"
+    },
+    {
+      "instance": "wine__d6",
+      "source_instance": "wine",
+      "family": "clustering",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "paired_six_factors",
+      "source_name": "Wine"
+    },
+    {
+      "instance": "co2__d6",
+      "source_instance": "co2",
+      "family": "forecasting",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "paired_six_factors",
+      "source_name": "co2"
+    },
+    {
+      "instance": "astronaut__d6",
+      "source_instance": "astronaut",
+      "family": "image_restoration",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "paired_six_factors",
+      "source_name": "astronaut"
+    },
+    {
+      "instance": "scifact__d6",
+      "source_instance": "scifact",
+      "family": "retrieval",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "paired_six_factors",
+      "source_name": "BEIR SciFact"
+    },
+    {
+      "instance": "mitdb_100__d6",
+      "source_instance": "mitdb_100",
+      "family": "beat_detection",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "additional_six_factors",
+      "source_name": "MIT-BIH record 100"
+    },
+    {
+      "instance": "mitdb_101__d6",
+      "source_instance": "mitdb_101",
+      "family": "beat_detection",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "additional_six_factors",
+      "source_name": "MIT-BIH record 101"
+    },
+    {
+      "instance": "mitdb_102__d6",
+      "source_instance": "mitdb_102",
+      "family": "beat_detection",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "additional_six_factors",
+      "source_name": "MIT-BIH record 102"
+    },
+    {
+      "instance": "mitdb_103__d6",
+      "source_instance": "mitdb_103",
+      "family": "beat_detection",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "additional_six_factors",
+      "source_name": "MIT-BIH record 103"
+    },
+    {
+      "instance": "graph_lesmis__d6",
+      "source_instance": "graph_lesmis",
+      "family": "graph_link_prediction",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "additional_six_factors",
+      "source_name": "Les Miserables character coappearance"
+    },
+    {
+      "instance": "graph_adjnoun__d6",
+      "source_instance": "graph_adjnoun",
+      "family": "graph_link_prediction",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "additional_six_factors",
+      "source_name": "David Copperfield word adjacency"
+    },
+    {
+      "instance": "graph_football__d6",
+      "source_instance": "graph_football",
+      "family": "graph_link_prediction",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "additional_six_factors",
+      "source_name": "American college football, fall 2000"
+    },
+    {
+      "instance": "graph_dolphins__d6",
+      "source_instance": "graph_dolphins",
+      "family": "graph_link_prediction",
+      "dimensions": 6,
+      "configurations": 64,
+      "condition": "additional_six_factors",
+      "source_name": "Doubtful Sound dolphin associations"
+    }
+  ],
+  "example": {
+    "truth": {
+      "0000": 0.37270262738981463,
+      "0001": 0.6094634528102678,
+      "0010": 0.4895441058375042,
+      "0011": 0.6791859432466931,
+      "0100": 0.5246495779519533,
+      "0101": 0.6158943234389972,
+      "0110": 0.6401647801011296,
+      "0111": 0.6821214136920579,
+      "1000": 0.40789532147187346,
+      "1001": 0.6212547598637264,
+      "1010": 0.5222612764301704,
+      "1011": 0.6674581581093648,
+      "1100": 0.5469629089126593,
+      "1101": 0.6173120164955426,
+      "1110": 0.6246799376892718,
+      "1111": 0.6794501242916556
+    },
+    "factors": {
+      "A": "unigrams plus bigrams instead of unigrams",
+      "B": "sklearn English stop words removed",
+      "C": "sublinear term frequency instead of raw counts",
+      "D": "IDF weighting instead of none"
+    },
+    "anchors": [
+      {
+        "mask": "0000",
+        "utility": 0.37270262738981463
+      },
+      {
+        "mask": "1111",
+        "utility": 0.6794501242916556
+      }
+    ]
+  }
+}

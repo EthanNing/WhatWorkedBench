@@ -1,0 +1,681 @@
+{
+  "instance": "graph_lesmis",
+  "family": "graph_link_prediction",
+  "dimensions": 6,
+  "source_manifest_sha256": "cee00c7c06b691c30868b7b0765596debac60a4a239b0fd0f99f459a1710d23e",
+  "construction_plan_sha256": "71f6cd07464f4ebe3d6dc9dfa45e6a9df0c93ae5950771ddeae4f6c1314cd2d0",
+  "outcomes": {
+    "000000": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.5,
+      "utility": 0.5,
+      "prediction_sha256": "378ee1192c0fb00f882c9f39ee9bf1f0900ac51d281ce1b6896f82058a270fa8",
+      "wall_seconds": 0.052223584993043914,
+      "prediction_wall_seconds": 0.05148773499240633,
+      "metric_wall_seconds": 0.0007358500006375834,
+      "warnings": []
+    },
+    "000001": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.5,
+      "utility": 0.5,
+      "prediction_sha256": "378ee1192c0fb00f882c9f39ee9bf1f0900ac51d281ce1b6896f82058a270fa8",
+      "wall_seconds": 0.0021410560002550483,
+      "prediction_wall_seconds": 0.0013908469991292804,
+      "metric_wall_seconds": 0.0007502090011257678,
+      "warnings": []
+    },
+    "000010": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8081507112648981,
+      "utility": 0.8081507112648981,
+      "prediction_sha256": "8fe73c28412a0cf27f365c550e442c043cf5452e79ead85f2646e9e4cebb58df",
+      "wall_seconds": 0.0025231939798686653,
+      "prediction_wall_seconds": 0.0019569929863791913,
+      "metric_wall_seconds": 0.0005662009934894741,
+      "warnings": []
+    },
+    "000011": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8081507112648981,
+      "utility": 0.8081507112648981,
+      "prediction_sha256": "c4b5324572361f05204061802b02dac0d157e67f145c32bd9fdacf056cd69348",
+      "wall_seconds": 0.003206585010048002,
+      "prediction_wall_seconds": 0.0024916670081438497,
+      "metric_wall_seconds": 0.0007149180019041523,
+      "warnings": []
+    },
+    "000100": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8961937716262975,
+      "utility": 0.8961937716262975,
+      "prediction_sha256": "c274de1e717c6486196f5d105a35a017741837fb7ac7b1b3f4ecb5828d17d70e",
+      "wall_seconds": 0.002575615988462232,
+      "prediction_wall_seconds": 0.0019224269926780835,
+      "metric_wall_seconds": 0.0006531889957841486,
+      "warnings": []
+    },
+    "000101": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8961937716262975,
+      "utility": 0.8961937716262975,
+      "prediction_sha256": "04df6d5aac0615b75c10ab05adabb4e4bb439f47ddc15b92d89e4286b7e961b1",
+      "wall_seconds": 0.0023875730112195015,
+      "prediction_wall_seconds": 0.0017892210016725585,
+      "metric_wall_seconds": 0.000598352009546943,
+      "warnings": []
+    },
+    "000110": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8750480584390619,
+      "utility": 0.8750480584390619,
+      "prediction_sha256": "fc1348633ab8169682a2cac73faf9db5ab8138e13b5e1b3c23cd95bc05465668",
+      "wall_seconds": 0.004788555990671739,
+      "prediction_wall_seconds": 0.004154939000727609,
+      "metric_wall_seconds": 0.0006336169899441302,
+      "warnings": []
+    },
+    "000111": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9019607843137255,
+      "utility": 0.9019607843137255,
+      "prediction_sha256": "6a4f11d292283527c1a77530f651355aad4302de5989da7553c46e1099a66050",
+      "wall_seconds": 0.00247256200236734,
+      "prediction_wall_seconds": 0.0019203960109734908,
+      "metric_wall_seconds": 0.0005521659913938493,
+      "warnings": []
+    },
+    "001000": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8954248366013072,
+      "utility": 0.8954248366013072,
+      "prediction_sha256": "c76053970dfda0e37d07c1b0f01aedb337d65d4d7ee4f9768c526dc2cefc1d28",
+      "wall_seconds": 0.002573998994193971,
+      "prediction_wall_seconds": 0.0017567129980307072,
+      "metric_wall_seconds": 0.0008172859961632639,
+      "warnings": []
+    },
+    "001001": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8954248366013072,
+      "utility": 0.8954248366013072,
+      "prediction_sha256": "855a9c23e2c52dc13cb993af497874313d72a0cdc8c5492e6c4c1f74f1b753c9",
+      "wall_seconds": 0.002651332993991673,
+      "prediction_wall_seconds": 0.0020896750065730885,
+      "metric_wall_seconds": 0.0005616579874185845,
+      "warnings": []
+    },
+    "001010": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8996539792387543,
+      "utility": 0.8996539792387543,
+      "prediction_sha256": "d5e45381b34767b99d3b390cefda73a5be939963dcf686c7d2729eb57fc6838f",
+      "wall_seconds": 0.0029047559946775436,
+      "prediction_wall_seconds": 0.002280674991197884,
+      "metric_wall_seconds": 0.0006240810034796596,
+      "warnings": []
+    },
+    "001011": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9015763168012303,
+      "utility": 0.9015763168012303,
+      "prediction_sha256": "8aad05a21dab8f27ea763bc2d0bcfee92f8cb95571fcf06b006ee5273d9a2c64",
+      "wall_seconds": 0.0025460719916736707,
+      "prediction_wall_seconds": 0.0019308909977553412,
+      "metric_wall_seconds": 0.0006151809939183295,
+      "warnings": []
+    },
+    "001100": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8954248366013072,
+      "utility": 0.8954248366013072,
+      "prediction_sha256": "8dd05abc18f49a11ac6a9f63baf7272e4cffc0e386a3b87884135fe028cee0df",
+      "wall_seconds": 0.002363214996876195,
+      "prediction_wall_seconds": 0.0018293839966645464,
+      "metric_wall_seconds": 0.0005338310002116486,
+      "warnings": []
+    },
+    "001101": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8961937716262975,
+      "utility": 0.8961937716262975,
+      "prediction_sha256": "1e2663b1f53295eb9adc50c4db6fede167c44099037938d676508dc582daef97",
+      "wall_seconds": 0.00280256500991527,
+      "prediction_wall_seconds": 0.0022148160060169175,
+      "metric_wall_seconds": 0.0005877490038983524,
+      "warnings": []
+    },
+    "001110": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9004229142637447,
+      "utility": 0.9004229142637447,
+      "prediction_sha256": "992bb3ee3af43eca46be34ce4a780a61297b6688b8023045f4d02d9d921f9ccf",
+      "wall_seconds": 0.004266894000465982,
+      "prediction_wall_seconds": 0.003614214001572691,
+      "metric_wall_seconds": 0.0006526799988932908,
+      "warnings": []
+    },
+    "001111": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9023452518262207,
+      "utility": 0.9023452518262207,
+      "prediction_sha256": "1dc70f8d822770451c086b003529f57c0482cca9e7c4bcdc1e52d87cc00a92c0",
+      "wall_seconds": 0.003279039985500276,
+      "prediction_wall_seconds": 0.0026704379997681826,
+      "metric_wall_seconds": 0.0006086019857320935,
+      "warnings": []
+    },
+    "010000": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8836985774702037,
+      "utility": 0.8836985774702037,
+      "prediction_sha256": "e4d42262424e65c1b2381378916a5b91bd9fa0001358817ff9446074b7f40059",
+      "wall_seconds": 0.002292725010192953,
+      "prediction_wall_seconds": 0.0017586330068297684,
+      "metric_wall_seconds": 0.0005340920033631846,
+      "warnings": []
+    },
+    "010001": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8836985774702037,
+      "utility": 0.8836985774702037,
+      "prediction_sha256": "0166b4d8f2ceac3d155820be89222d7afdd88a86663418d10215912c32df7f30",
+      "wall_seconds": 0.0024130500096362084,
+      "prediction_wall_seconds": 0.0018890150095103309,
+      "metric_wall_seconds": 0.0005240350001258776,
+      "warnings": []
+    },
+    "010010": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8592848904267589,
+      "utility": 0.8592848904267589,
+      "prediction_sha256": "73a3f4449e0fdd3e1cb2131935ad82473d8257b33e35126a5efe5a00f2e9b1c8",
+      "wall_seconds": 0.002689414002816193,
+      "prediction_wall_seconds": 0.002134763009962626,
+      "metric_wall_seconds": 0.000554650992853567,
+      "warnings": []
+    },
+    "010011": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8938869665513264,
+      "utility": 0.8938869665513264,
+      "prediction_sha256": "7a5e3e7d2e4c8f5f71f3d6651a81cb2ad8e8125ac4d257300e4535deb2421a3e",
+      "wall_seconds": 0.0025533029984217137,
+      "prediction_wall_seconds": 0.002026108995778486,
+      "metric_wall_seconds": 0.0005271940026432276,
+      "warnings": []
+    },
+    "010100": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.895040369088812,
+      "utility": 0.895040369088812,
+      "prediction_sha256": "31fbd6ac4dc8ff896c2840022d66f0a1b48d1c5631c8f49e881abe909a4022d2",
+      "wall_seconds": 0.004876854989561252,
+      "prediction_wall_seconds": 0.004211619991110638,
+      "metric_wall_seconds": 0.0006652349984506145,
+      "warnings": []
+    },
+    "010101": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8954248366013072,
+      "utility": 0.8954248366013072,
+      "prediction_sha256": "a7700e85a4f166fefe059450ac40a23806b5f6021f93babf479af68c903ea19f",
+      "wall_seconds": 0.003031184009159915,
+      "prediction_wall_seconds": 0.0023703870101599023,
+      "metric_wall_seconds": 0.0006607969990000129,
+      "warnings": []
+    },
+    "010110": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8842752787389466,
+      "utility": 0.8842752787389466,
+      "prediction_sha256": "052dcf45d5da38e990c023e94209c026e638f650053c074cf2469f906937e669",
+      "wall_seconds": 0.003196560006472282,
+      "prediction_wall_seconds": 0.0026163130096392706,
+      "metric_wall_seconds": 0.0005802469968330115,
+      "warnings": []
+    },
+    "010111": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9034986543637062,
+      "utility": 0.9034986543637062,
+      "prediction_sha256": "d04846002c6bb99546087111ba179fad86b3b7fc260759af274aa724f04f4440",
+      "wall_seconds": 0.002938131001428701,
+      "prediction_wall_seconds": 0.002392982001765631,
+      "metric_wall_seconds": 0.0005451489996630698,
+      "warnings": []
+    },
+    "011000": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8958093041138024,
+      "utility": 0.8958093041138024,
+      "prediction_sha256": "53d97557fb9138a4dfb99518e46d7d04db6a1ad70807968184642e8495530c71",
+      "wall_seconds": 0.0025468780077062547,
+      "prediction_wall_seconds": 0.0020113630016567186,
+      "metric_wall_seconds": 0.0005355150060495362,
+      "warnings": []
+    },
+    "011001": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8938869665513264,
+      "utility": 0.8938869665513264,
+      "prediction_sha256": "e1fc271245088d8236e1f868fb3b159dc5bfb1385145bc883508c39facfb5b89",
+      "wall_seconds": 0.005374193991883658,
+      "prediction_wall_seconds": 0.004607840994140133,
+      "metric_wall_seconds": 0.0007663529977435246,
+      "warnings": []
+    },
+    "011010": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9000384467512494,
+      "utility": 0.9000384467512494,
+      "prediction_sha256": "21dde43f8a151c7f505a51ce6d595723a76ca0dc86f276ba61ed4cdee49d9c51",
+      "wall_seconds": 0.0038938149955356494,
+      "prediction_wall_seconds": 0.0033166399953188375,
+      "metric_wall_seconds": 0.0005771750002168119,
+      "warnings": []
+    },
+    "011011": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9027297193387158,
+      "utility": 0.9027297193387158,
+      "prediction_sha256": "97bf4c62f1c27fc73d688f7a8c93f4de3f87293182c802c78280a282f0ba637a",
+      "wall_seconds": 0.002992955007357523,
+      "prediction_wall_seconds": 0.0024377110094064847,
+      "metric_wall_seconds": 0.0005552439979510382,
+      "warnings": []
+    },
+    "011100": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8958093041138024,
+      "utility": 0.8958093041138024,
+      "prediction_sha256": "c72f70b12361bce44a937b561a42fede9a9f73bb45a88ca15bc8619d3b77b304",
+      "wall_seconds": 0.002915738004958257,
+      "prediction_wall_seconds": 0.0023591430071974173,
+      "metric_wall_seconds": 0.0005565949977608398,
+      "warnings": []
+    },
+    "011101": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8958093041138024,
+      "utility": 0.8958093041138024,
+      "prediction_sha256": "4fa8a81b9624e478a150cdac00aba22732975128e9762ed1eaf8562583318343",
+      "wall_seconds": 0.0035612080100690946,
+      "prediction_wall_seconds": 0.00286357500590384,
+      "metric_wall_seconds": 0.0006976330041652545,
+      "warnings": []
+    },
+    "011110": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9004229142637447,
+      "utility": 0.9004229142637447,
+      "prediction_sha256": "b21673af87d1f230db4ea3d138a8f05895cefca200aac785fe04c83f40a21fab",
+      "wall_seconds": 0.004356452001957223,
+      "prediction_wall_seconds": 0.0037540420016739517,
+      "metric_wall_seconds": 0.0006024100002832711,
+      "warnings": []
+    },
+    "011111": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9019607843137254,
+      "utility": 0.9019607843137254,
+      "prediction_sha256": "67696465c4fbb097d0e387a18a4bfb9cb00e07803cbc34c9cabd026cf9ed66ba",
+      "wall_seconds": 0.0031775459938216954,
+      "prediction_wall_seconds": 0.002645152999320999,
+      "metric_wall_seconds": 0.0005323929945006967,
+      "warnings": []
+    },
+    "100000": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8881199538638985,
+      "utility": 0.8881199538638985,
+      "prediction_sha256": "0a336435415c47c2dc5f92c607aa161e07f1bacdb8c22760cdd1c090d7f59508",
+      "wall_seconds": 0.0019479329930618405,
+      "prediction_wall_seconds": 0.0013947709958301857,
+      "metric_wall_seconds": 0.0005531619972316548,
+      "warnings": []
+    },
+    "100001": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8881199538638985,
+      "utility": 0.8881199538638985,
+      "prediction_sha256": "5a69467575b8be12756fc34559df5bf2aaeb89708903c66d05b120d064273a5a",
+      "wall_seconds": 0.0021711610024794936,
+      "prediction_wall_seconds": 0.0016414980054832995,
+      "metric_wall_seconds": 0.0005296629969961941,
+      "warnings": []
+    },
+    "100010": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8927335640138409,
+      "utility": 0.8927335640138409,
+      "prediction_sha256": "8fb5ffce9736d348ed76fabe84147c4e31754e8b369e248b8a5ca3628cf27ac0",
+      "wall_seconds": 0.0025788920029299334,
+      "prediction_wall_seconds": 0.0020291989931138232,
+      "metric_wall_seconds": 0.0005496930098161101,
+      "warnings": []
+    },
+    "100011": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.893118031526336,
+      "utility": 0.893118031526336,
+      "prediction_sha256": "ca9c97ef4ee5c658134f41fee9cc5f91e9b47b8bc2accc7a8bcecce8cdf4f0ca",
+      "wall_seconds": 0.0036419709940673783,
+      "prediction_wall_seconds": 0.002995004993863404,
+      "metric_wall_seconds": 0.0006469660002039745,
+      "warnings": []
+    },
+    "100100": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8946559015763168,
+      "utility": 0.8946559015763168,
+      "prediction_sha256": "7345fc2c90060167005530740e938d05473725fb57dd75a23e9527b1e26034b4",
+      "wall_seconds": 0.0026608190091792494,
+      "prediction_wall_seconds": 0.002005771006224677,
+      "metric_wall_seconds": 0.0006550480029545724,
+      "warnings": []
+    },
+    "100101": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8954248366013072,
+      "utility": 0.8954248366013072,
+      "prediction_sha256": "63441539a5f66581bbc84e014b980653649a77128116df1c844f5647607ea242",
+      "wall_seconds": 0.0030359010124811903,
+      "prediction_wall_seconds": 0.0022325010068016127,
+      "metric_wall_seconds": 0.0008034000056795776,
+      "warnings": []
+    },
+    "100110": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8938869665513265,
+      "utility": 0.8938869665513265,
+      "prediction_sha256": "4560568afbee81f007eb932b98e0d3ba4c64520c55b1f052084a7d761da2466f",
+      "wall_seconds": 0.0031325590098276734,
+      "prediction_wall_seconds": 0.002538176006055437,
+      "metric_wall_seconds": 0.0005943830037722364,
+      "warnings": []
+    },
+    "100111": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9011918492887352,
+      "utility": 0.9011918492887352,
+      "prediction_sha256": "1c4af0d7ae41a11345db02ec89b897fdd848317b6ea3cea2bcaf9e5075a44c31",
+      "wall_seconds": 0.002740729003562592,
+      "prediction_wall_seconds": 0.0021898999984841794,
+      "metric_wall_seconds": 0.0005508290050784126,
+      "warnings": []
+    },
+    "101000": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8946559015763168,
+      "utility": 0.8946559015763168,
+      "prediction_sha256": "b39ef721b80f20366954783a4847df40024b063ecbde1ec6daad3981c9956621",
+      "wall_seconds": 0.0031555210007354617,
+      "prediction_wall_seconds": 0.0024835619988152757,
+      "metric_wall_seconds": 0.000671959001920186,
+      "warnings": []
+    },
+    "101001": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.895040369088812,
+      "utility": 0.895040369088812,
+      "prediction_sha256": "184364487c9c1191b7ad5e3552d52bb8a427ea2c25ba31bc4588ddc1acd533a3",
+      "wall_seconds": 0.002908107009716332,
+      "prediction_wall_seconds": 0.002344754000660032,
+      "metric_wall_seconds": 0.0005633530090562999,
+      "warnings": []
+    },
+    "101010": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8988850442137639,
+      "utility": 0.8988850442137639,
+      "prediction_sha256": "3c8fd972f7c4056ad64e86a53bc915d376c4b5dd1f1bff4db97673727c37d53e",
+      "wall_seconds": 0.0032899180077947676,
+      "prediction_wall_seconds": 0.002584089001175016,
+      "metric_wall_seconds": 0.0007058290066197515,
+      "warnings": []
+    },
+    "101011": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9008073817762399,
+      "utility": 0.9008073817762399,
+      "prediction_sha256": "c5f0f165925e1e06d1d2e4b4fbed3bd7755bce38561b1dd326f2f3b03e178f48",
+      "wall_seconds": 0.0032969890016829595,
+      "prediction_wall_seconds": 0.0026898230134975165,
+      "metric_wall_seconds": 0.000607165988185443,
+      "warnings": []
+    },
+    "101100": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8946559015763168,
+      "utility": 0.8946559015763168,
+      "prediction_sha256": "cc06f99375d54e4d6a4e196a852df7ad67d34cfdf7682fa16c9dcd40902c2495",
+      "wall_seconds": 0.0028541359934024513,
+      "prediction_wall_seconds": 0.002279374995850958,
+      "metric_wall_seconds": 0.0005747609975514933,
+      "warnings": []
+    },
+    "101101": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8954248366013072,
+      "utility": 0.8954248366013072,
+      "prediction_sha256": "93c4b43c9456db35bc1d8520570538316c87ddfe91e8362d80e42c3883fa0c9a",
+      "wall_seconds": 0.002963264982099645,
+      "prediction_wall_seconds": 0.0023573489888804033,
+      "metric_wall_seconds": 0.0006059159932192415,
+      "warnings": []
+    },
+    "101110": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8988850442137639,
+      "utility": 0.8988850442137639,
+      "prediction_sha256": "674fb71d87a81e572059b680981c1b0147af76aa9ab75f34431f4dd8ad531c56",
+      "wall_seconds": 0.003411808007513173,
+      "prediction_wall_seconds": 0.0028609680011868477,
+      "metric_wall_seconds": 0.0005508400063263252,
+      "warnings": []
+    },
+    "101111": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9008073817762399,
+      "utility": 0.9008073817762399,
+      "prediction_sha256": "54d9d4349a2330a8728ca61b95d7e8fc408c1a3953afac0a1f582a4e5e7536e8",
+      "wall_seconds": 0.0029385280067799613,
+      "prediction_wall_seconds": 0.002351425006054342,
+      "metric_wall_seconds": 0.0005871030007256195,
+      "warnings": []
+    },
+    "110000": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8877354863514033,
+      "utility": 0.8877354863514033,
+      "prediction_sha256": "52f6098dcab406639582e37951af6a724b1c987a398973ba4b92ad29212fcfbe",
+      "wall_seconds": 0.0027437399985501543,
+      "prediction_wall_seconds": 0.0021593139972537756,
+      "metric_wall_seconds": 0.0005844260012963787,
+      "warnings": []
+    },
+    "110001": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8877354863514033,
+      "utility": 0.8877354863514033,
+      "prediction_sha256": "d84dff13a7e7b0bc9adf7dccc1ef1169c735bd5b1fcac7a5e3abcbfbe2f52b04",
+      "wall_seconds": 0.003063652999117039,
+      "prediction_wall_seconds": 0.002517214001272805,
+      "metric_wall_seconds": 0.0005464389978442341,
+      "warnings": []
+    },
+    "110010": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8927335640138409,
+      "utility": 0.8927335640138409,
+      "prediction_sha256": "b1ebcc64787978c207f7141363bf97a4c2d683ed4a589908d7bc11d21ef99158",
+      "wall_seconds": 0.0041823990031844005,
+      "prediction_wall_seconds": 0.0029241120064398274,
+      "metric_wall_seconds": 0.0012582869967445731,
+      "warnings": []
+    },
+    "110011": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8938869665513264,
+      "utility": 0.8938869665513264,
+      "prediction_sha256": "7e72c3c6ac22c58b3876f6d21b2b6ae9b461f2dcf6188e30cc0ee6e898b63a8f",
+      "wall_seconds": 0.0030724499956704676,
+      "prediction_wall_seconds": 0.0025335709942737594,
+      "metric_wall_seconds": 0.0005388790013967082,
+      "warnings": []
+    },
+    "110100": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8942714340638216,
+      "utility": 0.8942714340638216,
+      "prediction_sha256": "40c3921c78105563bc660ab746ef9af8da08bfc062e763bcc95f94e2ff75eede",
+      "wall_seconds": 0.0027330860029906034,
+      "prediction_wall_seconds": 0.002146942002582364,
+      "metric_wall_seconds": 0.0005861440004082397,
+      "warnings": []
+    },
+    "110101": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.895040369088812,
+      "utility": 0.895040369088812,
+      "prediction_sha256": "9f4f7998d61dd6842536345416e3a325374a8d08a7b8ae0817f8bb029d663389",
+      "wall_seconds": 0.002992645007907413,
+      "prediction_wall_seconds": 0.002428904001135379,
+      "metric_wall_seconds": 0.0005637410067720339,
+      "warnings": []
+    },
+    "110110": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8938869665513265,
+      "utility": 0.8938869665513265,
+      "prediction_sha256": "1096094b06e01546420b9d70f29d5d0b8f4e4eb5d265453db713b588ba168a7c",
+      "wall_seconds": 0.0034630329901119694,
+      "prediction_wall_seconds": 0.00291560500045307,
+      "metric_wall_seconds": 0.0005474279896588996,
+      "warnings": []
+    },
+    "110111": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9015763168012303,
+      "utility": 0.9015763168012303,
+      "prediction_sha256": "fcbbbe990c248c18b0a75736497c66be47df7c6984a762915849d960d837916c",
+      "wall_seconds": 0.0044950509909540415,
+      "prediction_wall_seconds": 0.003795479002292268,
+      "metric_wall_seconds": 0.0006995719886617735,
+      "warnings": []
+    },
+    "111000": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.895040369088812,
+      "utility": 0.895040369088812,
+      "prediction_sha256": "ad10492dc97a8a256bfcbefc945d6afa425d694c6eb05af8f1046999f2ee51ad",
+      "wall_seconds": 0.0028141219954704866,
+      "prediction_wall_seconds": 0.0022585389961022884,
+      "metric_wall_seconds": 0.0005555829993681982,
+      "warnings": []
+    },
+    "111001": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8946559015763168,
+      "utility": 0.8946559015763168,
+      "prediction_sha256": "c32c10a63aea9c8654b4d86683d62d090535d4e7d3ad6116662d1e8780a422db",
+      "wall_seconds": 0.0029562010167865083,
+      "prediction_wall_seconds": 0.002416354007436894,
+      "metric_wall_seconds": 0.0005398470093496144,
+      "warnings": []
+    },
+    "111010": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8988850442137639,
+      "utility": 0.8988850442137639,
+      "prediction_sha256": "61add1d6aee6143448cc3ec0a98352d3f83bb28ff7ce7d8d6cf9bd7ec3483e62",
+      "wall_seconds": 0.0034714710054686293,
+      "prediction_wall_seconds": 0.0029008679994149134,
+      "metric_wall_seconds": 0.0005706030060537159,
+      "warnings": []
+    },
+    "111011": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9011918492887351,
+      "utility": 0.9011918492887351,
+      "prediction_sha256": "4ddaf6aa63e51eb8fdb5c805aaaf44fee96b414d642dddf96e2552b770fce0fb",
+      "wall_seconds": 0.003025811995030381,
+      "prediction_wall_seconds": 0.002485043994965963,
+      "metric_wall_seconds": 0.0005407680000644177,
+      "warnings": []
+    },
+    "111100": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.895040369088812,
+      "utility": 0.895040369088812,
+      "prediction_sha256": "bc2912d46f368dfa8123497e461a74e5eb5c964f16f1d015bc6b998a4acd98af",
+      "wall_seconds": 0.0044259270071052015,
+      "prediction_wall_seconds": 0.003698008003993891,
+      "metric_wall_seconds": 0.0007279190031113103,
+      "warnings": []
+    },
+    "111101": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8958093041138024,
+      "utility": 0.8958093041138024,
+      "prediction_sha256": "298c31f91b8da72da20d9ccf04c5cb8b6bd0838e306ea67c58856f1e63c8fc38",
+      "wall_seconds": 0.004751027998281643,
+      "prediction_wall_seconds": 0.0031251350010279566,
+      "metric_wall_seconds": 0.0016258929972536862,
+      "warnings": []
+    },
+    "111110": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.8988850442137639,
+      "utility": 0.8988850442137639,
+      "prediction_sha256": "053ef009981212ed5327a74243f7b77ae0fb2ee23fc53c12a356e13dda87c66b",
+      "wall_seconds": 0.004251549995387904,
+      "prediction_wall_seconds": 0.003704479997395538,
+      "metric_wall_seconds": 0.0005470699979923666,
+      "warnings": []
+    },
+    "111111": {
+      "native_metric": "ROC_AUC",
+      "native_value": 0.9019607843137254,
+      "utility": 0.9019607843137254,
+      "prediction_sha256": "fde9beff622df159378d1ebb2452c495e50f51b7ca8b09314ab01a8d033e01cf",
+      "wall_seconds": 0.0032481739908689633,
+      "prediction_wall_seconds": 0.0027183429920114577,
+      "metric_wall_seconds": 0.0005298309988575056,
+      "warnings": []
+    }
+  },
+  "manifest": {
+    "source": {
+      "instance": "graph_lesmis",
+      "family": "graph_link_prediction",
+      "source_files": [
+        {
+          "url": "https://websites.umich.edu/~mejn/netdata/lesmis.zip",
+          "bytes": 2517,
+          "sha256": "0f43d2ff1487cc8038dec5a149314d8878fa536e051884b2e06c65dc189e37e2"
+        }
+      ],
+      "prepared_path": "private/phase4_diversity/prepared/graph_lesmis.npz",
+      "prepared_sha256": "10151e22e40baa16b0d1006015b70923c5b6e74a7769b2d0afec7b82c73d0850",
+      "public_summary": {
+        "nodes": 77,
+        "observed_edges": 152,
+        "calibration_pairs": 102,
+        "test_pairs": 102,
+        "graph_kind": "undirected, simple, unweighted",
+        "feature_boundary": "all NetworkX features use only observed_edges"
+      },
+      "host_only": {
+        "source_edges": 254,
+        "split_seed": 369610197,
+        "test_positive_pairs": 51
+      },
+      "source_name": "Les Miserables character coappearance",
+      "citation": "D. E. Knuth, The Stanford GraphBase, 1993",
+      "license_statement": "Free for scientific use according to source page; standardized redistribution license not asserted",
+      "source_url": "https://websites.umich.edu/~mejn/netdata/"
+    }
+  }
+}

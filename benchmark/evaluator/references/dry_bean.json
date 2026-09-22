@@ -1,0 +1,137 @@
+{
+  "instance": "dry_bean",
+  "family": "clustering",
+  "truth": {
+    "0000": 0.5144533577588334,
+    "0001": 0.5151092188204514,
+    "0010": 0.5156988749164306,
+    "0011": 0.5147868478799739,
+    "0100": 0.7115442339262922,
+    "0101": 0.7128311344877488,
+    "0110": 0.6375512169953192,
+    "0111": 0.7013921874786118,
+    "1000": 0.5777057511223082,
+    "1001": 0.5778953001384199,
+    "1010": 0.5180138373137084,
+    "1011": 0.5128482519728103,
+    "1100": 0.7218765764056578,
+    "1101": 0.7221828058050664,
+    "1110": 0.7181713420009476,
+    "1111": 0.7182556154683788
+  },
+  "native_measurements": {
+    "0000": {
+      "native_metric": "NMI",
+      "native_value": 0.5144533577588334,
+      "wall_seconds": 0.016884165001101792,
+      "prediction_sha256": "5f544f55061d109e5818c384a511ce94cfe460c76de358d1e4db1b3c5d8b35e1",
+      "warnings": []
+    },
+    "0001": {
+      "native_metric": "NMI",
+      "native_value": 0.5151092188204514,
+      "wall_seconds": 0.09990127800847404,
+      "prediction_sha256": "bd0ed8d08730ee78a4e740ee8559b0c5c987432a9a8fadf4d13ba60772761f9a",
+      "warnings": []
+    },
+    "0010": {
+      "native_metric": "NMI",
+      "native_value": 0.5156988749164306,
+      "wall_seconds": 0.009467278010561131,
+      "prediction_sha256": "fd3bb73857cef4f8296ee12bf697429bcb8f561fbed76fdfa7109fd338efc804",
+      "warnings": []
+    },
+    "0011": {
+      "native_metric": "NMI",
+      "native_value": 0.5147868478799739,
+      "wall_seconds": 0.03412309598934371,
+      "prediction_sha256": "94102cf73ed6c31368f6ecd66fd5185209db4e1aab48e3d03c6466bc69f90759",
+      "warnings": []
+    },
+    "0100": {
+      "native_metric": "NMI",
+      "native_value": 0.7115442339262922,
+      "wall_seconds": 0.012551706997328438,
+      "prediction_sha256": "4f8d88658c8c4410dd1349231f691251f7e0d54fb235b5a3c47a695029fe6d0f",
+      "warnings": []
+    },
+    "0101": {
+      "native_metric": "NMI",
+      "native_value": 0.7128311344877488,
+      "wall_seconds": 0.08620257599977776,
+      "prediction_sha256": "800742ef9f668075870d33ae9985263eb73eca8a231f00e0f6962314a72e0619",
+      "warnings": []
+    },
+    "0110": {
+      "native_metric": "NMI",
+      "native_value": 0.6375512169953192,
+      "wall_seconds": 0.014424926004721783,
+      "prediction_sha256": "580041da7873ad444d2c9f074757bb70f9fe780117afe17d0007c3fb37cfce93",
+      "warnings": []
+    },
+    "0111": {
+      "native_metric": "NMI",
+      "native_value": 0.7013921874786118,
+      "wall_seconds": 0.04704932399909012,
+      "prediction_sha256": "4fd17294af746d45d3da22417badfa8b838f49a5a0ce7df18ce969de28c465e5",
+      "warnings": []
+    },
+    "1000": {
+      "native_metric": "NMI",
+      "native_value": 0.5777057511223082,
+      "wall_seconds": 0.01328942998952698,
+      "prediction_sha256": "da4e8ec59a82dd94be6bb2f21ca6a4291355668f17c0b9536a1a0020fa1be1a3",
+      "warnings": []
+    },
+    "1001": {
+      "native_metric": "NMI",
+      "native_value": 0.5778953001384199,
+      "wall_seconds": 0.12085152100189589,
+      "prediction_sha256": "b908b17a92434fd73793b14046cd58986ef6f890d8d0e665d71631494a6daf31",
+      "warnings": []
+    },
+    "1010": {
+      "native_metric": "NMI",
+      "native_value": 0.5180138373137084,
+      "wall_seconds": 0.011702228002832271,
+      "prediction_sha256": "43d7b6513b68dc0b1413d3f0c6f737b20ea081d7c7e2adc8ce42b923b2d80171",
+      "warnings": []
+    },
+    "1011": {
+      "native_metric": "NMI",
+      "native_value": 0.5128482519728103,
+      "wall_seconds": 0.04212158700102009,
+      "prediction_sha256": "f3abe4ff43e30d2480b5fd73467d8362f2941a96e6bee995a2803629abd7f4ff",
+      "warnings": []
+    },
+    "1100": {
+      "native_metric": "NMI",
+      "native_value": 0.7218765764056578,
+      "wall_seconds": 0.014687540999148041,
+      "prediction_sha256": "06bae5c79aa5fa95beb69d86282025c2808ccc8c60fe661a7b14ddeb2ab47239",
+      "warnings": []
+    },
+    "1101": {
+      "native_metric": "NMI",
+      "native_value": 0.7221828058050664,
+      "wall_seconds": 0.09983605598972645,
+      "prediction_sha256": "432126a03bee2d21dfe2e3496c60ed873f1f4700d238d7e6458923830d23a6fe",
+      "warnings": []
+    },
+    "1110": {
+      "native_metric": "NMI",
+      "native_value": 0.7181713420009476,
+      "wall_seconds": 0.015663056998164393,
+      "prediction_sha256": "69d6b2cd641af80a565765a34efdf2e150994d915d79022aabd4937eb6845a64",
+      "warnings": []
+    },
+    "1111": {
+      "native_metric": "NMI",
+      "native_value": 0.7182556154683788,
+      "wall_seconds": 0.05682867098948918,
+      "prediction_sha256": "3e19d99c13bf4de0a84ba4ef4c49376e17c313e79758afb6c525cd5a9b3c6c63",
+      "warnings": []
+    }
+  },
+  "source_table_file_sha256": "624204efaae5a5c45e43a62555af4c781035fea741094bf2b923ced70e47fc6b"
+}

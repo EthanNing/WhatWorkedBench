@@ -1,0 +1,80 @@
+{
+  "paired_source_manifest": {
+    "source": {
+      "source_name": "astronaut",
+      "source_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.26.0/src/skimage/data/astronaut.png",
+      "license": "public domain, NASA photograph",
+      "license_authority": "https://scikit-image.org/docs/0.26.x/api/skimage.data.html",
+      "registry_sha256": "29c1ed34f6ba3ae1e0fe748f3b8d38231538a29246f53826686f593415c7987f",
+      "raw_data_sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+      "original_size": [
+        512,
+        512
+      ],
+      "evaluation_shape": [
+        256,
+        256
+      ],
+      "source_unit": "one photograph from the scikit-image example collection",
+      "corruption": "synthetic independent Gaussian pixel noise, std=0.1, seed=20260907, clipped to [0,1]",
+      "input_sha256": "bb7c61ae6cf976d9846bf78324fa8c0dde4c8d12b86a95141ad14f0e6bdaffac",
+      "reference_sha256": "abd19f3ad731365d44242fdedb427f7db2897e1d22cf21a2210777bd794891d3",
+      "instance": "astronaut",
+      "family": "image_restoration",
+      "source_catalog_sha256": "f72c02df48b5007a70157ae20d33e9fb9892ebdd832e8eb9357350250f4e3f6a"
+    },
+    "factors": {
+      "A": "3x3 median filtering",
+      "B": "Gaussian filtering with sigma=0.8",
+      "C": "local Wiener filtering with a 5x5 neighborhood and automatically estimated noise power",
+      "D": "unsharp masking, Gaussian sigma=1 and amount=0.5"
+    },
+    "source_code_sha256": {
+      "whatworked/phase4_expansion.py": "bd6c79b46bb3703da56e853a7d5e1eb7db7a13ffc2b851f98ff6a125f0f23dc0",
+      "whatworked/phase4_sources.py": "b7817b7b70e26bba8ea0071c600b75813c77a2f358a147d845af42ce9e7e6cce",
+      "whatworked/phase4_workflows.py": "e96816fe3f747a4967a9dc38bd575c6b37b0da50450e2267532a1684d2607916"
+    },
+    "versions": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.6.1",
+      "pillow": "12.3.0"
+    },
+    "native_threads": 1,
+    "native_timeout_seconds": 180,
+    "state": "construction development evidence; no model evaluation on new instances"
+  },
+  "six_factor_construction_plan_sha256": "b4642f22b48ab5fb7681b3e3747cd2e66e88a02a2432049f2aa734e80f934063",
+  "source": {
+    "source_name": "astronaut",
+    "source_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.26.0/src/skimage/data/astronaut.png",
+    "license": "public domain, NASA photograph",
+    "license_authority": "https://scikit-image.org/docs/0.26.x/api/skimage.data.html",
+    "registry_sha256": "29c1ed34f6ba3ae1e0fe748f3b8d38231538a29246f53826686f593415c7987f",
+    "raw_data_sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+    "original_size": [
+      512,
+      512
+    ],
+    "evaluation_shape": [
+      256,
+      256
+    ],
+    "source_unit": "one photograph from the scikit-image example collection",
+    "corruption": "synthetic independent Gaussian pixel noise, std=0.1, seed=20260907, clipped to [0,1]",
+    "input_sha256": "bb7c61ae6cf976d9846bf78324fa8c0dde4c8d12b86a95141ad14f0e6bdaffac",
+    "reference_sha256": "abd19f3ad731365d44242fdedb427f7db2897e1d22cf21a2210777bd794891d3",
+    "instance": "astronaut",
+    "family": "image_restoration",
+    "source_catalog_sha256": "f72c02df48b5007a70157ae20d33e9fb9892ebdd832e8eb9357350250f4e3f6a"
+  },
+  "new_independent_source": false,
+  "native_code_sha256": {
+    "whatworked/phase4_scale.py": "b803becec9bd6880e8f00b5debce72b424e00f1d12463d06b70b95f21dc8b71a",
+    "whatworked/phase4_workflows.py": "e96816fe3f747a4967a9dc38bd575c6b37b0da50450e2267532a1684d2607916",
+    "whatworked/phase4_sources.py": "b7817b7b70e26bba8ea0071c600b75813c77a2f358a147d845af42ce9e7e6cce",
+    "whatworked/phase4_expansion_audit.py": "b6b1b2e98818d15e21df229ffdcba6395629016e0b7d7e96ccf73a1218177e59",
+    "whatworked/phase4_numeric_helpers.py": "cb7ac328a23c39fd3c8610d7b50543bb2c6a8fb1143b370f88ff45106fa897fb",
+    "whatworked/phase4_portable.py": "82343623e1c4d771058f4cb89901d97d14a988257bd8792488d7c374ad8e5037"
+  }
+}

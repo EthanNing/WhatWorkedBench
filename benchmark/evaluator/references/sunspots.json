@@ -1,0 +1,137 @@
+{
+  "instance": "sunspots",
+  "family": "forecasting",
+  "truth": {
+    "0000": 0.6780682464537363,
+    "0001": 0.6750676323750054,
+    "0010": 0.6609402541783468,
+    "0011": 0.6542479823676227,
+    "0100": 0.7812193550390497,
+    "0101": 0.7865730188091018,
+    "0110": 0.8073853562282595,
+    "0111": 0.7878651540316957,
+    "1000": 0.6789889665736186,
+    "1001": 0.6759867821628556,
+    "1010": 0.6545538001375085,
+    "1011": 0.6479918348713326,
+    "1100": 0.7788160034487467,
+    "1101": 0.7824621483447425,
+    "1110": 0.791716440939239,
+    "1111": 0.7695839172218543
+  },
+  "native_measurements": {
+    "0000": {
+      "native_metric": "one_step_MAE",
+      "native_value": 23.691412458811563,
+      "wall_seconds": 0.0025485060032224283,
+      "prediction_sha256": "e9664a9d430299be11a3cd286a8e139c97cf4c3d268de16daf7401998784c207",
+      "warnings": []
+    },
+    "0001": {
+      "native_metric": "one_step_MAE",
+      "native_value": 24.018519577724557,
+      "wall_seconds": 0.0019273180078016594,
+      "prediction_sha256": "90466d2e63f1667678539b67a3552098db8dccc1d176d363af3d2519595b9c9d",
+      "warnings": []
+    },
+    "0010": {
+      "native_metric": "one_step_MAE",
+      "native_value": 25.598503358724304,
+      "wall_seconds": 0.0019910600094590336,
+      "prediction_sha256": "6240c78fdee13d61c8cd0ce7a214ce4ccf97f609648cb4c5c2824bb5ea45d7df",
+      "warnings": []
+    },
+    "0011": {
+      "native_metric": "one_step_MAE",
+      "native_value": 26.370773995235847,
+      "wall_seconds": 0.001986586008570157,
+      "prediction_sha256": "1234786651a66f8aae9dbfdcfafa5242d67a82d3c076c5173f664d1740da46fc",
+      "warnings": []
+    },
+    "0100": {
+      "native_metric": "one_step_MAE",
+      "native_value": 13.974505512610754,
+      "wall_seconds": 0.0025247620069421828,
+      "prediction_sha256": "ba6c68c561c0582c80969e45b0c9c52b95961ff52ed4a66b6ccdc9da1c0a61cf",
+      "warnings": []
+    },
+    "0101": {
+      "native_metric": "one_step_MAE",
+      "native_value": 13.53975550489933,
+      "wall_seconds": 0.0019328609923832119,
+      "prediction_sha256": "1c55b0f1b6d2a35f5d4ac581c79a15ff1e7994b711ef2f8624d2e3e08ac67c73",
+      "warnings": []
+    },
+    "0110": {
+      "native_metric": "one_step_MAE",
+      "native_value": 11.904440240420406,
+      "wall_seconds": 0.002961068006698042,
+      "prediction_sha256": "fd2243ac5af119934830ab26bcd4a720eedae7f5ed9df4494ef5028175ff3645",
+      "warnings": []
+    },
+    "0111": {
+      "native_metric": "one_step_MAE",
+      "native_value": 13.435711377320967,
+      "wall_seconds": 0.0024673479929333553,
+      "prediction_sha256": "3a7d40172fa21190466cb4a35965ca963f76f5329c2cefad95cca65ffa71d9cc",
+      "warnings": []
+    },
+    "1000": {
+      "native_metric": "one_step_MAE",
+      "native_value": 23.5916213024938,
+      "wall_seconds": 0.0020702569891000167,
+      "prediction_sha256": "ba1e2916881fa872d90ac32e85978a855f7e584722b1b2f8f5511531fff3d497",
+      "warnings": []
+    },
+    "1001": {
+      "native_metric": "one_step_MAE",
+      "native_value": 23.91801141191298,
+      "wall_seconds": 0.0019066579989157617,
+      "prediction_sha256": "303c3b34f66276c312659c427e3fb491d04b88c46a9b52634e87b8c797d598e3",
+      "warnings": []
+    },
+    "1010": {
+      "native_metric": "one_step_MAE",
+      "native_value": 26.33513909707195,
+      "wall_seconds": 0.0019321639992995188,
+      "prediction_sha256": "bcea3d3c12e597d8bb3ea61afbce29e6e77f1a997f61c839cfb013f45007329d",
+      "warnings": []
+    },
+    "1011": {
+      "native_metric": "one_step_MAE",
+      "native_value": 27.107143168568335,
+      "wall_seconds": 0.002011325996136293,
+      "prediction_sha256": "4394bd9e2a6f803a1a37ca4d3ce94e58d6397aa3d466e98274036d0b32797bc2",
+      "warnings": []
+    },
+    "1100": {
+      "native_metric": "one_step_MAE",
+      "native_value": 14.171616118612386,
+      "wall_seconds": 0.002105895007844083,
+      "prediction_sha256": "0769d1ee8fc5076925edebe63d521bb5ea393f39b59d2b4ef8b017fbf85db3e9",
+      "warnings": []
+    },
+    "1101": {
+      "native_metric": "one_step_MAE",
+      "native_value": 13.873052927302393,
+      "wall_seconds": 0.0026894310140050948,
+      "prediction_sha256": "38bc82a02b00b41a7b43f4d05bec534c4df4bf1149e500ef77b275ff5b11ca0e",
+      "warnings": []
+    },
+    "1110": {
+      "native_metric": "one_step_MAE",
+      "native_value": 13.12761622684254,
+      "wall_seconds": 0.002286788003402762,
+      "prediction_sha256": "8810f1c1c8d9512a5e424ddd1ac8f77fbba84a068bcda80b7b6aad41ba9a3d8c",
+      "warnings": []
+    },
+    "1111": {
+      "native_metric": "one_step_MAE",
+      "native_value": 14.94023234286862,
+      "wall_seconds": 0.002126118997693993,
+      "prediction_sha256": "058d939f3530ea0eaa62b300ec5cae2d23c9b6e9514aca29ab483102683d25f6",
+      "warnings": []
+    }
+  },
+  "source_table_file_sha256": "c676e225f20198e4bdd0b1a4f204ae3db84e9098ad6925a2666e4ceec1999f8e"
+}

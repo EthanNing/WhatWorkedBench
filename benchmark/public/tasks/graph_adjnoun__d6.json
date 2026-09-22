@@ -1,0 +1,47 @@
+{
+  "instance": "graph_adjnoun__d6",
+  "family": "graph_link_prediction",
+  "dimensions": 6,
+  "factor_order": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "factors": {
+    "A": "common-neighbor count feature",
+    "B": "Jaccard feature",
+    "C": "Adamic-Adar feature",
+    "D": "resource-allocation feature",
+    "E": "preferential-attachment feature",
+    "F": "calibration-fitted StandardScaler before logistic regression"
+  },
+  "utility": "ROC AUC on the fixed balanced test pair set; independent positive-negative pair concordance audit.",
+  "data": {
+    "nodes": 112,
+    "observed_edges": 255,
+    "calibration_pairs": 170,
+    "test_pairs": 170,
+    "graph_kind": "undirected, simple, unweighted",
+    "feature_boundary": "all NetworkX features use only observed_edges"
+  },
+  "source_code": "def switches(mask):\n    if not isinstance(mask, str) or len(mask) != 6 or set(mask) - {\"0\", \"1\"}:\n        raise ValueError(\"Expected a six-bit configuration\")\n    return tuple(v == \"1\" for v in mask)\n\ndef predict_links(n_nodes, observed_edges, fit_pairs, fit_labels, test_pairs, mask):\n    import networkx as nx\n    enabled = switches(mask)\n    graph = nx.Graph()\n    graph.add_nodes_from(range(int(n_nodes)))\n    graph.add_edges_from((int(u), int(v)) for u, v in observed_edges)\n    pairs = [(int(u), int(v)) for u, v in np.concatenate([fit_pairs, test_pairs])]\n    columns = []\n    if enabled[0]:\n        columns.append(np.array([len(list(nx.common_neighbors(graph, u, v))) for u, v in pairs], dtype=float))\n    for active, algorithm in zip(enabled[1:5], (nx.jaccard_coefficient, nx.adamic_adar_index,\n                                              nx.resource_allocation_index, nx.preferential_attachment)):\n        if active:\n            columns.append(np.array([value for _, _, value in algorithm(graph, pairs)], dtype=float))\n    features = np.column_stack(columns) if columns else np.zeros((len(pairs), 1))\n    train, test = features[:len(fit_pairs)], features[len(fit_pairs):]\n    if enabled[5]:\n        scaler = StandardScaler().fit(train)\n        train, test = scaler.transform(train), scaler.transform(test)\n    model = LogisticRegression(C=1., solver=\"lbfgs\", max_iter=2000, random_state=20260907)\n    model.fit(train, fit_labels)\n    result = model.predict_proba(test)[:, 1]\n    if not np.isfinite(result).all():\n        raise ValueError(\"Nonfinite link probabilities\")\n    return result\n",
+  "source_name": "David Copperfield word adjacency",
+  "options_origin": "authored native-operation configuration choices; no claimed reproduction of a named detector or learned graph model",
+  "reference_scope": "one fixed algorithm, source input, and evaluation cohort; no population or clinical-validity claim",
+  "source_instance": "graph_adjnoun",
+  "condition": "additional_six_factors",
+  "free_observations": [
+    {
+      "mask": "000000",
+      "utility": 0.5
+    },
+    {
+      "mask": "111111",
+      "utility": 0.7340484429065743
+    }
+  ],
+  "shared_code": "NumPy is np; signal operations are scipy.signal butter/find_peaks/sosfiltfilt and scipy.ndimage uniform_filter1d; graph operations use NetworkX; fitting uses sklearn LogisticRegression and StandardScaler. Numerical helper access is documented separately."
+}

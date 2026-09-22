@@ -1,0 +1,42 @@
+{
+  "source_manifest": {
+    "instance": "graph_dolphins",
+    "family": "graph_link_prediction",
+    "source_files": [
+      {
+        "url": "https://websites.umich.edu/~mejn/netdata/dolphins.zip",
+        "bytes": 1868,
+        "sha256": "42ad752c1711f2e9ab625aef0fb123463523a2590825b546b02ecac23735aa4c"
+      }
+    ],
+    "prepared_path": "private/phase4_diversity/prepared/graph_dolphins.npz",
+    "prepared_sha256": "37fd7e6c0528619db1bf163429e4e10f115d81764b475a6f6b66c2003492c396",
+    "public_summary": {
+      "nodes": 62,
+      "observed_edges": 95,
+      "calibration_pairs": 64,
+      "test_pairs": 64,
+      "graph_kind": "undirected, simple, unweighted",
+      "feature_boundary": "all NetworkX features use only observed_edges"
+    },
+    "host_only": {
+      "source_edges": 159,
+      "split_seed": 3335237670,
+      "test_positive_pairs": 32
+    },
+    "source_name": "Doubtful Sound dolphin associations",
+    "citation": "D. Lusseau et al., Behavioral Ecology and Sociobiology 54, 396-405, 2003",
+    "license_statement": "Free for scientific use according to source page; standardized redistribution license not asserted",
+    "source_url": "https://websites.umich.edu/~mejn/netdata/"
+  },
+  "construction_plan_sha256": "71f6cd07464f4ebe3d6dc9dfa45e6a9df0c93ae5950771ddeae4f6c1314cd2d0",
+  "native_code_sha256": {
+    "whatworked/phase4_diversity_sources.py": "9376ae8d87b9ff48b2b503058250f5d5dd4390769356befbd732145a4a2ab110",
+    "whatworked/phase4_diversity_workflows.py": "288b30fc5e367c4619c32a330a37e6fc15795be9474fc2e8f52f31e72c06bfdb",
+    "whatworked/phase4_diversity_construct.py": "319d7f0ad659088eaf6d7a6cc1f805cab282da2ed997a8cc9ad0141a580019ae",
+    "whatworked/phase4_numeric_helpers.py": "cb7ac328a23c39fd3c8610d7b50543bb2c6a8fb1143b370f88ff45106fa897fb",
+    "whatworked/phase4_kernel_controls.py": "aceaa69802e813517386db778e4cc57d425bfb188daf2e4a929a2c8de4a68510",
+    "whatworked/phase4_portable.py": "82343623e1c4d771058f4cb89901d97d14a988257bd8792488d7c374ad8e5037",
+    "whatworked/phase4_scale_controls.py": "0bf44e6e4c0ac02f145f50e3f7987505f079720b136f6a50b27f4c78db2ad6c3"
+  }
+}

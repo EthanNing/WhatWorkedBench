@@ -1,0 +1,68 @@
+{
+  "paired_source_manifest": {
+    "source": {
+      "source_name": "co2",
+      "source_url": "https://raw.githubusercontent.com/statsmodels/statsmodels/v0.14.6/statsmodels/datasets/co2/co2.csv",
+      "source_metadata_url": "https://raw.githubusercontent.com/statsmodels/statsmodels/v0.14.6/statsmodels/datasets/co2/data.py",
+      "license": "public domain",
+      "raw_data_sha256": "16695fa2786e53414e5a6b54767a3fdf5de99cfbc68617f69d1362d92776a92f",
+      "source_metadata_sha256": "f0ccc0e485050daad29aebc55a2dc0940cef3e299d9dd57750724c71be1c8b06",
+      "series_length": 2284,
+      "training_stop_exclusive": 1713,
+      "evaluation_points": 571,
+      "causally_forward_filled_points": 59,
+      "frequency": "weekly, original missing values forward filled causally",
+      "forecast_contract": "one step ahead; only observations earlier than each prediction time; fixed model fitted on training prefix",
+      "instance": "co2",
+      "family": "forecasting",
+      "source_catalog_sha256": "f72c02df48b5007a70157ae20d33e9fb9892ebdd832e8eb9357350250f4e3f6a"
+    },
+    "factors": {
+      "A": "linear time trend feature",
+      "B": "lags 1..12 instead of lag 1 only",
+      "C": "log1p series transform and expm1 prediction inverse",
+      "D": "Ridge alpha=10 instead of alpha=1"
+    },
+    "source_code_sha256": {
+      "whatworked/phase4_expansion.py": "bd6c79b46bb3703da56e853a7d5e1eb7db7a13ffc2b851f98ff6a125f0f23dc0",
+      "whatworked/phase4_sources.py": "b7817b7b70e26bba8ea0071c600b75813c77a2f358a147d845af42ce9e7e6cce",
+      "whatworked/phase4_workflows.py": "e96816fe3f747a4967a9dc38bd575c6b37b0da50450e2267532a1684d2607916"
+    },
+    "versions": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.6.1",
+      "pillow": "12.3.0"
+    },
+    "native_threads": 1,
+    "native_timeout_seconds": 180,
+    "state": "construction development evidence; no model evaluation on new instances"
+  },
+  "six_factor_construction_plan_sha256": "b4642f22b48ab5fb7681b3e3747cd2e66e88a02a2432049f2aa734e80f934063",
+  "source": {
+    "source_name": "co2",
+    "source_url": "https://raw.githubusercontent.com/statsmodels/statsmodels/v0.14.6/statsmodels/datasets/co2/co2.csv",
+    "source_metadata_url": "https://raw.githubusercontent.com/statsmodels/statsmodels/v0.14.6/statsmodels/datasets/co2/data.py",
+    "license": "public domain",
+    "raw_data_sha256": "16695fa2786e53414e5a6b54767a3fdf5de99cfbc68617f69d1362d92776a92f",
+    "source_metadata_sha256": "f0ccc0e485050daad29aebc55a2dc0940cef3e299d9dd57750724c71be1c8b06",
+    "series_length": 2284,
+    "training_stop_exclusive": 1713,
+    "evaluation_points": 571,
+    "causally_forward_filled_points": 59,
+    "frequency": "weekly, original missing values forward filled causally",
+    "forecast_contract": "one step ahead; only observations earlier than each prediction time; fixed model fitted on training prefix",
+    "instance": "co2",
+    "family": "forecasting",
+    "source_catalog_sha256": "f72c02df48b5007a70157ae20d33e9fb9892ebdd832e8eb9357350250f4e3f6a"
+  },
+  "new_independent_source": false,
+  "native_code_sha256": {
+    "whatworked/phase4_scale.py": "b803becec9bd6880e8f00b5debce72b424e00f1d12463d06b70b95f21dc8b71a",
+    "whatworked/phase4_workflows.py": "e96816fe3f747a4967a9dc38bd575c6b37b0da50450e2267532a1684d2607916",
+    "whatworked/phase4_sources.py": "b7817b7b70e26bba8ea0071c600b75813c77a2f358a147d845af42ce9e7e6cce",
+    "whatworked/phase4_expansion_audit.py": "b6b1b2e98818d15e21df229ffdcba6395629016e0b7d7e96ccf73a1218177e59",
+    "whatworked/phase4_numeric_helpers.py": "cb7ac328a23c39fd3c8610d7b50543bb2c6a8fb1143b370f88ff45106fa897fb",
+    "whatworked/phase4_portable.py": "82343623e1c4d771058f4cb89901d97d14a988257bd8792488d7c374ad8e5037"
+  }
+}

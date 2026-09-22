@@ -1,0 +1,62 @@
+{
+  "instance": "concrete__d6",
+  "family": "regression",
+  "source_name": "Concrete Compressive Strength",
+  "factor_order": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "factors": {
+    "A": "log1p training target and expm1 prediction inverse",
+    "B": "standard scaling before feature construction",
+    "C": "degree-two polynomial features instead of original features",
+    "D": "Ridge alpha=10 instead of alpha=1",
+    "E": "interaction_only=True in the degree-two polynomial transformer; inactive when C=0",
+    "F": "RobustScaler instead of StandardScaler when B=1; inactive when B=0"
+  },
+  "utility": "1/(1+MAE / IQR_of_training_targets)",
+  "data": {
+    "training": {
+      "rows": 702,
+      "features": 8,
+      "negative_value_fraction": 0.0,
+      "feature_std_quantiles": [
+        5.819416792523055,
+        52.82009954638106,
+        70.59372136023694,
+        80.88830194125107,
+        104.61679358493019
+      ],
+      "constant_feature_count": 0
+    },
+    "evaluation_rows": 303,
+    "training_target_quantiles": [
+      2.33,
+      23.252499999999998,
+      33.724999999999994,
+      44.61,
+      81.75
+    ]
+  },
+  "source_code": "def switches(mask):\n    if not isinstance(mask,str) or len(mask)!=6 or set(mask)-{'0','1'}:\n        raise ValueError('Expected six-bit configuration')\n    return tuple(v=='1' for v in mask)\n\ndef supervised_pipeline(family,mask):\n    a,b,c,d,e,f=switches(mask); steps=[]\n    if family=='classification' and a:\n        steps.append(('signed_log',FunctionTransformer(signed_log)))\n    if b:\n        steps.append(('scale',RobustScaler() if family=='regression' and f else StandardScaler()))\n    if family=='classification':\n        if e:steps.append(('selection',SelectPercentile(f_classif,percentile=50)))\n        if f:steps.append(('pca',PCA(n_components=.95,svd_solver='full')))\n        steps.append(('model',LogisticRegression(C=.05 if d else 1.,class_weight='balanced' if c else None,\n                                                      solver='lbfgs',max_iter=3000,random_state=17)))\n        return Pipeline(steps)\n    if c:steps.append(('poly',PolynomialFeatures(2,include_bias=False,interaction_only=e)))\n    steps.append(('model',Ridge(alpha=10. if d else 1.,solver='svd')))\n    model=Pipeline(steps)\n    return TransformedTargetRegressor(regressor=model,func=np.log1p,inverse_func=np.expm1) if a else model\n",
+  "shared_code": "numpy is np; sklearn/scipy operation names use their standard imports; SelectPercentile and f_classif are from sklearn.feature_selection; RobustScaler is from sklearn.preprocessing. Native fitting and metric boundaries are the same as the paired four-factor source.",
+  "options_origin": "authored native-library configurations; not generated improvements or mined patches",
+  "reference_scope": "effects on this fixed finite evaluation cohort, without a population causal claim",
+  "free_observations": [
+    {
+      "mask": "000000",
+      "utility": 0.7319358955511462
+    },
+    {
+      "mask": "111111",
+      "utility": 0.7413250610225418
+    }
+  ],
+  "source_instance": "concrete",
+  "dimensions": 6,
+  "condition": "paired six-factor variant; same prepared source as the four-factor instance"
+}

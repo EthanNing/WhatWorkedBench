@@ -1,0 +1,49 @@
+{
+  "instance": "seeds",
+  "family": "clustering",
+  "source_name": "Seeds",
+  "factor_order": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "factors": {
+    "A": "sign(x)*log1p(abs(x)) feature transform",
+    "B": "feature-only standard scaling",
+    "C": "PCA retaining 95 percent variance instead of all original features",
+    "D": "10 KMeans initializations instead of 1"
+  },
+  "utility": "normalized mutual information, arithmetic entropy normalization, comparing fitted clusters to private original labels",
+  "data": {
+    "input_features": {
+      "rows": 210,
+      "features": 7,
+      "negative_value_fraction": 0.0,
+      "feature_std_quantiles": [
+        0.02357308893142152,
+        0.40941067873006254,
+        0.49030891102578644,
+        1.4014092757091137,
+        2.9027633077572266
+      ],
+      "constant_feature_count": 0
+    },
+    "known_cluster_count": 3,
+    "labels": "private original dataset classes; used only by the external metric, not by clustering"
+  },
+  "source_code": "def signed_log(x):return np.sign(x)*np.log1p(np.abs(x))\n\ndef cluster(x,n_clusters,mask):\n    a,b,c,d=switches(mask);steps=[]\n    if a:steps.append(('signed_log',FunctionTransformer(signed_log)))\n    if b:steps.append(('scale',StandardScaler()))\n    if c:steps.append(('pca',PCA(n_components=.95,svd_solver='full')))\n    steps.append(('model',KMeans(n_clusters=n_clusters,n_init=10 if d else 1,random_state=17,max_iter=300,algorithm='lloyd')))\n    return Pipeline(steps).fit_predict(x)\n",
+  "shared_code": "switches(mask) returns tuple(v == \"1\" for v in mask); numpy is np; standard sklearn/scipy imports",
+  "options_origin": "authored native-library configurations; not generated improvements or mined patches",
+  "reference_scope": "effects on this fixed finite evaluation cohort, without a population causal claim",
+  "free_observations": [
+    {
+      "mask": "0000",
+      "utility": 0.710063757776045
+    },
+    {
+      "mask": "1111",
+      "utility": 0.7193354017949463
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "instance": "scifact__d6",
+  "family": "retrieval",
+  "source_name": "BEIR SciFact",
+  "factor_order": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "factors": {
+    "A": "unigrams plus bigrams instead of unigrams",
+    "B": "sklearn English stop words removed",
+    "C": "sublinear term frequency instead of raw counts",
+    "D": "IDF weighting instead of none",
+    "E": "binary term-frequency counts; this makes sublinear term frequency inactive",
+    "F": "norm=None instead of L2-normalized document/query TF-IDF vectors"
+  },
+  "utility": "mean NDCG@10, binary original relevance, log2(rank+1) discounts",
+  "data": {
+    "corpus_documents": 5183,
+    "evaluation_queries": 64,
+    "document_character_length_quantiles": [
+      221.0,
+      1124.0,
+      1426.0,
+      1811.5,
+      10127.0
+    ],
+    "query_character_length_quantiles": [
+      38.0,
+      61.75,
+      79.5,
+      103.5,
+      173.0
+    ],
+    "self_exclusion": false,
+    "relevance": "private original binary relevance annotations"
+  },
+  "source_code": "def switches(mask):\n    if not isinstance(mask,str) or len(mask)!=6 or set(mask)-{'0','1'}:\n        raise ValueError('Expected six-bit configuration')\n    return tuple(v=='1' for v in mask)\n\ndef retrieve(documents,queries,exclude_self,mask):\n    a,b,c,d,e,f=switches(mask)\n    docs=sorted(documents,key=lambda r:r['doc_id'])\n    vectorizer=TfidfVectorizer(ngram_range=(1,2) if a else (1,1),stop_words='english' if b else None,\n                                   sublinear_tf=c,use_idf=d,norm=None if f else 'l2',binary=e,dtype=np.float64)\n    matrix=vectorizer.fit_transform([r['text'] for r in docs])\n    similarities=(vectorizer.transform([text for _,text in queries])@matrix.T).toarray()\n    normalized=[normalized_text(r['text']) for r in docs] if exclude_self else None\n    result={}\n    for (qid,text),row in zip(queries,similarities):\n        if not np.isfinite(row).all():raise ValueError('Nonfinite retrieval scores')\n        order=np.argsort(-row,kind='stable')\n        if exclude_self:\n            query=normalized_text(text); order=[i for i in order if normalized[i]!=query]\n        result[qid]=[docs[i]['doc_id'] for i in order[:10]]\n    return result\n",
+  "shared_code": "numpy is np; sklearn/scipy operation names use their standard imports; SelectPercentile and f_classif are from sklearn.feature_selection; RobustScaler is from sklearn.preprocessing. Native fitting and metric boundaries are the same as the paired four-factor source.",
+  "options_origin": "authored native-library configurations; not generated improvements or mined patches",
+  "reference_scope": "effects on this fixed finite evaluation cohort, without a population causal claim",
+  "free_observations": [
+    {
+      "mask": "000000",
+      "utility": 0.37270262738981463
+    },
+    {
+      "mask": "111111",
+      "utility": 0.6538892188015777
+    }
+  ],
+  "source_instance": "scifact",
+  "dimensions": 6,
+  "condition": "paired six-factor variant; same prepared source as the four-factor instance"
+}

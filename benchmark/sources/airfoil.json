@@ -1,0 +1,51 @@
+{
+  "source": {
+    "source_name": "Airfoil Self-Noise",
+    "source_url": "https://archive.ics.uci.edu/static/public/291/data.csv",
+    "repository_url": "https://archive.ics.uci.edu/dataset/291/airfoil+self+noise",
+    "license": "CC-BY-4.0",
+    "license_authority": "https://archive.ics.uci.edu/dataset/291/airfoil+self+noise",
+    "raw_data_sha256": "0beffa51c5b1493960d046c7d512a67d06a7884df6db599408087ee2fc2fc18a",
+    "metadata_sha256": "92cad478b99fe7128bcd0ff67af9a0014f30ed13a706936a655da0bc0b963f2c",
+    "raw_rows": 1503,
+    "rows": 1503,
+    "removed_duplicate_feature_label_rows": 0,
+    "features": [
+      "frequency",
+      "attack-angle",
+      "chord-length",
+      "free-stream-velocity",
+      "suction-side-displacement-thickness"
+    ],
+    "target": "scaled-sound-pressure",
+    "target_labels": null,
+    "no_id_or_target_features": true,
+    "train_rows": 1052,
+    "evaluation_rows": 451,
+    "feature_group_overlap": 0,
+    "split_sha256": "39f0ad99367bf819ec04faa04bd97e2d55292885610de8be1b3ef34da99a5083",
+    "instance": "airfoil",
+    "family": "regression",
+    "source_catalog_sha256": "f72c02df48b5007a70157ae20d33e9fb9892ebdd832e8eb9357350250f4e3f6a"
+  },
+  "factors": {
+    "A": "log1p training target and expm1 prediction inverse",
+    "B": "standard scaling before feature construction",
+    "C": "degree-two polynomial features instead of original features",
+    "D": "Ridge alpha=10 instead of alpha=1"
+  },
+  "source_code_sha256": {
+    "whatworked/phase4_expansion.py": "bd6c79b46bb3703da56e853a7d5e1eb7db7a13ffc2b851f98ff6a125f0f23dc0",
+    "whatworked/phase4_sources.py": "b7817b7b70e26bba8ea0071c600b75813c77a2f358a147d845af42ce9e7e6cce",
+    "whatworked/phase4_workflows.py": "e96816fe3f747a4967a9dc38bd575c6b37b0da50450e2267532a1684d2607916"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "pillow": "12.3.0"
+  },
+  "native_threads": 1,
+  "native_timeout_seconds": 180,
+  "state": "construction development evidence; no model evaluation on new instances"
+}

@@ -1,0 +1,142 @@
+{
+  "instance": "breast_diagnostic",
+  "family": "classification",
+  "truth": {
+    "0000": 0.9539641943734015,
+    "0001": 0.9539641943734015,
+    "0010": 0.9612105711849956,
+    "0011": 0.9539641943734015,
+    "0100": 0.9710144927536232,
+    "0101": 0.9420289855072463,
+    "0110": 0.9782608695652174,
+    "0111": 0.9782608695652174,
+    "1000": 0.9612105711849956,
+    "1001": 0.895993179880648,
+    "1010": 0.9563086104006819,
+    "1011": 0.9296675191815857,
+    "1100": 0.9782608695652174,
+    "1101": 0.963768115942029,
+    "1110": 0.9782608695652174,
+    "1111": 0.9710144927536232
+  },
+  "native_measurements": {
+    "0000": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9539641943734015,
+      "wall_seconds": 0.1339679939992493,
+      "prediction_sha256": "e3d55bb80e0e2fa7cbe3eca4037a895f406d5cb7e07fafb5dd08155cf5f401bc",
+      "warnings": [
+        {
+          "category": "ConvergenceWarning",
+          "message": "lbfgs failed to converge (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.\n\nIncrease the number of iterations (max_iter) or scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+        }
+      ]
+    },
+    "0001": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9539641943734015,
+      "wall_seconds": 0.036890983988996595,
+      "prediction_sha256": "e3d55bb80e0e2fa7cbe3eca4037a895f406d5cb7e07fafb5dd08155cf5f401bc",
+      "warnings": []
+    },
+    "0010": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9612105711849956,
+      "wall_seconds": 0.13356748000660446,
+      "prediction_sha256": "b958845822049f0cea16014a50d5c85fed5a8bbea983ce9608bedc6bcffd63d5",
+      "warnings": []
+    },
+    "0011": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9539641943734015,
+      "wall_seconds": 0.04306876499322243,
+      "prediction_sha256": "e3d55bb80e0e2fa7cbe3eca4037a895f406d5cb7e07fafb5dd08155cf5f401bc",
+      "warnings": []
+    },
+    "0100": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9710144927536232,
+      "wall_seconds": 0.0038752170075895265,
+      "prediction_sha256": "6b44773e3dd2d6a3747a968867c4624c1d0e91610c85575e4e95eb221458ab6d",
+      "warnings": []
+    },
+    "0101": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9420289855072463,
+      "wall_seconds": 0.0030864169966662303,
+      "prediction_sha256": "c3f1b4ae79d7c0b34f4cde0994c4f5b97736b66dda4989301d6a355617f4bacd",
+      "warnings": []
+    },
+    "0110": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9782608695652174,
+      "wall_seconds": 0.003302693003206514,
+      "prediction_sha256": "6e5eb7d7703c78122d9d23fe2e38b703b9e7d4a7b4da8dfab11b83d1cddbdb25",
+      "warnings": []
+    },
+    "0111": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9782608695652174,
+      "wall_seconds": 0.0036441309930523857,
+      "prediction_sha256": "6e5eb7d7703c78122d9d23fe2e38b703b9e7d4a7b4da8dfab11b83d1cddbdb25",
+      "warnings": []
+    },
+    "1000": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9612105711849956,
+      "wall_seconds": 0.004383582010632381,
+      "prediction_sha256": "b958845822049f0cea16014a50d5c85fed5a8bbea983ce9608bedc6bcffd63d5",
+      "warnings": []
+    },
+    "1001": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.895993179880648,
+      "wall_seconds": 0.025122970997472294,
+      "prediction_sha256": "18b0c223a441c3ae40f896838ca92ab3adf59c273dffcaa16e084be871788e94",
+      "warnings": []
+    },
+    "1010": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9563086104006819,
+      "wall_seconds": 0.007726559997536242,
+      "prediction_sha256": "04e0ad9ddb39a69dae1f960437378bea2137f4e815aa85e6ab90c3608b1acb17",
+      "warnings": []
+    },
+    "1011": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9296675191815857,
+      "wall_seconds": 0.0052338009991217405,
+      "prediction_sha256": "7f02eca8a2461c0079b73b32dd570fdd09c30112c6abff671fea9be0476d0998",
+      "warnings": []
+    },
+    "1100": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9782608695652174,
+      "wall_seconds": 0.0033625930082052946,
+      "prediction_sha256": "6e5eb7d7703c78122d9d23fe2e38b703b9e7d4a7b4da8dfab11b83d1cddbdb25",
+      "warnings": []
+    },
+    "1101": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.963768115942029,
+      "wall_seconds": 0.0028456470026867464,
+      "prediction_sha256": "df16515e4d407936e71163373c4fc8fc47c3d0bae450125d5d6848c44c7a89c3",
+      "warnings": []
+    },
+    "1110": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9782608695652174,
+      "wall_seconds": 0.004216547997202724,
+      "prediction_sha256": "6e5eb7d7703c78122d9d23fe2e38b703b9e7d4a7b4da8dfab11b83d1cddbdb25",
+      "warnings": []
+    },
+    "1111": {
+      "native_metric": "balanced_accuracy",
+      "native_value": 0.9710144927536232,
+      "wall_seconds": 0.004058391001308337,
+      "prediction_sha256": "da76278daf1dccbd8e4b739b97a5eba3bd7d370f43202d36c032b9deff474583",
+      "warnings": []
+    }
+  },
+  "source_table_file_sha256": "2c5f9320015a7cdb715f41e6ecc5de233104ce50711bec61d9f118b161d17558"
+}

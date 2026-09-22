@@ -1,0 +1,55 @@
+{
+  "instance": "yacht",
+  "family": "regression",
+  "source_name": "Yacht Hydrodynamics",
+  "factor_order": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "factors": {
+    "A": "log1p training target and expm1 prediction inverse",
+    "B": "standard scaling before feature construction",
+    "C": "degree-two polynomial features instead of original features",
+    "D": "Ridge alpha=10 instead of alpha=1"
+  },
+  "utility": "1/(1+MAE / IQR_of_training_targets)",
+  "data": {
+    "training": {
+      "rows": 215,
+      "features": 6,
+      "negative_value_fraction": 0.13333333333333333,
+      "feature_std_quantiles": [
+        0.023234085663403767,
+        0.1361454838664805,
+        0.24616662833815406,
+        0.480185054021232,
+        1.574209803749036
+      ],
+      "constant_feature_count": 0
+    },
+    "evaluation_rows": 93,
+    "training_target_quantiles": [
+      0.03,
+      0.775,
+      2.94,
+      12.395,
+      60.85
+    ]
+  },
+  "source_code": "def signed_log(x):return np.sign(x)*np.log1p(np.abs(x))\n\ndef supervised_pipeline(family,mask):\n    a,b,c,d=switches(mask);steps=[]\n    if family=='classification' and a:steps.append(('signed_log',FunctionTransformer(signed_log)))\n    if b:steps.append(('scale',StandardScaler()))\n    if family=='classification':\n        steps.append(('model',LogisticRegression(C=.05 if d else 1.,class_weight='balanced' if c else None,\n                                                  solver='lbfgs',max_iter=3000,random_state=17)))\n        return Pipeline(steps)\n    if c:steps.append(('poly',PolynomialFeatures(2,include_bias=False)))\n    steps.append(('model',Ridge(alpha=10. if d else 1.,solver='svd')))\n    model=Pipeline(steps)\n    return TransformedTargetRegressor(regressor=model,func=np.log1p,inverse_func=np.expm1) if a else model\n",
+  "shared_code": "switches(mask) returns tuple(v == \"1\" for v in mask); numpy is np; standard sklearn/scipy imports",
+  "options_origin": "authored native-library configurations; not generated improvements or mined patches",
+  "reference_scope": "effects on this fixed finite evaluation cohort, without a population causal claim",
+  "free_observations": [
+    {
+      "mask": "0000",
+      "utility": 0.6237071542720739
+    },
+    {
+      "mask": "1111",
+      "utility": 0.8978786434496997
+    }
+  ]
+}

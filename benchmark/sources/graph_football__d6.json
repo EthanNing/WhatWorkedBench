@@ -1,0 +1,42 @@
+{
+  "source_manifest": {
+    "instance": "graph_football",
+    "family": "graph_link_prediction",
+    "source_files": [
+      {
+        "url": "https://websites.umich.edu/~mejn/netdata/football.zip",
+        "bytes": 4409,
+        "sha256": "147081ba047c919782896b26852f812e65880a9e52f69070069f950eea90c396"
+      }
+    ],
+    "prepared_path": "private/phase4_diversity/prepared/graph_football.npz",
+    "prepared_sha256": "211b4e74742592f4c59db385336bb88d65f6da6936a5504d47858b7565176bd2",
+    "public_summary": {
+      "nodes": 115,
+      "observed_edges": 367,
+      "calibration_pairs": 246,
+      "test_pairs": 246,
+      "graph_kind": "undirected, simple, unweighted",
+      "feature_boundary": "all NetworkX features use only observed_edges"
+    },
+    "host_only": {
+      "source_edges": 613,
+      "split_seed": 1356401253,
+      "test_positive_pairs": 123
+    },
+    "source_name": "American college football, fall 2000",
+    "citation": "M. Girvan and M. E. J. Newman, PNAS 99, 7821-7826, 2002",
+    "license_statement": "Free for scientific use according to source page; standardized redistribution license not asserted",
+    "source_url": "https://websites.umich.edu/~mejn/netdata/"
+  },
+  "construction_plan_sha256": "71f6cd07464f4ebe3d6dc9dfa45e6a9df0c93ae5950771ddeae4f6c1314cd2d0",
+  "native_code_sha256": {
+    "whatworked/phase4_diversity_sources.py": "9376ae8d87b9ff48b2b503058250f5d5dd4390769356befbd732145a4a2ab110",
+    "whatworked/phase4_diversity_workflows.py": "288b30fc5e367c4619c32a330a37e6fc15795be9474fc2e8f52f31e72c06bfdb",
+    "whatworked/phase4_diversity_construct.py": "319d7f0ad659088eaf6d7a6cc1f805cab282da2ed997a8cc9ad0141a580019ae",
+    "whatworked/phase4_numeric_helpers.py": "cb7ac328a23c39fd3c8610d7b50543bb2c6a8fb1143b370f88ff45106fa897fb",
+    "whatworked/phase4_kernel_controls.py": "aceaa69802e813517386db778e4cc57d425bfb188daf2e4a929a2c8de4a68510",
+    "whatworked/phase4_portable.py": "82343623e1c4d771058f4cb89901d97d14a988257bd8792488d7c374ad8e5037",
+    "whatworked/phase4_scale_controls.py": "0bf44e6e4c0ac02f145f50e3f7987505f079720b136f6a50b27f4c78db2ad6c3"
+  }
+}

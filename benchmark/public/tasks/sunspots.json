@@ -1,0 +1,71 @@
+{
+  "instance": "sunspots",
+  "family": "forecasting",
+  "source_name": "sunspots",
+  "factor_order": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "factors": {
+    "A": "linear time trend feature",
+    "B": "lags 1..12 instead of lag 1 only",
+    "C": "log1p series transform and expm1 prediction inverse",
+    "D": "Ridge alpha=10 instead of alpha=1"
+  },
+  "utility": "1/(1+one_step_MAE / IQR_of_training_series)",
+  "data": {
+    "series_length": 309,
+    "training_length": 231,
+    "training_target_quantiles": [
+      0.0,
+      14.05,
+      37.6,
+      63.95,
+      154.4
+    ],
+    "last_24_training_values": [
+      62.0,
+      48.5,
+      43.9,
+      18.6,
+      5.7,
+      3.6,
+      1.4,
+      9.6,
+      47.4,
+      57.1,
+      103.9,
+      80.6,
+      63.6,
+      37.6,
+      26.1,
+      14.2,
+      5.8,
+      16.7,
+      44.3,
+      63.9,
+      69.0,
+      77.8,
+      64.9,
+      35.7
+    ],
+    "frequency": "annual",
+    "evaluation": "fixed parameters fitted on training prefix; forecast each next point using only earlier realized observations; common fitting start at lag 12"
+  },
+  "source_code": "def forecast(series,cut,mask):\n    a,b,c,d=switches(mask)\n    values=np.log1p(series) if c else np.array(series,copy=True)\n    times=np.arange(12,len(values))\n    lag_count=12 if b else 1\n    features=np.column_stack([values[times-lag] for lag in range(1,lag_count+1)])\n    if a:features=np.column_stack([features,times/float(cut)])\n    train=times<cut\n    model=Pipeline([('scale',StandardScaler()),('model',Ridge(alpha=10. if d else 1.,solver='svd'))])\n    model.fit(features[train],values[times[train]])\n    prediction=model.predict(features[~train])\n    return np.expm1(prediction) if c else prediction\n",
+  "shared_code": "switches(mask) returns tuple(v == \"1\" for v in mask); numpy is np; standard sklearn/scipy imports",
+  "options_origin": "authored native-library configurations; not generated improvements or mined patches",
+  "reference_scope": "effects on this fixed finite evaluation cohort, without a population causal claim",
+  "free_observations": [
+    {
+      "mask": "0000",
+      "utility": 0.6780682464537363
+    },
+    {
+      "mask": "1111",
+      "utility": 0.7695839172218543
+    }
+  ]
+}

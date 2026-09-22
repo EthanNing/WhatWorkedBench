@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Cite this software release. Paper citation and arXiv link will follow."
+title: "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents"
+type: software
+version: 1.0.0
+authors:
+  - name: WhatWorkedBench contributors
+repository-code: "https://github.com/EthanNing/WhatWorkedBench"
+url: "https://ethanning.github.io/WhatWorkedBench/"
+license: Apache-2.0

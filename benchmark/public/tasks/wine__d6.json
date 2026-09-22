@@ -1,0 +1,56 @@
+{
+  "instance": "wine__d6",
+  "family": "clustering",
+  "source_name": "Wine",
+  "factor_order": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "factors": {
+    "A": "sign(x)*log1p(abs(x)) feature transform",
+    "B": "feature-only standard scaling",
+    "C": "PCA retaining 95 percent variance instead of all original features",
+    "D": "10 KMeans initializations instead of 1",
+    "E": "PCA whitening when C=1; inactive when C=0",
+    "F": "KMeans init=random instead of k-means++"
+  },
+  "utility": "normalized mutual information, arithmetic entropy normalization, comparing fitted clusters to private original labels",
+  "data": {
+    "input_features": {
+      "rows": 178,
+      "features": 13,
+      "negative_value_fraction": 0.0,
+      "feature_std_quantiles": [
+        0.12410325988364797,
+        0.5707488486199377,
+        0.809542914528517,
+        2.3117646609525573,
+        314.0216568419877
+      ],
+      "constant_feature_count": 0
+    },
+    "known_cluster_count": 3,
+    "labels": "private original dataset classes; used only by the external metric, not by clustering"
+  },
+  "source_code": "def signed_log(x):return np.sign(x)*np.log1p(np.abs(x))\n\ndef switches(mask):\n    if not isinstance(mask,str) or len(mask)!=6 or set(mask)-{'0','1'}:\n        raise ValueError('Expected six-bit configuration')\n    return tuple(v=='1' for v in mask)\n\ndef cluster(x,n_clusters,mask):\n    a,b,c,d,e,f=switches(mask); steps=[]\n    if a:steps.append(('signed_log',FunctionTransformer(signed_log)))\n    if b:steps.append(('scale',StandardScaler()))\n    if c:steps.append(('pca',PCA(n_components=.95,svd_solver='full',whiten=e)))\n    steps.append(('model',KMeans(n_clusters=n_clusters,n_init=10 if d else 1,random_state=17,\n                                     max_iter=300,algorithm='lloyd',init='random' if f else 'k-means++')))\n    return Pipeline(steps).fit_predict(x)\n",
+  "shared_code": "numpy is np; sklearn/scipy operation names use their standard imports; SelectPercentile and f_classif are from sklearn.feature_selection; RobustScaler is from sklearn.preprocessing. Native fitting and metric boundaries are the same as the paired four-factor source.",
+  "options_origin": "authored native-library configurations; not generated improvements or mined patches",
+  "reference_scope": "effects on this fixed finite evaluation cohort, without a population causal claim",
+  "free_observations": [
+    {
+      "mask": "000000",
+      "utility": 0.42875685976453537
+    },
+    {
+      "mask": "111111",
+      "utility": 0.8872026190731097
+    }
+  ],
+  "source_instance": "wine",
+  "dimensions": 6,
+  "condition": "paired six-factor variant; same prepared source as the four-factor instance"
+}
