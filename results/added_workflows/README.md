@@ -6,8 +6,8 @@ two free anchors, and 32 purchased measurements. The prompts, tools, and
 session limits match the six-option agent interface used by the core study.
 
 Six of eight attempts produce valid complete prediction tables. The last two
-sources use all 32 measurements before the provider returns HTTP 402 for
-insufficient balance; their original attempts and tool receipts remain in
+sources use all 32 measurements before upstream service interruptions; their
+original attempts and tool receipts remain in
 `artifacts/`. The planned eight-attempt analysis assigns zero delivered recovery
 to those two missing tables. It also reconstructs their saved observations
 with a shared Gaussian process.

@@ -92,7 +92,7 @@ The release records **4,206 numerical-control executions** and **124 agent attem
 | Structure diagnostic; submitted table → post-hoc code-equivalence projection | 0.338 → 0.507 |
 | Added beat/graph workflows, B=32; valid agent table → same-observation GP | 0.303 → 0.455 |
 
-Shared inference and the post-hoc projection reuse the same acquired observations. The code-aware GP comparison changes acquisition and inference. The added-workflow cohort records six valid tables and two provider HTTP 402 interruptions after complete measurement. Cohort and source details are preserved in [results](results/).
+Shared inference and the post-hoc projection reuse the same acquired observations. The code-aware GP comparison changes acquisition and inference. The added-workflow cohort records six valid tables and two upstream service interruptions after complete measurement. Cohort and source details are preserved in [results](results/).
 
 ## Native replay
 
