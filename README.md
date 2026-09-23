@@ -81,7 +81,7 @@ The [protocol guide](guides/evaluation.md) defines these metrics and the agent/e
 
 The numerical tools include main-effect ridge, pair-interaction ridge, and Gaussian-process inference with grid-variance or effect-variance acquisition. Code-aware GP inference supports visible parameter equivalences in the paired six-option tasks.
 
-The release records **4,206 numerical-control executions** across eight workflow families and **108 core agent episodes**, including 94 valid prediction artifacts. A separate, complete eight-episode structure diagnostic tests how agents use visible program equivalences.
+The release records **4,206 numerical-control executions** across eight workflow families and **108 core agent episodes**, including 94 valid prediction artifacts. A separate, complete eight-episode structure diagnostic tests how agents use visible program equivalences. The added beat-detection and graph-link-prediction workflows have six valid B=32 agent submissions, three per family.
 
 | Comparison | Effect recovery before → after |
 | --- | --- |
@@ -89,8 +89,9 @@ The release records **4,206 numerical-control executions** across eight workflow
 | Additional Flash cohort, B=8; delivered table → shared GP | 0.621 → 0.720 |
 | Paired six-option tasks, B=20; pair ridge → code-aware GP | 0.248 → 0.462 |
 | Structure diagnostic; submitted table → post-hoc code-equivalence projection | 0.338 → 0.507 |
+| Added beat/graph workflows, B=32; six valid submitted tables → same-observation GP | 0.303 → 0.455 |
 
-Shared inference and the post-hoc projection reuse the same acquired observations. The code-aware GP comparison changes acquisition and inference. Cohort and source details are preserved in [results](results/).
+Shared inference and the post-hoc projection reuse the same acquired observations. The code-aware GP comparison changes acquisition and inference. In the added workflows, effect recovery improves for all six valid submissions. The 0.303 → 0.455 comparison averages those six completed submissions, with three sources in each family. Cohort and source details are preserved in [results](results/).
 
 ## Native replay
 

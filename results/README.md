@@ -9,9 +9,13 @@ observations, the public code-equivalence rules, and an independently checked
 post-hoc projection. Run `python scripts/audit_structure.py` to reproduce the
 change in mean effect recovery from 0.338 to 0.507 using fixed observations.
 
-`added_workflows/` retains the supplemental run artifacts, collection records,
-and independent release audit. The folder has its own audit script at
-`scripts/audit_added.py`.
+`added_workflows/` contains six valid B=32 agent submissions, three each from
+beat detection and graph link prediction. With each agent's observations held
+fixed, shared GP reconstruction raises valid-submission mean effect recovery
+from 0.303 to 0.455; every submitted table improves. The folder also preserves
+two incomplete records for audit. See its README and `source_comparison.csv`
+for the per-source results. Run `python scripts/audit_added.py` to validate the
+released records against their references.
 
 `conditional_effects.csv` and `mean_pair_interactions.csv` contain 3,392 conditional component effects and 342 mean pair interactions. The numerical-control records preserve acquisition observations and final predictions. Each cohort retains its original model and condition identifiers.
 
