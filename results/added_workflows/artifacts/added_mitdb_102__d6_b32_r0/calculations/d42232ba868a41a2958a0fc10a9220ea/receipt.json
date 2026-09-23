@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 31, in <module>\n    S.append(best); remaining.remove(best)\n                    ^^^^^^^^^^^^^^^^^^^^^^\nValueError: list.remove(x): x not in list\n",
+  "wall_seconds": 0.11460419299964997,
+  "code_sha256": "6d2ed06b3bdd424fe9b7410c97fd28680ea7cd90000d77740a76ef0260d87cb6",
+  "evidence_sha256": "cde4735ba81a9d016a9df63847690ecd5ab760242bbac92682a3921bedab9b07",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

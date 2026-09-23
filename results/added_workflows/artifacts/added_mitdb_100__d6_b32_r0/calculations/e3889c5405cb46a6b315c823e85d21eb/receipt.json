@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "nparams 26 maxabs_resid 0.0103 rmse 0.00435\n   int    +0.95130\n   B      -0.00197\n   C      -0.04494\n   D      +0.04636\n   E      -0.04687\n   F      +0.01266\n   AC     -0.00371\n   AD     +0.00246\n   AE     -0.00195\n   AF     +0.00090\n   BC     -0.00124\n   BD     +0.00115\n   BE     -0.00115\n   BF     +0.00320\n   CD     +0.04711\n   CE     -0.04677\n   CF     +0.01125\n   DE     +0.04802\n   DF     -0.01150\n   EF     +0.01167\n   CDE    +0.04544\n   CEF    +0.01224\n   CDF    -0.01224\n   DEF    -0.01232\n   CDEF   -0.01142\nresiduals sorted:\n   000101 0.0103\n   111010 -0.0103\n   110101 -0.0103\n   001010 0.0103\n   111100 0.00444\n   110011 0.00444\n   000011 -0.00444\n   001100 -0.00444\n   001001 -0.00344\n   000110 -0.00344\n   110110 0.00344\n   111001 0.00344\n",
+  "stderr": "",
+  "wall_seconds": 0.11459488299988152,
+  "code_sha256": "338f58e76de83debe76489abb6498d00b90d1e4436f5d1808318624decf3a9aa",
+  "evidence_sha256": "83191439e8e931956e607e36137fd6b51c7fd7a909ce28223518a772bc89ee16",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

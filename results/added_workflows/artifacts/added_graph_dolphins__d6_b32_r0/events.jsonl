@@ -1,0 +1,20 @@
+{"event": "calculation", "number": 1, "returncode": 0, "elapsed": 43.4437118019996}
+{"event": "calculation", "number": 2, "returncode": 0, "elapsed": 82.46017824800037}
+{"event": "calculation", "number": 3, "returncode": 0, "elapsed": 109.57373478699992}
+{"event": "calculation", "number": 4, "returncode": 0, "elapsed": 130.79666695599917}
+{"event": "calculation", "number": 5, "returncode": 0, "elapsed": 142.38998472399908}
+{"event": "calculation", "number": 6, "returncode": 0, "elapsed": 164.2623568300005}
+{"event": "observe", "masks": ["000010", "000100", "000111", "001000", "001011", "001100", "001101", "010000", "010100", "010101", "010110", "010111", "011000", "011001", "011011", "011110", "011111", "100000", "100011", "100101", "100110", "101000", "101010", "101011", "101101", "101111", "110001", "110110", "111001", "111010", "111100", "111110"], "credits_spent": 32, "elapsed": 168.21685314000024}
+{"event": "calculation", "number": 7, "returncode": 1, "elapsed": 185.73551657399912}
+{"event": "calculation", "number": 8, "returncode": 0, "elapsed": 196.2202718009994}
+{"event": "calculation", "number": 9, "returncode": 0, "elapsed": 212.19693662200007}
+{"event": "calculation", "number": 10, "returncode": 0, "elapsed": 231.5957307080007}
+{"event": "calculation", "number": 11, "returncode": 0, "elapsed": 243.6658500220001}
+{"event": "calculation", "number": 12, "returncode": 0, "elapsed": 261.7835752310002}
+{"event": "calculation", "number": 13, "returncode": 1, "elapsed": 290.51493713799937}
+{"event": "calculation", "number": 14, "returncode": 1, "elapsed": 295.3682167070001}
+{"event": "calculation", "number": 15, "returncode": 1, "elapsed": 300.808578062999}
+{"event": "calculation", "number": 16, "returncode": 0, "elapsed": 306.24187194799924}
+{"event": "calculation", "number": 17, "returncode": 1, "elapsed": 356.52262605800024}
+{"event": "calculation", "number": 18, "returncode": 1, "elapsed": 383.16711665100047}
+{"event": "calculation", "number": 19, "returncode": 0, "elapsed": 398.1042645519992}

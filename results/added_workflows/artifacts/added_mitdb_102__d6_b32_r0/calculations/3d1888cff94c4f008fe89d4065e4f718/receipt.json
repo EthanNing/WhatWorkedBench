@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "deg 1 params 7 train rmse 0.09845 loo rmse 0.12396\ndeg 2 params 22 train rmse 0.06482 loo rmse 0.18246\ndeg 3 params 42 train rmse 0.0 loo rmse 0.76811\n",
+  "stderr": "",
+  "wall_seconds": 0.16476045699982933,
+  "code_sha256": "b874eabbb6b925ae62ddab636137f268de4ce36944dfaeb96b2435e9a3ded380",
+  "evidence_sha256": "f3050cfcc07806f7bf880dcbefbb40f66f13c4d70c40c7911be365b1a70bc420",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "nestedCV K 10 rmse 0.1511\nnestedCV K 14 rmse 0.1543\nnestedCV K 18 rmse 0.1572\n",
+  "stderr": "",
+  "wall_seconds": 9.638886018999983,
+  "code_sha256": "867fbbbd2f79576cd8707babad2b30c3b4d2e1e846a98aea73afa7c2bd2c16f7",
+  "evidence_sha256": "a11c16671e0b5b98e53a52092d5fb64d1d5f3d1cc64d8001ccc6ae4c9a3458b5",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

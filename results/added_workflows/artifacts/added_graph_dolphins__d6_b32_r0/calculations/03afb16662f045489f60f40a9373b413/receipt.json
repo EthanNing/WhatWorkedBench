@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "const  0.00574\nknn4   0.00687\nknn6   0.00662\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 47, in <module>\n    print(\"fcount a=%.2f %.5f\"%(a,loo2(lambda t,m,x,a=a: fcount(t,x,m,a))))\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 41, in loo2\n    errs.append(pred(tr,allK[i],allM[i])-allY[i])\n                ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 47, in <lambda>\n    print(\"fcount a=%.2f %.5f\"%(a,loo2(lambda t,m,x,a=a: fcount(t,x,m,a))))\n                                                         ^^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 30, in fcount\n    j=allK.index(flip(mask,5))\n      ^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: '000110' is not in list\n",
+  "wall_seconds": 0.11494733899962739,
+  "code_sha256": "f123417f0b58b54ec83091290cb8630eb14f2bd498ef7bc3dbab6b04b865011c",
+  "evidence_sha256": "2913531c94dddf939be9ffd303b15d5262288413b9f80703edb94ce2d1795a47",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

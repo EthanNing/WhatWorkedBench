@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 21, in <module>\n    'CDE+ABFfull':dm(Xo,ABFfull),\n                  ^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 14, in dm\n    def dm(x,extras): return np.column_stack([np.ones(x.shape[0])]+[mono(x,c) for c in CDE+extras])\n                                                                    ^^^^^^^^^\n  File \"/job/calculation.py\", line 11, in mono\n    for i in c: v=v*x[:,i]\n             ^\nTypeError: 'int' object is not iterable\n",
+  "wall_seconds": 0.11439957000038703,
+  "code_sha256": "7b4324f5038cdabace44c7c3916bb50b8d5f9f339f240967e8c0a96e271bd676",
+  "evidence_sha256": "4630b413331ee9b97ac11d32fe2c3082387f3ec62bab1e335c36501b234f8039",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

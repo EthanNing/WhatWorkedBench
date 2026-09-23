@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "deg 1 a 1e-06 6fold mse 0.00556\ndeg 1 a 0.0001 6fold mse 0.00561\ndeg 1 a 0.001 6fold mse 0.00556\ndeg 1 a 0.01 6fold mse 0.00554\ndeg 1 a 0.1 6fold mse 0.00552\ndeg 1 a 1 6fold mse 0.00524\ndeg 1 a 10 6fold mse 0.00475\ndeg 1 a 100 6fold mse 0.00489\n\ndeg 2 a 1e-06 6fold mse 0.0238\ndeg 2 a 0.0001 6fold mse 0.0237\ndeg 2 a 0.001 6fold mse 0.0222\ndeg 2 a 0.01 6fold mse 0.0197\ndeg 2 a 0.1 6fold mse 0.0105\ndeg 2 a 1 6fold mse 0.00527\ndeg 2 a 10 6fold mse 0.00488\ndeg 2 a 100 6fold mse 0.00486\n\ndeg 3 a 1e-06 6fold mse 0.0376\ndeg 3 a 0.0001 6fold mse 0.0369\ndeg 3 a 0.001 6fold mse 0.0361\ndeg 3 a 0.01 6fold mse 0.0337\ndeg 3 a 0.1 6fold mse 0.0191\ndeg 3 a 1 6fold mse 0.00624\ndeg 3 a 10 6fold mse 0.00486\ndeg 3 a 100 6fold mse 0.00485\n\ndeg 4 a 1e-06 6fold mse 0.0306\ndeg 4 a 0.0001 6fold mse 0.0293\ndeg 4 a 0.001 6fold mse 0.0284\ndeg 4 a 0.01 6fold mse 0.0262\ndeg 4 a 0.1 6fold mse 0.0155\ndeg 4 a 1 6fold mse 0.00648\ndeg 4 a 10 6fold mse 0.00487\ndeg 4 a 100 6fold mse 0.00487\n\ndeg 5 a 1e-06 6fold mse 0.0274\ndeg 5 a 0.0001 6fold mse 0.027\ndeg 5 a 0.001 6fold mse 0.0275\ndeg 5 a 0.01 6fold mse 0.0243\ndeg 5 a 0.1 6fold mse 0.0145\ndeg 5 a 1 6fold mse 0.00636\ndeg 5 a 10 6fold mse 0.00487\ndeg 5 a 100 6fold mse 0.00486\n\n",
+  "stderr": "",
+  "wall_seconds": 3.524874159000319,
+  "code_sha256": "7b996178f27fb6773bce168660e973c23ca70b6099c44af867c0dde8834a7b99",
+  "evidence_sha256": "056710efb503fc53997ae8a9e65b124ba4123c62858f7d0a196e3e6ca909b9a8",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

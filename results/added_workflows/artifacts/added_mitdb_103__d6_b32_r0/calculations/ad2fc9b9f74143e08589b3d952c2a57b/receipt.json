@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 43, in <module>\n    M,_=build(Xo,[]); models['null']=M\n    ^^^\nValueError: too many values to unpack (expected 2)\n",
+  "wall_seconds": 0.11470449900116364,
+  "code_sha256": "4a9e62e6fba6f86c1d3ffd943690b3d492dd89b1117370d1c41b3999ef2ceef7",
+  "evidence_sha256": "05fd20635b5af958eec5a036cc9cc97ce45324838b94f314e07c4d137d9daa35",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

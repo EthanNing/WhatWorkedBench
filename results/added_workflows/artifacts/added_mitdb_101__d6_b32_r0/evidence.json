@@ -1,0 +1,188 @@
+{
+  "observations": [
+    {
+      "mask": "000000",
+      "utility": 0.9164420485175202
+    },
+    {
+      "mask": "111111",
+      "utility": 0.9686609686609686
+    },
+    {
+      "mask": "000011",
+      "utility": 0.9405255878284924
+    },
+    {
+      "mask": "000101",
+      "utility": 0.3706896551724138
+    },
+    {
+      "mask": "000110",
+      "utility": 0.4305835010060362
+    },
+    {
+      "mask": "001001",
+      "utility": 0.9811866859623734
+    },
+    {
+      "mask": "001010",
+      "utility": 0.5132075471698113
+    },
+    {
+      "mask": "001100",
+      "utility": 0.9897209985315712
+    },
+    {
+      "mask": "001111",
+      "utility": 0.9456066945606695
+    },
+    {
+      "mask": "010001",
+      "utility": 0.9531914893617022
+    },
+    {
+      "mask": "010010",
+      "utility": 0.9110512129380054
+    },
+    {
+      "mask": "010100",
+      "utility": 0.3891213389121339
+    },
+    {
+      "mask": "010111",
+      "utility": 0.3758099352051836
+    },
+    {
+      "mask": "011000",
+      "utility": 0.9941520467836257
+    },
+    {
+      "mask": "011011",
+      "utility": 0.6686390532544378
+    },
+    {
+      "mask": "011101",
+      "utility": 0.9911504424778761
+    },
+    {
+      "mask": "011110",
+      "utility": 0.9405255878284924
+    },
+    {
+      "mask": "100001",
+      "utility": 0.9855072463768116
+    },
+    {
+      "mask": "100010",
+      "utility": 0.9457579972183588
+    },
+    {
+      "mask": "100100",
+      "utility": 0.9912280701754386
+    },
+    {
+      "mask": "100111",
+      "utility": 0.9897810218978103
+    },
+    {
+      "mask": "101000",
+      "utility": 0.9742120343839542
+    },
+    {
+      "mask": "101011",
+      "utility": 0.6544401544401545
+    },
+    {
+      "mask": "101101",
+      "utility": 0.9882352941176471
+    },
+    {
+      "mask": "101110",
+      "utility": 0.9066666666666666
+    },
+    {
+      "mask": "110000",
+      "utility": 0.9869375907111756
+    },
+    {
+      "mask": "110011",
+      "utility": 0.9883720930232558
+    },
+    {
+      "mask": "110101",
+      "utility": 0.9897510980966325
+    },
+    {
+      "mask": "110110",
+      "utility": 0.9883381924198251
+    },
+    {
+      "mask": "111001",
+      "utility": 0.9955947136563876
+    },
+    {
+      "mask": "111010",
+      "utility": 0.6204379562043796
+    },
+    {
+      "mask": "111100",
+      "utility": 0.9926362297496318
+    },
+    {
+      "mask": "111000",
+      "utility": 0.9941348973607038
+    },
+    {
+      "mask": "000111",
+      "utility": 0.42083333333333334
+    }
+  ],
+  "credits_remaining": 0,
+  "closed": true,
+  "calculation_calls_remaining": 5,
+  "session_seconds_elapsed": 571.17,
+  "session_seconds_remaining": 1228.83,
+  "task": {
+    "instance": "workflow_03",
+    "family": "beat_detection",
+    "dimensions": 6,
+    "factor_order": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "factors": {
+      "A": "second-order 0.5 Hz high-pass filter",
+      "B": "second-order 35 Hz low-pass filter",
+      "C": "squared first derivative instead of absolute amplitude",
+      "D": "120 ms moving-average integration",
+      "E": "median plus three scaled MADs instead of mean plus one standard deviation for peak height",
+      "F": "300 ms instead of 200 ms minimum peak distance"
+    },
+    "utility": "One-to-one event F1 within 100 ms, evaluating events in [1,299) seconds; additional 50/150 ms sensitivity. This is a declared development matching tolerance, not a clinical validation criterion.",
+    "data": {
+      "samples": 108000,
+      "sample_rate_hz": 360,
+      "seconds": 300,
+      "channel": "MLII",
+      "units": "mV",
+      "signal_quantiles": [
+        -0.95,
+        -0.42,
+        -0.32,
+        -0.21,
+        1.105
+      ]
+    },
+    "source_code": "def switches(mask):\n    if not isinstance(mask, str) or len(mask) != 6 or set(mask) - {\"0\", \"1\"}:\n        raise ValueError(\"Expected a six-bit configuration\")\n    return tuple(v == \"1\" for v in mask)\n\ndef detect_events(signal, sample_rate, mask):\n    a, b, c, d, e, f = switches(mask)\n    signal = np.asarray(signal, dtype=np.float64)\n    work = signal - np.median(signal)\n    if a:\n        work = sosfiltfilt(butter(2, .5, btype=\"highpass\", fs=sample_rate, output=\"sos\"), work)\n    if b:\n        work = sosfiltfilt(butter(2, 35., btype=\"lowpass\", fs=sample_rate, output=\"sos\"), work)\n    envelope = np.diff(work, prepend=work[0]) ** 2 if c else np.abs(work)\n    if d:\n        envelope = uniform_filter1d(envelope, size=max(1, round(.120 * sample_rate)), mode=\"nearest\")\n    if e:\n        center = np.median(envelope)\n        height = center + 3 * 1.4826 * np.median(np.abs(envelope - center))\n    else:\n        height = np.mean(envelope) + np.std(envelope)\n    candidates, _ = find_peaks(envelope, height=height,\n                               distance=max(1, round((.300 if f else .200) * sample_rate)))\n    radius = round(.075 * sample_rate)\n    aligned = []\n    for candidate in candidates:\n        low, high = max(0, candidate - radius), min(len(work), candidate + radius + 1)\n        aligned.append(low + int(np.argmax(np.abs(work[low:high]))))\n    # This offline workflow evaluates an interior interval to avoid filter edges.\n    result = np.array(sorted({p for p in aligned if sample_rate <= p < len(signal) - sample_rate}), dtype=np.int64)\n    if not np.isfinite(work).all():\n        raise ValueError(\"Nonfinite filtered signal\")\n    return result\n",
+    "source_name": "MIT-BIH record 101",
+    "options_origin": "authored native-operation configuration choices; no claimed reproduction of a named detector or learned graph model",
+    "reference_scope": "one fixed algorithm, source input, and evaluation cohort; no population or clinical-validity claim",
+    "source_instance": "mitdb_101",
+    "condition": "additional_six_factors",
+    "shared_code": "NumPy is np; signal operations are scipy.signal butter/find_peaks/sosfiltfilt and scipy.ndimage uniform_filter1d; graph operations use NetworkX; fitting uses sklearn LogisticRegression and StandardScaler. Numerical helper access is documented separately."
+  }
+}

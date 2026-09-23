@@ -1,0 +1,2 @@
+# Preserve raw agent-generated code and its recorded calculation receipts.
+results/added_workflows/artifacts/**/code.py -whitespace

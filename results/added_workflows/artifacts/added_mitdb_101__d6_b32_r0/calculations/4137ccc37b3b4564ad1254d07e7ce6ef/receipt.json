@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "=== Walsh coefficients by order (even design) ===\n-- order 0 () --\n         +0.8524\n-- order 1 (main) --\n  A      +0.0830  B      +0.0072  C      +0.0304  D      -0.0244  E      -0.0532  F      +0.0093\n-- order 2 (2FI) --\n  AB     -0.0013  AC     -0.0782  BC     +0.0065  AD     +0.0659  BD     -0.0057  CD     +0.1070  AE     +0.0006  BE     +0.0012  CE     -0.0524  DE     +0.0434  AF     +0.0004  BF     -0.0025  CF     +0.0071  DF     -0.0098  EF     +0.0080\n-- order 3 (3FI-pairsum) --\n  ABC    -0.0057  ABD    +0.0077  ACD    -0.0721  BCD    -0.0001  ABE    +0.0015  ACE    +0.0049  BCE    +0.0074  ADE    -0.0043  BDE    -0.0026  CDE    +0.0371  ABF    +0.0371  ACF    -0.0026  BCF    -0.0043  ADF    +0.0074  BDF    +0.0049  CDF    +0.0015  AEF    -0.0001  BEF    -0.0721  CEF    +0.0077  DEF    -0.0057\n-- order 4 (4FI(=2FI)) --\n  ABCD   +0.0080  ABCE   -0.0098  ABDE   +0.0071  ACDE   -0.0025  BCDE   +0.0004  ABCF   +0.0434  ABDF   -0.0524  ACDF   +0.0012  BCDF   +0.0006  ABEF   +0.1070  ACEF   -0.0057  BCEF   +0.0659  ADEF   +0.0065  BDEF   -0.0782  CDEF   -0.0013\n-- order 5 (5FI(=main)) --\n  ABCDE  +0.0093  ABCDF  -0.0532  ABCEF  -0.0244  ABDEF  +0.0304  ACDEF  +0.0072  BCDEF  +0.0830\n-- order 6 (6FI(mean)) --\n  ABCDEF +0.8524\n",
+  "stderr": "",
+  "wall_seconds": 0.16459263799970358,
+  "code_sha256": "1277bb20c3ec07b601efb9e124a6af1f504cfd75808e2b619d0fbc904a04a2e7",
+  "evidence_sha256": "465ade505c0fd1a76a4eddd0f6c3530ec54751e961688e146bfa27cadd184c88",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

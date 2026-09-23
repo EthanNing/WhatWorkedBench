@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "degree2 OLS rank 22 resid rms 1.763e-02 max 5.656e-02\n  1    +0.68730\n  E    +0.05473\n  A    +0.00914\n  BE   -0.00806\n  B    +0.00791\n  AE   -0.00735\n  CE   -0.00724\n  AC   -0.00701\n  C    +0.00700\n  D    +0.00681\n  AD   -0.00670\n  DE   -0.00658\n  CD   -0.00638\n  EF   -0.00622\n  BD   -0.00505\n  BC   -0.00494\n  AB   -0.00310\n  DF   -0.00254\n  F    +0.00242\n  CF   -0.00240\n  BF   -0.00195\n  AF   -0.00175\ndegree1 rms 2.9588e-02 max 1.0132e-01\nmain effects deg1: {'1': np.float64(0.6845), 'A': np.float64(0.00914), 'B': np.float64(0.00791), 'C': np.float64(0.007), 'D': np.float64(0.00681), 'E': np.float64(0.05473), 'F': np.float64(0.00242)}\nextrap 000001 pred 0.58946 true 0.50000\nextrap 111110 pred 0.72741 true 0.74208\n",
+  "stderr": "",
+  "wall_seconds": 0.11471542999970552,
+  "code_sha256": "f59cfdad250ce83786db524a9e5a9de71196a7110dcce29d36a9f4d257a27427",
+  "evidence_sha256": "57e1b862f526dbb06f4a374408ff4ad64e0f49df2df9a2020e1aa4b1236d8ebc",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

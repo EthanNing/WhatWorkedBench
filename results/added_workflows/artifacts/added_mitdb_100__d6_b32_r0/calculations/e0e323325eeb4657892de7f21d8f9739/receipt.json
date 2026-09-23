@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "gate table (F,B)->u: {(0, 0): 0.558667676003028, (1, 1): 0.7242394504416094, (1, 0): 0.7178988326848249, (0, 1): 0.5023825731790333}\ngate A-check: (F0B0) 001010,101010 -> 0.558667676003028 0.558667676003028\ngate A-check: (F0B1) 011010,111010 -> 0.5023825731790333 0.5023825731790333\ndistinct penalties (non-gate): [0.001353, 0.00271, 0.005405, 0.006729, 0.009396, 0.012048, 0.02122]\n",
+  "stderr": "",
+  "wall_seconds": 0.1651376159998108,
+  "code_sha256": "1805d4b1e23d55fc3a982eb0d0dfa7d3a6b6c1de0f72d24d1ea2be07bc08abeb",
+  "evidence_sha256": "66d68070a01864f068df61e0109b7f5b96ca93b462cfff16d06da5c5ce2d29ab",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

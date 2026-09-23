@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "000000 e= 1.0\n000011 e= 7.0\n000101 e= 5.0\n000110 e= 4.0109\n010001 e= 0.0\n010010 e= 9.0\n010100 e= 16.0\n010111 e= 2.0054\nB direct coef = mean(z*e) = 1.2493  (mean_plus,mean_minus)= 6.751 4.253\nD direct coef = mean(z*e) = 1.252  (mean_plus,mean_minus)= 6.754 4.25\nE direct coef = mean(z*e) = 0.002  (mean_plus,mean_minus)= 5.504 5.5\nF direct coef = mean(z*e) = -2.0007  (mean_plus,mean_minus)= 3.501 7.503\nlstsq coef: [ 5.5020e+00  1.2493e+00  1.2520e+00  2.0000e-03 -2.0007e+00]\nmean e: 5.502\n",
+  "stderr": "",
+  "wall_seconds": 0.21712262199980614,
+  "code_sha256": "ff726c44cb99fa1a2f3dc55f0f696af701ce32b5c02ac4882709e4348af3cdb2",
+  "evidence_sha256": "8899379cc861173d84637e78bd796869e6bbd38a0d205d372a1042d139200860",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

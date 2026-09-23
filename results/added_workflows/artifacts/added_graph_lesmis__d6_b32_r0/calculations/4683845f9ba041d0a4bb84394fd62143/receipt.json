@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "deg2 LOO mse 0.0002601  rmse(k) 41.9\nknn3 LOO mse 0.0002207  rmse(k) 38.6\nknn4 LOO mse 0.0001984  rmse(k) 36.6\nstrat LOO mse 0.0002282  rmse(k) 39.3\nefint LOO mse 0.0002459  rmse(k) 40.8\ndeg2+efint LOO mse 0.0002445 rmse(k) 40.7\nall4 LOO mse 0.0002258 rmse(k) 39.1\nknn3+strat LOO mse 0.0002174 rmse(k) 38.3\ndeg2+knn3+strat LOO mse 0.0002238 rmse(k) 38.9\nknn3+knn4+strat LOO mse 0.0002084 rmse(k) 37.6\n",
+  "stderr": "",
+  "wall_seconds": 0.11497051199967245,
+  "code_sha256": "d2a1801a3d02521e67e1c743ffd865d48ec489c446d546fc24623837b4059472",
+  "evidence_sha256": "752b4c1d1990ffdfb278f741f743b743ed8505f1dcb717cac61a9582e3e076b3",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

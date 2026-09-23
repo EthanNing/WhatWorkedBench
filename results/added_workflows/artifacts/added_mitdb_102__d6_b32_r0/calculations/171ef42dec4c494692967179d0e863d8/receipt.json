@@ -1,0 +1,12 @@
+{
+  "returncode": 137,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "",
+  "wall_seconds": 30.05453432500053,
+  "code_sha256": "f7ea137c52e4d81d3171668828adebd0205a6245d0a5110f4c2ef3be1f01f5a2",
+  "evidence_sha256": "591c6bc2cd3ae8aab0e9b8687ae708b32dac62ace3e7e3a41b6712cbd612b6b7",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

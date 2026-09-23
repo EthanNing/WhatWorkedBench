@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "ridge deg 1 (np.float64(0.12390009421005124), np.float64(0.13433993325988988))\nridge deg 2 (np.float64(0.1809742330509286), np.float64(0.21544346900318823))\nridge deg 3 (np.float64(0.7678263732672231), np.float64(0.13433993325988988))\nGP best (np.float64(0.13690674647657947), 0.1, 0.0001)\n5NN loo rmse 0.1558274566552765\n",
+  "stderr": "",
+  "wall_seconds": 0.3153324410004643,
+  "code_sha256": "05bffd5150fa81a5e5a98057932aa128418dabeebd42dbfab092534eda8d30ae",
+  "evidence_sha256": "190035575d2128c5c8389e17c957afb8381c2652fa00888b6583414eba1c52cd",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

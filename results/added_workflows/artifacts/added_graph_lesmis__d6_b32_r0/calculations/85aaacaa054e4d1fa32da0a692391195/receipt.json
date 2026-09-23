@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "deg1 type <class 'dict'>\n d1 predictions <class 'dict'> ()\n d1 degree <class 'int'> 1\n d1 ridge_alpha <class 'float'> 10.0\n d1 observed_loo_mse <class 'float'> 0.0049215377921079115\n d1 observed_loo_mse_by_alpha <class 'dict'> ()\n d1 observations_used <class 'int'> 34\n d1 hidden_outcomes_used <class 'int'> 0\ndeg2 keys dict_keys(['predictions', 'degree', 'ridge_alpha', 'observed_loo_mse', 'observed_loo_mse_by_alpha', 'observations_used', 'hidden_outcomes_used'])\n d2 predictions <class 'dict'> ()\n d2 degree <class 'int'> 2\n d2 ridge_alpha <class 'float'> 10.0\n d2 observed_loo_mse <class 'float'> 0.005733634582808408\n d2 observed_loo_mse_by_alpha <class 'dict'> ()\n d2 observations_used <class 'int'> 34\n d2 hidden_outcomes_used <class 'int'> 0\n",
+  "stderr": "",
+  "wall_seconds": 0.11479651300032856,
+  "code_sha256": "9b88d91ef7410ab3d09fc87db34dea8e43cf7d9cd6ba9ef049574cac80410b92",
+  "evidence_sha256": "244c4f320c50a708a397b52d5a43e9eac0d99261aca5b36091e075a021ed7063",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

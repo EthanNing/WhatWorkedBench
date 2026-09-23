@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "unobserved 30\ndeg1: MAE vs structural 0.0152 max 0.0382\n    000010 helper 0.7051 struct 0.7433\n    000100 helper 0.6121 struct 0.6401\n    000111 helper 0.7230 struct 0.7424\n    110010 helper 0.7386 struct 0.7475\n    100011 helper 0.7275 struct 0.7449\n    011101 helper 0.6551 struct 0.6551\n    000110 helper 0.7444 struct 0.7444\ndeg2: MAE vs structural 0.0149 max 0.0461\n    000010 helper 0.6972 struct 0.7433\n    000100 helper 0.6117 struct 0.6401\n    000111 helper 0.7287 struct 0.7424\n    110010 helper 0.7444 struct 0.7475\n    100011 helper 0.7303 struct 0.7449\n    011101 helper 0.6551 struct 0.6551\n    000110 helper 0.7444 struct 0.7444\n",
+  "stderr": "",
+  "wall_seconds": 0.11467926800014538,
+  "code_sha256": "13e3ffa6c101eaf0dad92b4511b517f22a4f62832e330ea15d6020174cc9f5b3",
+  "evidence_sha256": "a86a88fc67c57fa934684e2cd16e1e022d02032827b22fc3a56a60041f680b4f",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

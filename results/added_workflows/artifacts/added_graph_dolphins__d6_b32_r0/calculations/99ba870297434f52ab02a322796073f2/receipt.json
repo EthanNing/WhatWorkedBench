@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "constant(mean norm): 0.00553\n[train_norm] const 0.00574 | knn2 0.00784 knn3 0.00681 knn4 0.00687 | knn2w 0.00788 knn3w 0.00692 | gp L=0.5 0.50861 L=1 0.18642 L=2 0.04328\n   ridge d1 best 0.00707 alpha 0.0001\n   ridge d2 best 0.01665 alpha 0.0001\n[train_all] const 0.01728 | knn2 0.00945 knn3 0.00922 knn4 0.02347 | knn2w 0.00948 knn3w 0.00924 | gp L=0.5 0.45149 L=1 0.12833 L=2 0.03578\n   ridge d1 best 0.02662 alpha 0.0001\n   ridge d2 best 0.02555 alpha 1\n",
+  "stderr": "",
+  "wall_seconds": 0.3153592769995157,
+  "code_sha256": "ae6564f2a57cd2deb6a662ef0f992ba08ea37c017da46747a222d7eb721c11a1",
+  "evidence_sha256": "a4fd50c0ea366c57210a0f4866a97db7101970bd36956fee10c2000cbfacafbf",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

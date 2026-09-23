@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "lasso deg3 full-LOO al 0.0002 0.0639\nlasso deg3 full-LOO al 0.0005 0.0653\nlasso deg3 full-LOO al 0.001 0.0674\nnested lasso deg3 rmse 0.0717\n",
+  "stderr": "",
+  "wall_seconds": 4.327513413998531,
+  "code_sha256": "cbc51007f28a6f4afb214593fa9e01d0ebfb3755e8c1137f6dd09c75ef9ab4ab",
+  "evidence_sha256": "6ae7c2e221dd1f2bd47d9dd63aee70f402f857aa55bfc0e9d98f4456fd46411f",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

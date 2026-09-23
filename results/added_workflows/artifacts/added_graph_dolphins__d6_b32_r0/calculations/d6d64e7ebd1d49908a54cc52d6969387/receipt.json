@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "dir A: n=12 zeros=0  |diff| mean(nonzero)=0.0544  vals=[-0.011719, -0.008789, -0.007812, -0.003906, -0.001953, 0.00293, 0.004883, 0.025391, 0.066406, 0.255859]\ndir B: n=12 zeros=1  |diff| mean(nonzero)=0.0478  vals=[-0.004883, -0.001465, -0.000977, 0.000488, 0.000977, 0.00293, 0.004395, 0.253418]\ndir C: n=14 zeros=3  |diff| mean(nonzero)=0.0573  vals=[-0.006836, -0.003906, -0.000977, 0.000977, 0.00293, 0.004883, 0.021484, 0.063477, 0.259766]\ndir D: n=11 zeros=4  |diff| mean(nonzero)=0.0862  vals=[-0.003906, 0.000977, 0.004883, 0.010742, 0.063477, 0.259766]\ndir E: n=11 zeros=1  |diff| mean(nonzero)=0.0451  vals=[-0.02832, -0.001465, 0.00293, 0.003418, 0.005371, 0.008301, 0.009766, 0.194824]\ndir F: n=13 zeros=8  |diff| mean(nonzero)=0.0102  vals=[-0.012695, -0.005859, 0.003906, 0.022461]\npop>=2 values: n=28 min 0.7358 max 0.7642 mean 0.7570 std 0.0055\n",
+  "stderr": "",
+  "wall_seconds": 0.11449236699991161,
+  "code_sha256": "062387854580b39821ac0b28858f226fc31cef26774cfd54d1bb2710c51096c8",
+  "evidence_sha256": "7451ee3e0357ba6dc0f4a43c9a1d28777a2399de6b41188ed3f3ff5b6790ea36",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

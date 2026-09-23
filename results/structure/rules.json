@@ -1,0 +1,40 @@
+{
+  "concrete": [
+    {
+      "guard_bit": "C",
+      "guard_value": 0,
+      "inactive_bit": "E"
+    },
+    {
+      "guard_bit": "B",
+      "guard_value": 0,
+      "inactive_bit": "F"
+    }
+  ],
+  "wine": [
+    {
+      "guard_bit": "C",
+      "guard_value": 0,
+      "inactive_bit": "E"
+    }
+  ],
+  "astronaut": [
+    {
+      "guard_bit": "B",
+      "guard_value": 0,
+      "inactive_bit": "E"
+    },
+    {
+      "guard_bit": "A",
+      "guard_value": 0,
+      "inactive_bit": "F"
+    }
+  ],
+  "scifact": [
+    {
+      "guard_bit": "E",
+      "guard_value": 1,
+      "inactive_bit": "C"
+    }
+  ]
+}

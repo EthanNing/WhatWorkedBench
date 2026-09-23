@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "start LOO 4.668\nadd ['A'] LOO 3.947\nadd ['D', 'E'] LOO 3.519\nadd ['B', 'F'] LOO 2.949\nadd ['F'] LOO 2.821\nadd ['A', 'F'] LOO 2.717\nselected: [['A'], ['D', 'E'], ['B', 'F'], ['F'], ['A', 'F']]\n\nodd C=0 predictions:\n   000001 e=  3.38 u=0.99545\n   000010 e=  7.62 u=0.98977\n   000100 e=  7.62 u=0.98977\n   000111 e=  3.38 u=0.99545\n   010000 e=  7.38 u=0.99011\n   010011 e=  3.62 u=0.99511\n   010101 e=  3.62 u=0.99511\n   010110 e=  7.38 u=0.99011\n   100000 e= -3.50 u=1.00000\n   100011 e=  3.75 u=0.99494\n   100101 e=  3.75 u=0.99494\n   100110 e= -3.50 u=1.00000\n   110001 e= -3.75 u=1.00000\n   110010 e=  4.00 u=0.99461\n   110100 e=  4.00 u=0.99461\n   110111 e= -3.75 u=1.00000\n",
+  "stderr": "",
+  "wall_seconds": 0.11509113400006754,
+  "code_sha256": "bf66ec943d39e855b93f8a861a50c36e3f4de371e6e7b6790137156bc8e8c748",
+  "evidence_sha256": "89337d9ea95fc3bc2c7868eeda38b2d6a29ea40e892799abc09b1dc3cbd817c9",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "n obs 34\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 7, in <module>\n    r=fit_surface(obs, degree=deg)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/job/wwb_helpers.py\", line 41, in fit_surface\n    observed,m=_observed(observations);masks,X=features(m,degree)\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/job/wwb_helpers.py\", line 14, in _observed\n    mask=row['mask'];value=row['utility']\n         ~~~^^^^^^^^\nTypeError: tuple indices must be integers or slices, not str\n",
+  "wall_seconds": 0.11497179700018023,
+  "code_sha256": "6a408ea84c1f0dffcca1a728bea008949629c90aedc51286ee05f3bab7e480af",
+  "evidence_sha256": "aa09d7a1897cbc0d5497e494829196714fcbfd04ee9dd8cf6679cbcbdbbe8bca",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

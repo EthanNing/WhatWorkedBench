@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "degree 1 alpha 10.0 LOO 0.0183\n     001011 0.8188\n     111011 0.8156\n     000010 0.8679\n     000100 1.0\n     010110 0.9565\n     111000 0.8677\ndegree 2 alpha 10.0 LOO 0.0125\n     001011 0.7599\n     111011 0.7452\n     000010 0.9156\n     000100 0.9613\n     010110 1.0\n     111000 0.9056\n",
+  "stderr": "",
+  "wall_seconds": 0.1648506110004746,
+  "code_sha256": "ac0f88cfb045ce08a6665e829e8268351452a2895a39342a47fd994e57363c24",
+  "evidence_sha256": "ad489efdf17ae33190fcfe02f392f3ac93df68f6536ed796f3b5509abe8b8cb9",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

@@ -1,0 +1,69 @@
+{
+  "complete": true,
+  "completed": 8,
+  "planned": 8,
+  "aggregates": [
+    {
+      "family": "beat_detection",
+      "attempts": 4,
+      "valid": 3,
+      "recovery": 0.30926870241130583,
+      "shared_gp_recovery": 0.5755939055600354
+    },
+    {
+      "family": "graph_link_prediction",
+      "attempts": 4,
+      "valid": 3,
+      "recovery": 0.14524286186535518,
+      "shared_gp_recovery": 0.34456271264609184
+    }
+  ],
+  "family_macro_recovery": 0.2272557821383305,
+  "valid": 6,
+  "failed": 2,
+  "cohort": "added beat and graph workflows; independent of 108 core episodes",
+  "family_macro": {
+    "delivered_recovery": 0.22725578213833053,
+    "shared_gp_recovery": 0.46007830910306363,
+    "shared_gp_effect_mae": 0.027523602488979663,
+    "design_d2_b32": 0.22829614378750318,
+    "gp_grid_b32": 0.42305841983567205,
+    "gp_effect_b32": 0.36618792046007376
+  },
+  "delivered_effect_mae_valid_mean": 0.03922331312322684,
+  "shared_gp_gain": {
+    "all_attempt_family_macro": 0.23282252696473316,
+    "valid_only_family_macro": 0.15244041429967287,
+    "positive": 8,
+    "tied": 0,
+    "negative": 0,
+    "valid_only_positive": 6,
+    "valid_only_tied": 0,
+    "valid_only_negative": 0
+  },
+  "provider_usage": {
+    "requests": 231,
+    "http_200": 229,
+    "http_402": 2,
+    "http_429": 0,
+    "input_tokens": 238153,
+    "cache_read_input_tokens": 16784384,
+    "output_tokens": 851594
+  },
+  "service_failures": [
+    {
+      "source": "mitdb_103",
+      "family": "beat_detection",
+      "reason": "insufficient_balance",
+      "http_402": 1,
+      "credits_spent": 32
+    },
+    {
+      "source": "graph_dolphins",
+      "family": "graph_link_prediction",
+      "reason": "insufficient_balance",
+      "http_402": 1,
+      "credits_spent": 32
+    }
+  ]
+}

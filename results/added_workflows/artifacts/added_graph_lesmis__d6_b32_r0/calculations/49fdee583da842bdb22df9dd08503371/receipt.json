@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "knn4stable  LOO rmse_k 37.5\nknn3stable  LOO rmse_k 36.7\ntie1        LOO rmse_k 42.8\nkernel.5    LOO rmse_k 40.9\nkernel1     LOO rmse_k 42.9\ninvd2       LOO rmse_k 42.8\ninvd1       LOO rmse_k 44.1\n",
+  "stderr": "",
+  "wall_seconds": 0.16495162000046548,
+  "code_sha256": "05cdaf9407da6ba90e91d68502bab0f3cd338ad26738e3e34fe874f25fb3353e",
+  "evidence_sha256": "035277e586b4cab4a1aeb18df6afa45df892688331b1d18425b9d58a9ea31805",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

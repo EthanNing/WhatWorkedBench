@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "restart 0 -> 271.15 exact 73\nrestart 1 -> 228.44 exact 68\nrestart 3 -> 216.98 exact 69\nrestart 4 -> 216.04 exact 73\nBEST deg2 edgeMSE 216.04 exact 73 deg1 41.29\nPURCHASES: ['000010', '000100', np.str_('000111'), '001000', np.str_('001011'), np.str_('001100'), '001101', '010000', np.str_('010100'), np.str_('010101'), np.str_('010110'), np.str_('010111'), np.str_('011000'), np.str_('011001'), np.str_('011011'), np.str_('011110'), np.str_('011111'), '100000', np.str_('100011'), np.str_('100101'), '100110', np.str_('101000'), np.str_('101010'), np.str_('101011'), np.str_('101101'), np.str_('101111'), np.str_('110001'), np.str_('110110'), np.str_('111001'), np.str_('111010'), np.str_('111100'), np.str_('111110')]\nhist {0: 1, 5: 2, 1: 5, 3: 8, 2: 12, 4: 6}\n",
+  "stderr": "",
+  "wall_seconds": 0.7166069129998505,
+  "code_sha256": "39f400529cd3dbc816fef4661f6c94d14531581e8f3913120a5f7c12d410e399",
+  "evidence_sha256": "b720b8c81e75b1853cf9777068a3da1c8c6122fbcd02dbe398ceee8ba0beeef7",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

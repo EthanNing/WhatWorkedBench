@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "deg1 edge-diff MAE vs my table: 0.0321 corr: 0.674\ndeg2 edge-diff MAE vs my table: 0.0346 corr: 0.7768\nmy table mean|ediff| 0.0364\n",
+  "stderr": "",
+  "wall_seconds": 0.1649146350000592,
+  "code_sha256": "39048d0a381245c883247204f5110b3d155dd11516d7f0573ad59207db3cc06b",
+  "evidence_sha256": "6d6fe4db9d4bf5bb585cb180d033e5cfc8bedec685db50b3ce0e02ccf2e71b40",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

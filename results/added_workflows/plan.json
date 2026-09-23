@@ -1,0 +1,163 @@
+{
+  "campaign": "phase4_added_b32_20260922",
+  "created_at": 1790133438.53127,
+  "jobs": [
+    {
+      "instance": "mitdb_100__d6",
+      "family": "beat_detection",
+      "model": "deepseek-v4-flash",
+      "budget": 32,
+      "repeat": 0,
+      "job_id": "added_mitdb_100__d6_b32_r0"
+    },
+    {
+      "instance": "graph_lesmis__d6",
+      "family": "graph_link_prediction",
+      "model": "deepseek-v4-flash",
+      "budget": 32,
+      "repeat": 0,
+      "job_id": "added_graph_lesmis__d6_b32_r0"
+    },
+    {
+      "instance": "mitdb_101__d6",
+      "family": "beat_detection",
+      "model": "deepseek-v4-flash",
+      "budget": 32,
+      "repeat": 0,
+      "job_id": "added_mitdb_101__d6_b32_r0"
+    },
+    {
+      "instance": "graph_adjnoun__d6",
+      "family": "graph_link_prediction",
+      "model": "deepseek-v4-flash",
+      "budget": 32,
+      "repeat": 0,
+      "job_id": "added_graph_adjnoun__d6_b32_r0"
+    },
+    {
+      "instance": "mitdb_102__d6",
+      "family": "beat_detection",
+      "model": "deepseek-v4-flash",
+      "budget": 32,
+      "repeat": 0,
+      "job_id": "added_mitdb_102__d6_b32_r0"
+    },
+    {
+      "instance": "graph_football__d6",
+      "family": "graph_link_prediction",
+      "model": "deepseek-v4-flash",
+      "budget": 32,
+      "repeat": 0,
+      "job_id": "added_graph_football__d6_b32_r0"
+    },
+    {
+      "instance": "mitdb_103__d6",
+      "family": "beat_detection",
+      "model": "deepseek-v4-flash",
+      "budget": 32,
+      "repeat": 0,
+      "job_id": "added_mitdb_103__d6_b32_r0"
+    },
+    {
+      "instance": "graph_dolphins__d6",
+      "family": "graph_link_prediction",
+      "model": "deepseek-v4-flash",
+      "budget": 32,
+      "repeat": 0,
+      "job_id": "added_graph_dolphins__d6_b32_r0"
+    }
+  ],
+  "tasks": {
+    "mitdb_100__d6": {
+      "family": "beat_detection",
+      "public_task": "reports/phase4/added_agent_b32_20260922/public_tasks/mitdb_100__d6.json",
+      "public_task_sha256": "90fc747905e79a7bc0c4f5404ca30be71410c8140a6a0dde76ad720ace2a54c4",
+      "reference": "reports/phase4/task_pack_v3/evaluator/references/mitdb_100__d6.json",
+      "reference_sha256": "78f8e25cde7fe2d0da5a7aa78acb817d23ed1f33e5a21653f25e89bf179ac406"
+    },
+    "graph_lesmis__d6": {
+      "family": "graph_link_prediction",
+      "public_task": "reports/phase4/added_agent_b32_20260922/public_tasks/graph_lesmis__d6.json",
+      "public_task_sha256": "3dfc48b2a77b0360c99cee77d0b60c8ebebae7801b64de0522080c2e589c10e4",
+      "reference": "reports/phase4/task_pack_v3/evaluator/references/graph_lesmis__d6.json",
+      "reference_sha256": "461685c7f212849bdccda8e9070c39e8609847e860d410cf9931f8d51e6bab41"
+    },
+    "mitdb_101__d6": {
+      "family": "beat_detection",
+      "public_task": "reports/phase4/added_agent_b32_20260922/public_tasks/mitdb_101__d6.json",
+      "public_task_sha256": "998e37ca30d24f6b99d28195ea0ce5ba038832c481eb03fec976be74f03aca77",
+      "reference": "reports/phase4/task_pack_v3/evaluator/references/mitdb_101__d6.json",
+      "reference_sha256": "2036b22c0ba4fa1fb6926e690270e8242defd2d12777dafa2780f43787d56488"
+    },
+    "graph_adjnoun__d6": {
+      "family": "graph_link_prediction",
+      "public_task": "reports/phase4/added_agent_b32_20260922/public_tasks/graph_adjnoun__d6.json",
+      "public_task_sha256": "89eba0b699ff5b5d9a3cb44b9b538fcfa95d107714372ddb2c31092b28247de0",
+      "reference": "reports/phase4/task_pack_v3/evaluator/references/graph_adjnoun__d6.json",
+      "reference_sha256": "ecc86ea994c1eedfe70533f38639f71440343a2da4c7a744379d818f0317267e"
+    },
+    "mitdb_102__d6": {
+      "family": "beat_detection",
+      "public_task": "reports/phase4/added_agent_b32_20260922/public_tasks/mitdb_102__d6.json",
+      "public_task_sha256": "87fb78ad0a77db190cc5c29037e1fe5634ae1df5084417f4df0d4970af3d0f31",
+      "reference": "reports/phase4/task_pack_v3/evaluator/references/mitdb_102__d6.json",
+      "reference_sha256": "a4b4f9c4de92fb321983e96b7d5ae9d21b2105d41bb179053b5dee775c1fe86c"
+    },
+    "graph_football__d6": {
+      "family": "graph_link_prediction",
+      "public_task": "reports/phase4/added_agent_b32_20260922/public_tasks/graph_football__d6.json",
+      "public_task_sha256": "1e81376e5e9a6dcc6211c2b51d5c4a5144ded8c8e82e441058bfe83b442a48f9",
+      "reference": "reports/phase4/task_pack_v3/evaluator/references/graph_football__d6.json",
+      "reference_sha256": "52f9c5b153417afc78e5b9e1e0b3b45c45979a1b11c76f1bf68d42846479ddf5"
+    },
+    "mitdb_103__d6": {
+      "family": "beat_detection",
+      "public_task": "reports/phase4/added_agent_b32_20260922/public_tasks/mitdb_103__d6.json",
+      "public_task_sha256": "15d368c34626748cafaa9f35dc2584d52ce9aaf602701c9ccac945a25a4d8c63",
+      "reference": "reports/phase4/task_pack_v3/evaluator/references/mitdb_103__d6.json",
+      "reference_sha256": "81d3e46efe4fa93f971025940e42b48709671cfe8960e146b19a7163ef88d3d1"
+    },
+    "graph_dolphins__d6": {
+      "family": "graph_link_prediction",
+      "public_task": "reports/phase4/added_agent_b32_20260922/public_tasks/graph_dolphins__d6.json",
+      "public_task_sha256": "0777a6d10d6d406a9b0507911e4ccd6256edd212fe53c906e59cd63f6f23c071",
+      "reference": "reports/phase4/task_pack_v3/evaluator/references/graph_dolphins__d6.json",
+      "reference_sha256": "cc5d01ab1c8d52ee5d2c927b8a45e7d5ecde81b91efc6552087b3129423ffbd1"
+    }
+  },
+  "selection": "All four MIT-BIH records and all four graph instances in the v3 extension; one Flash episode per source.",
+  "controls": {
+    "model": "deepseek-v4-flash",
+    "budget": 32,
+    "anchors": 2,
+    "reasoning": "enabled",
+    "effort": "high",
+    "max_output_tokens": 32768,
+    "session_seconds": 1800,
+    "calculation_calls": 20,
+    "workers": 2,
+    "global_session_limit": 4
+  },
+  "primary": "All-attempt conditional-effect recovery and valid delivery; missing submission scores zero.",
+  "secondary": "Exact choice, strict reconstruction, credits spent, and GP reconstruction on each agent's fixed observations.",
+  "analysis": "Sources average within family; beat detection and graph link prediction receive equal family weight. Compare with same-source B=32 numerical controls. This cohort stays separate from earlier B=20 information studies.",
+  "stop_rule": "Run all eight frozen jobs after technical preflight; inspect service failures and report all attempts.",
+  "preflight": "reports/phase4/added_agent_b32_20260922/online_smoke.json",
+  "prompt_sha256": "91debc8622c35e7be0815adaf22102031864602f8d43fde0764efb10b7757d9d",
+  "system_sha256": "98b4afcf3a2865f472773ae2b2319272cc1f73d651d19b1f714326290a34eb77",
+  "code_sha256": {
+    "whatworked/phase4_added_agent_b32.py": "2b32bacf6b1a039b477642d7007e63bb50e43de6be300b94a0a15fc7b2ce9f30",
+    "whatworked/phase4_paired_experiment.py": "c24fe148de2feeeddc036d1e9858416134d1a7c5207365a7f78fe8456556705c",
+    "whatworked/phase4_paired_broker.py": "224871784f5a9a7573d71dd7e45c0af5feadd6192414e72525e71d9904a418b2",
+    "whatworked/phase4_portable.py": "82343623e1c4d771058f4cb89901d97d14a988257bd8792488d7c374ad8e5037",
+    "whatworked/phase4_numeric_helpers.py": "cb7ac328a23c39fd3c8610d7b50543bb2c6a8fb1143b370f88ff45106fa897fb",
+    "whatworked/phase4_kernel_controls.py": "aceaa69802e813517386db778e4cc57d425bfb188daf2e4a929a2c8de4a68510",
+    "whatworked/phase4_scratch_v2.py": "57d567bd965bd19c2b0376b02e9a3549e0ab63fd549d74eaf9ac015095eb43cf",
+    "whatworked/phase4_scratch_v2_entry.py": "536930f5de8590578c322d6d5cbbb9d84c7ff301d4c51ad9582596b8beb4742a",
+    "whatworked/phase4_scratch.py": "90b72c87ad3409ee5d861781916f78061824b7ec3bd9668fcd3f718232cf2e72",
+    "whatworked/phase4_scratch_entry.py": "18ee4c4c95d5484a2e327c2af1de312f0233a443aa5a26a792dfcf11bedcacc0",
+    "whatworked/phase4_runtime.py": "5c8eb4610d734a7675b708c8afbdc16866f6b5c897adb177956474f9fbf48780",
+    "whatworked/api_proxy.py": "aa1b72ae0a73ae435811b70fc3c312a0bc656c5e2e3dffe468abfc19fd0cb00a",
+    "whatworked/cli_runtime.py": "44600dc366688d5f545b5a90f4d182c829857a55f3dedfb7255b537769076678"
+  }
+}

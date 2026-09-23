@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "obj 77.258\nchosen32: ['000001', '000010', '000100', '000111', '001000', '001011', '001101', '001110', '010000', '010011', '010101', '010110', '011001', '011010', '011100', '011111', '100000', '100011', '100101', '100110', '101001', '101010', '101100', '101111', '110001', '110010', '110100', '110111', '111000', '111011', '111101', '111110']\nedges covered 12 of 192\nfactor 0 cov 2 / 32\nfactor 1 cov 2 / 32\nfactor 2 cov 2 / 32\nfactor 3 cov 2 / 32\nfactor 4 cov 2 / 32\nfactor 5 cov 2 / 32\n",
+  "stderr": "",
+  "wall_seconds": 0.21492440000019997,
+  "code_sha256": "fa2a6c1e52c08dae27277def37a8436bc4a0fc2dbd15d6429949267755b1a3f8",
+  "evidence_sha256": "fbeed22972e1b204c9c8cdcdcf22265bc34566f87ff2bd70414b3d66c7417e92",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "lasso deg 3 al 0.0002 loo 0.0639\nlasso deg 3 al 0.0003 loo 0.0647\nlasso deg 3 al 0.0005 loo 0.0653\nlasso deg 3 al 0.0007 loo 0.0659\nlasso deg 3 al 0.001 loo 0.0674\nlasso deg 3 al 0.0015 loo 0.0683\nlasso deg 3 al 0.002 loo 0.0677\nlasso deg 3 al 0.003 loo 0.0676\nlasso deg 4 al 0.0002 loo 0.0851\nlasso deg 4 al 0.0003 loo 0.0853\nlasso deg 4 al 0.0005 loo 0.0853\nlasso deg 4 al 0.0007 loo 0.0855\nlasso deg 4 al 0.001 loo 0.085\nlasso deg 4 al 0.0015 loo 0.086\nlasso deg 4 al 0.002 loo 0.0871\nlasso deg 4 al 0.003 loo 0.0895\nlasso deg 5 al 0.0002 loo 0.0934\nlasso deg 5 al 0.0003 loo 0.0933\nlasso deg 5 al 0.0005 loo 0.0931\nlasso deg 5 al 0.0007 loo 0.0926\nlasso deg 5 al 0.001 loo 0.0923\nlasso deg 5 al 0.0015 loo 0.0921\nlasso deg 5 al 0.002 loo 0.0929\nlasso deg 5 al 0.003 loo 0.0933\nBEST (np.float64(0.06392726708201026), 3, 0.0002)\nbest loo preds vs y:\n000000 0.9541 0.959\n111111 1.0 0.9746\n000001 0.9772 0.9541\n000010 0.9668 0.9086\n000011 0.9838 0.9625\n000100 0.9568 0.9465\n000110 0.7907 0.8946\n001000 0.9688 0.9691\n001010 0.5536 0.6511\n001101 0.8426 0.9224\n010000 0.9733 0.906\n010111 0.7806 0.7731\n011001 1.0 0.9648\n011011 0.6953 0.7685\n011100 0.9972 0.9421\n011101 0.9972 0.9525\n011110 0.8846 0.9652\n100000 0.9668 0.9588\n100101 1.0 0.9997\n100111 0.8481 0.7654\n101000 0.9688 0.9558\n101001 0.9688 0.9888\n101010 0.5536 0.6076\n101011 0.6855 0.6206\n101100 0.8426 0.9152\n101101 0.8426 0.8027\n101110 0.9905 0.7634\n110000 0.9838 0.988\n110001 1.0 0.9739\n110011 1.0 1.0429\n110100 1.0 0.956\n110110 0.8389 0.7582\n111000 1.0 0.9907\n111010 0.6196 0.6361\n",
+  "stderr": "",
+  "wall_seconds": 1.1675830230005886,
+  "code_sha256": "e3a37c2637ffcaedd806dc0ca3465ab5d459bdbe8b7cbbdc91b7a60e1f56b628",
+  "evidence_sha256": "c7aff7b52cc4e25a6e23dba01f05b7e43f8abcd7dea5f2616f5a1138177b577f",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

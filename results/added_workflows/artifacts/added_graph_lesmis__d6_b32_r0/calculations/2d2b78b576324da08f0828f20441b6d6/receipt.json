@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "best kernel loo mse 0.0002195 wE=1 wF=4 theta=0.3\nstrat-knn k=1 u mse 0.0004116 rmse_k 52.8\nstrat-knn k=1 d mse 0.0004116 rmse_k 52.8\nstrat-knn k=2 u mse 0.0002515 rmse_k 41.3\nstrat-knn k=2 d mse 0.000258 rmse_k 41.8\nstrat-knn k=3 u mse 0.0002846 rmse_k 43.9\nstrat-knn k=3 d mse 0.0002688 rmse_k 42.6\nstrat-knn k=4 u mse 0.0002585 rmse_k 41.8\nstrat-knn k=4 d mse 0.0002499 rmse_k 41.1\nstrat-knn k=5 u mse 0.0002808 rmse_k 43.6\nstrat-knn k=5 d mse 0.0002578 rmse_k 41.8\n",
+  "stderr": "",
+  "wall_seconds": 0.16508328300005815,
+  "code_sha256": "2a6774a2d1684821ca012e1fb523bac3db709daba89bb2d6836453726a3c7d91",
+  "evidence_sha256": "a661d1def64d706a9b238eadefbcdda7b590897b65d2932ae8b8db10d8762695",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

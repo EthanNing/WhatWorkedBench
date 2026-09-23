@@ -1,0 +1,182 @@
+{
+  "observations": [
+    {
+      "mask": "000000",
+      "utility": 0.5
+    },
+    {
+      "mask": "111111",
+      "utility": 0.8803952673673078
+    },
+    {
+      "mask": "000011",
+      "utility": 0.6422103245422696
+    },
+    {
+      "mask": "000101",
+      "utility": 0.8135369158569634
+    },
+    {
+      "mask": "000110",
+      "utility": 0.8915658668781811
+    },
+    {
+      "mask": "001001",
+      "utility": 0.8134047194130478
+    },
+    {
+      "mask": "001010",
+      "utility": 0.8839645713530306
+    },
+    {
+      "mask": "001100",
+      "utility": 0.8134047194130478
+    },
+    {
+      "mask": "001111",
+      "utility": 0.8817833300284222
+    },
+    {
+      "mask": "010001",
+      "utility": 0.8247075153678366
+    },
+    {
+      "mask": "010010",
+      "utility": 0.8856500760129553
+    },
+    {
+      "mask": "010100",
+      "utility": 0.821105162271135
+    },
+    {
+      "mask": "010111",
+      "utility": 0.8825104104699583
+    },
+    {
+      "mask": "011000",
+      "utility": 0.8164121885121289
+    },
+    {
+      "mask": "011011",
+      "utility": 0.8809901513649283
+    },
+    {
+      "mask": "011101",
+      "utility": 0.8240134840372794
+    },
+    {
+      "mask": "011110",
+      "utility": 0.8835679820212836
+    },
+    {
+      "mask": "100001",
+      "utility": 0.8046797541146143
+    },
+    {
+      "mask": "100010",
+      "utility": 0.8779826822658471
+    },
+    {
+      "mask": "100100",
+      "utility": 0.8134047194130478
+    },
+    {
+      "mask": "100111",
+      "utility": 0.8805274638112235
+    },
+    {
+      "mask": "101000",
+      "utility": 0.8134047194130478
+    },
+    {
+      "mask": "101011",
+      "utility": 0.8788750082622777
+    },
+    {
+      "mask": "101101",
+      "utility": 0.8134047194130478
+    },
+    {
+      "mask": "101110",
+      "utility": 0.8786767135964043
+    },
+    {
+      "mask": "110000",
+      "utility": 0.8241456804811951
+    },
+    {
+      "mask": "110011",
+      "utility": 0.8787097627073832
+    },
+    {
+      "mask": "110101",
+      "utility": 0.8244100733690264
+    },
+    {
+      "mask": "110110",
+      "utility": 0.8782140260426994
+    },
+    {
+      "mask": "111001",
+      "utility": 0.8242778769251107
+    },
+    {
+      "mask": "111010",
+      "utility": 0.8785445171524886
+    },
+    {
+      "mask": "111100",
+      "utility": 0.8165443849560446
+    },
+    {
+      "mask": "001110",
+      "utility": 0.8834357855773679
+    },
+    {
+      "mask": "111101",
+      "utility": 0.8243439751470685
+    }
+  ],
+  "credits_remaining": 0,
+  "closed": true,
+  "calculation_calls_remaining": 7,
+  "session_seconds_elapsed": 565.53,
+  "session_seconds_remaining": 1234.47,
+  "task": {
+    "instance": "workflow_06",
+    "family": "graph_link_prediction",
+    "dimensions": 6,
+    "factor_order": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "factors": {
+      "A": "common-neighbor count feature",
+      "B": "Jaccard feature",
+      "C": "Adamic-Adar feature",
+      "D": "resource-allocation feature",
+      "E": "preferential-attachment feature",
+      "F": "calibration-fitted StandardScaler before logistic regression"
+    },
+    "utility": "ROC AUC on the fixed balanced test pair set; independent positive-negative pair concordance audit.",
+    "data": {
+      "nodes": 115,
+      "observed_edges": 367,
+      "calibration_pairs": 246,
+      "test_pairs": 246,
+      "graph_kind": "undirected, simple, unweighted",
+      "feature_boundary": "all NetworkX features use only observed_edges"
+    },
+    "source_code": "def switches(mask):\n    if not isinstance(mask, str) or len(mask) != 6 or set(mask) - {\"0\", \"1\"}:\n        raise ValueError(\"Expected a six-bit configuration\")\n    return tuple(v == \"1\" for v in mask)\n\ndef predict_links(n_nodes, observed_edges, fit_pairs, fit_labels, test_pairs, mask):\n    import networkx as nx\n    enabled = switches(mask)\n    graph = nx.Graph()\n    graph.add_nodes_from(range(int(n_nodes)))\n    graph.add_edges_from((int(u), int(v)) for u, v in observed_edges)\n    pairs = [(int(u), int(v)) for u, v in np.concatenate([fit_pairs, test_pairs])]\n    columns = []\n    if enabled[0]:\n        columns.append(np.array([len(list(nx.common_neighbors(graph, u, v))) for u, v in pairs], dtype=float))\n    for active, algorithm in zip(enabled[1:5], (nx.jaccard_coefficient, nx.adamic_adar_index,\n                                              nx.resource_allocation_index, nx.preferential_attachment)):\n        if active:\n            columns.append(np.array([value for _, _, value in algorithm(graph, pairs)], dtype=float))\n    features = np.column_stack(columns) if columns else np.zeros((len(pairs), 1))\n    train, test = features[:len(fit_pairs)], features[len(fit_pairs):]\n    if enabled[5]:\n        scaler = StandardScaler().fit(train)\n        train, test = scaler.transform(train), scaler.transform(test)\n    model = LogisticRegression(C=1., solver=\"lbfgs\", max_iter=2000, random_state=20260907)\n    model.fit(train, fit_labels)\n    result = model.predict_proba(test)[:, 1]\n    if not np.isfinite(result).all():\n        raise ValueError(\"Nonfinite link probabilities\")\n    return result\n",
+    "source_name": "American college football, fall 2000",
+    "options_origin": "authored native-operation configuration choices; no claimed reproduction of a named detector or learned graph model",
+    "reference_scope": "one fixed algorithm, source input, and evaluation cohort; no population or clinical-validity claim",
+    "source_instance": "graph_football",
+    "condition": "additional_six_factors",
+    "shared_code": "NumPy is np; signal operations are scipy.signal butter/find_peaks/sosfiltfilt and scipy.ndimage uniform_filter1d; graph operations use NetworkX; fitting uses sklearn LogisticRegression and StandardScaler. Numerical helper access is documented separately."
+  }
+}

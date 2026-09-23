@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "all observed consistent with u=738/(738+e), integer e. good\nC=0 even masks: 16\ne (even C=0): {'000000': np.int64(1), '000011': np.int64(7), '000101': np.int64(5), '000110': np.int64(4), '010001': np.int64(0), '010010': np.int64(9), '010100': np.int64(16), '010111': np.int64(2), '100001': np.int64(0), '100010': np.int64(1), '100100': np.int64(0), '100111': np.int64(0), '110000': np.int64(0), '110011': np.int64(0), '110101': np.int64(0), '110110': np.int64(0)}\nexact fit residual 8.43769498715119e-15\n\nodd C=0 predictions (mains+2fi):\n   000001 e_hat=   0.88  u_hat=0.99882\n   000010 e_hat=   5.38  u_hat=0.99277\n   000100 e_hat=   7.37  u_hat=0.99011\n   000111 e_hat=   3.38  u_hat=0.99545\n   010000 e_hat=   7.38  u_hat=0.99011\n   010011 e_hat=   3.38  u_hat=0.99545\n   010101 e_hat=   6.38  u_hat=0.99144\n   010110 e_hat=   9.87  u_hat=0.98680\n   100000 e_hat=  -3.62  u_hat=1.00000\n   100011 e_hat=   6.38  u_hat=0.99144\n   100101 e_hat=   1.38  u_hat=0.99814\n   100110 e_hat=  -3.13  u_hat=1.00000\n   110001 e_hat=  -3.63  u_hat=1.00000\n   110010 e_hat=   1.88  u_hat=0.99747\n   110100 e_hat=   5.87  u_hat=0.99210\n   110111 e_hat=  -4.12  u_hat=1.00000\n\nmains-only odd C=0 u_hat: [np.float64(0.9956), np.float64(0.9926), np.float64(0.9913), np.float64(0.9939), np.float64(0.9913), np.float64(0.9939), np.float64(0.9926), np.float64(0.9896), np.float64(1.0), 1.0, 1.0, np.float64(0.9983), 1.0, np.float64(0.9983), np.float64(0.997), np.float64(0.9997)]\n",
+  "stderr": "",
+  "wall_seconds": 0.11502205099986895,
+  "code_sha256": "6e668778a83486a8e4fa0c9082e383fea4866a8556f71a05a4dbe685e577fa2d",
+  "evidence_sha256": "e74ee15cce830f966d4b7698c18119a13b4044cd93b0bcb72888ed4279641974",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

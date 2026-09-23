@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 12\n    (\"110000\",0.6460899653979237),(\"110011\":=None,)] \n                                   ^^^^^^^^\nSyntaxError: cannot use assignment expressions with literal\n",
+  "wall_seconds": 0.064643611000065,
+  "code_sha256": "f8c789c0c086212273857e9af076ec46b4b4251b909a4ecbc582d1c15d9752be",
+  "evidence_sha256": "7f909a71277392b88d167ec35b4df25f34133f9982e848fe2000df93e0c4a1ba",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

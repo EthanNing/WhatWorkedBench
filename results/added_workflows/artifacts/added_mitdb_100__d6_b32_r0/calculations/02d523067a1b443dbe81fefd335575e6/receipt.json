@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "10 complementary 3-factor pairs:\n   ABC ~ DEF   g=-0.0123\n   ABD ~ CEF   g=+0.0122\n   ABE ~ CDF   g=-0.0122\n   ABF ~ CDE   g=+0.0454\n   ACD ~ BEF   g=+0.0015\n   ACE ~ BDF   g=-0.0019\n   ACF ~ BDE   g=+0.0021\n   ADE ~ BCF   g=+0.0008\n   ADF ~ BCE   g=-0.0021\n   AEF ~ BCD   g=+0.0019\n\norder-2 model coefficients (main and pair):\n   int    +0.95130\n   A      -0.00012\n   B      -0.00197\n   C      -0.04494\n   D      +0.04636\n   E      -0.04687\n   F      +0.01266\n   AB     -0.01142\n   AC     -0.00371\n   AD     +0.00246\n   AE     -0.00195\n   AF     +0.00090\n   BC     -0.00124\n   BD     +0.00115\n   BE     -0.00115\n   BF     +0.00320\n   CD     +0.04711\n   CE     -0.04677\n   CF     +0.01125\n   DE     +0.04802\n   DF     -0.01150\n   EF     +0.01167\n",
+  "stderr": "",
+  "wall_seconds": 0.11556769999970129,
+  "code_sha256": "a889bbf9cad89dbf52e9ac4c55c405c1bd5f5f6119bb56e364dbe035f1e09761",
+  "evidence_sha256": "2c458e6d9acea4d0b1ee18d61cdc5f2c150464c3e979508ff65a4b8709267483",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

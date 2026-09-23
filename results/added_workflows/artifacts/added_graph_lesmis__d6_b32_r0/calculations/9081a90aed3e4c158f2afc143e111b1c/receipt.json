@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "deg 1 p= 6 best LOO mse=0.000243668 alpha=3\ndeg 2 p= 21 best LOO mse=0.000227832 alpha=1\ndeg 3 p= 41 best LOO mse=4.47833e-08 alpha=0.0001\ndeg 4 p= 56 best LOO mse=2.5675e-08 alpha=0.0001\n--- with 000001=0.5 included (n=34) ---\ndeg 1 p= 6 best LOO mse=0.00456628 alpha=30\ndeg 2 p= 21 best LOO mse=0.0045563 alpha=30\ndeg 3 p= 41 best LOO mse=2.38141e-06 alpha=0.0001\n",
+  "stderr": "",
+  "wall_seconds": 0.1150992689999839,
+  "code_sha256": "91ba3c080e05cfb6eb62fb61e4508766387e10a9714711a4b64e65feee0b8ee4",
+  "evidence_sha256": "6039a449a36ff38859be8c02bb94ff5ef3b90c3965d9db0125678bd096541106",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

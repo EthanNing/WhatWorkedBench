@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "const  0.00574\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 38, in <module>\n    print(\"knn4   %.5f\"%loo2(lambda t,x,m: knn(t,x,4)))\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 24, in loo2\n    errs.append(pred(tr,allK[i],allM[i])-allY[i])\n                ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 38, in <lambda>\n    print(\"knn4   %.5f\"%loo2(lambda t,x,m: knn(t,x,4)))\n                                           ^^^^^^^^^^\n  File \"/job/calculation.py\", line 28, in knn\n    d=np.abs(allM[tr]-xq).sum(1); o=np.argsort(d)[:k]; return allY[tr][o].mean()\n             ~~~~~~~~^~~\nnumpy._core._exceptions._UFuncNoLoopError: ufunc 'subtract' did not contain a loop with signature matching types (dtype('float64'), dtype('<U6')) -> None\n",
+  "wall_seconds": 0.11481012500007637,
+  "code_sha256": "e75750688f60095bbf78b60d44a9636512111affbcd30598054cc192b7e814db",
+  "evidence_sha256": "b15a9010a004cbabfb8995205ffe0bd5752b4a8d1af62d11becdcd69b22804bf",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

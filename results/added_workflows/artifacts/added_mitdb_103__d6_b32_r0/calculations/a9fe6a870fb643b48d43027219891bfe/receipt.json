@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "=== LOO within even half ===\ndeg1: LOO rmse 0.1329 (lam=17, p=7)\ndeg2: LOO rmse 0.1206 (lam=11.9, p=22)\ndeg3: LOO rmse 0.1490 (lam=100, p=42)\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 43, in <module>\n    M,names=terms(X[obs],deg); s,lam,beta,A=res[deg]\n                               ^^^^^^^^^^^^\nValueError: too many values to unpack (expected 4)\n",
+  "wall_seconds": 0.164488471000368,
+  "code_sha256": "1a0520b73746c824549eb78eab0f234c2eacfb7f842da81fbefa585b25e73963",
+  "evidence_sha256": "add003c12d46423b9b003da3b4113aeb149a8783d34606fccaab7b15db960f76",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

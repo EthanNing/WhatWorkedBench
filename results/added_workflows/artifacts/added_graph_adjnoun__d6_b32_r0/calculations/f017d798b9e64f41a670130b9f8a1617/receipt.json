@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "E=0 v=0 n=2 mean=0.5000 sd=0.0000 min=0.5000 max=0.5000\nE=0 v=1 n=15 mean=0.6452 sd=0.0112 min=0.6280 max=0.6693\n     110101 0.6693 r= 3 F= 1\n     111001 0.6691 r= 3 F= 1\n     011101 0.6551 r= 3 F= 1\n     110000 0.6461 r= 2 F= 0\n     111100 0.6422 r= 4 F= 0\n     011000 0.6419 r= 2 F= 0\n     001001 0.6417 r= 1 F= 1\n     001100 0.6417 r= 2 F= 0\n     100001 0.6417 r= 1 F= 1\n     100100 0.6415 r= 2 F= 0\n     101000 0.6415 r= 2 F= 0\n     101101 0.6412 r= 3 F= 1\n     000101 0.6401 r= 1 F= 1\n     010100 0.6365 r= 2 F= 0\n     010001 0.6280 r= 1 F= 1\nE=1 v=0 n=1 mean=0.7433 sd=0.0000 min=0.7433 max=0.7433\nE=1 v=1 n=16 mean=0.7408 sd=0.0042 min=0.7329 max=0.7469\n\nmodel 1+E+v+Ev coefs: [ 0.5      0.24332  0.14517 -0.14774] rms 7.6850e-03 max 2.4171e-02\n   resid 110101 +0.0242 y= 0.6693 v= 1 E= 0 r= 3 F= 1\n   resid 111001 +0.0239 y= 0.6691 v= 1 E= 0 r= 3 F= 1\n   resid 010001 -0.0172 y= 0.6280 v= 1 E= 0 r= 1 F= 1\n   resid 011101 +0.0099 y= 0.6551 v= 1 E= 0 r= 3 F= 1\n   resid 010100 -0.0086 y= 0.6365 v= 1 E= 0 r= 2 F= 0\n   resid 011011 -0.0078 y= 0.7329 v= 1 E= 1 r= 2 F= 1\n   resid 010111 -0.0074 y= 0.7334 v= 1 E= 1 r= 2 F= 1\n   resid 111111 -0.0067 y= 0.7340 v= 1 E= 1 r= 4 F= 1\n   resid 100010 +0.0062 y= 0.7469 v= 1 E= 1 r= 1 F= 0\n   resid 000101 -0.0050 y= 0.6401 v= 1 E= 0 r= 1 F= 1\n   resid 101101 -0.0040 y= 0.6412 v= 1 E= 0 r= 3 F= 1\n   resid 101000 -0.0037 y= 0.6415 v= 1 E= 0 r= 2 F= 0\n",
+  "stderr": "",
+  "wall_seconds": 0.11497496300034982,
+  "code_sha256": "21eff7da0707ed842846fa6e40c8c141ad614981f5eada1fd2a32fc4ce94a747",
+  "evidence_sha256": "63f19a61301314c84080120eee14dca74b7213bf8bd4ac3d4e4ecb4288f148e1",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 16, in <module>\n    else: final[m]=float(np.median([obs[k] for k in nbrs(m)]))\n                         ^^\nNameError: name 'np' is not defined\n",
+  "wall_seconds": 0.11470472699966194,
+  "code_sha256": "6515447b868ac4429ef825bd4fec25ff02ad3ffbab0d6788b89c0a317cc7b184",
+  "evidence_sha256": "e28997dfacab7ebcd6148f8aaf1409816a321e32347894784a222fe8c4b11b76",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

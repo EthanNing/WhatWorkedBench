@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "train n= 33\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 50, in <module>\n    m,_,_=ridge_loo(X,ytr,a)\n          ^^^^^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 39, in ridge_loo\n    H=Xc@np.linalg.solve(XtX,Xc.T)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/deps/numpy/linalg/_linalg.py\", line 410, in solve\n    r = gufunc(a, b, signature=signature)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/deps/numpy/linalg/_linalg.py\", line 104, in _raise_linalgerror_singular\n    raise LinAlgError(\"Singular matrix\")\nnumpy.linalg.LinAlgError: Singular matrix\n",
+  "wall_seconds": 0.11473019599998224,
+  "code_sha256": "90c871d3a0b273a4d3ae4a87cc20a2c544e53715e710bd3b985171015a1a7312",
+  "evidence_sha256": "47f03167e9baa97a4237c526d7ce7fc74fbd0dc5a87dac50f3d556e8dd6b8569",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

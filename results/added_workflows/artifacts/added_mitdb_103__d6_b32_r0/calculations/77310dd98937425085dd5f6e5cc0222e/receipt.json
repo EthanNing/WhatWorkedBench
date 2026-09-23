@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "hierarchical ridge LOO: 0.0907 lam 0.002\nsaturated (lam~0) LOO: 0.0019\npooled LOO: 0.0907\n\nhierarchical preds unobserved:\n   000001 0.938\n   000010 0.832\n   000100 0.893\n   000111 0.985\n   001000 1.0\n   001011 0.734\n   001101 1.0\n   001110 0.979\n   010000 0.938\n   010011 0.844\n   010101 0.893\n   010110 0.985\n   011001 1.0\n   011010 0.58\n   011100 1.0\n   011111 0.983\n   100000 0.938\n   100011 1.0\n   100101 1.0\n   100110 0.99\n   101001 1.0\n   101010 0.443\n   101100 1.0\n   101111 1.0\n   110001 1.0\n   110010 0.846\n   110100 0.937\n   110111 1.0\n   111000 1.0\n   111011 0.741\n   111101 1.0\n   111110 0.979\n",
+  "stderr": "",
+  "wall_seconds": 0.11477694000132033,
+  "code_sha256": "d293edd2926674bd066a8762ebf851342c3f0180f17b7f42018ca8b3b6da5bf3",
+  "evidence_sha256": "cf62fdd35e55476676dbd3a72ae0d05f25f1c7a687747e7f3395fa1ab2e450a6",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

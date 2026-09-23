@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "=== 6-fold CV on 33 nonempty points ===\ndeg 1 p 6 best 6fold mse 0.0002688 at alpha=10\ndeg 2 p 21 best 6fold mse 0.0002652 at alpha=10\ndeg 3 p 41 best 6fold mse 0.0002691 at alpha=10\ndeg 4 p 56 best 6fold mse 0.0002668 at alpha=10\ndeg 5 p 62 best 6fold mse 0.0002663 at alpha=10\ndeg 6 p 63 best 6fold mse 0.0002659 at alpha=10\n=== kNN (hamming) CV ===\nk 1 LOO mse 0.0003029\nk 2 LOO mse 0.00026\nk 3 LOO mse 0.0002096\nk 4 LOO mse 0.0002008\nk 5 LOO mse 0.000222\nk 6 LOO mse 0.0002261\n",
+  "stderr": "",
+  "wall_seconds": 6.966258798999661,
+  "code_sha256": "9bb170279deba74c3ed2e2f7fdee097abfbdd2f56b898ca3d7ca843f34e41592",
+  "evidence_sha256": "3ec12805587d70f8f28171f759cdc2cca61a0bb96633b79bd5c959d543565d55",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

@@ -1,0 +1,18 @@
+{"event": "calculation", "number": 1, "returncode": 0, "elapsed": 84.06840898900009}
+{"event": "observe", "masks": ["110000", "101000", "100100", "100010", "100001", "011000", "010100", "010010", "010001", "001100", "001010", "001001", "000110", "000101", "000011", "001111", "010111", "011011", "011101", "011110", "100111", "101011", "101101", "101110", "110011", "110101", "110110", "111001", "111010", "111100"], "credits_spent": 30, "elapsed": 99.07760914800019}
+{"event": "calculation", "number": 2, "returncode": 0, "elapsed": 108.29748557399944}
+{"event": "calculation", "number": 3, "returncode": 1, "elapsed": 158.3283111469991}
+{"event": "calculation", "number": 4, "returncode": 1, "elapsed": 171.0682467989991}
+{"event": "calculation", "number": 5, "returncode": 0, "elapsed": 176.0224237879993}
+{"event": "calculation", "number": 6, "returncode": 0, "elapsed": 203.03916910299995}
+{"event": "calculation", "number": 7, "returncode": 0, "elapsed": 236.28425474200048}
+{"event": "calculation", "number": 8, "returncode": 0, "elapsed": 252.3414958579997}
+{"event": "calculation", "number": 9, "returncode": 0, "elapsed": 282.1139376299998}
+{"event": "observe", "masks": ["101010", "001011"], "credits_spent": 2, "elapsed": 309.8714542029993}
+{"event": "calculation", "number": 10, "returncode": 0, "elapsed": 331.3246711669999}
+{"event": "calculation", "number": 11, "returncode": 1, "elapsed": 345.96678771500046}
+{"event": "calculation", "number": 12, "returncode": 1, "elapsed": 350.43883871599974}
+{"event": "calculation", "number": 13, "returncode": 1, "elapsed": 354.8051311799991}
+{"event": "calculation", "number": 14, "returncode": 0, "elapsed": 361.60245477900025}
+{"event": "calculation", "number": 15, "returncode": 0, "elapsed": 426.6435104379998}
+{"event": "calculation", "number": 16, "returncode": 1, "elapsed": 476.09497191599985}

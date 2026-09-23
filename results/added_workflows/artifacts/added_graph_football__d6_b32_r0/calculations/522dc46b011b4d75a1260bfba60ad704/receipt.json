@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "deg1 pred type <class 'dict'> alpha 10.0\n  MAE vs tbl(odd) 0.0321 max 0.2543\n   000010 0.6422 0.8085\n   000001 0.5 0.7543\n   111101 0.8243 0.8243\n   001110 0.8834 0.8834\n   111110 0.8786 0.9093\n   001110 0.8834 0.8834\ndeg2 pred type <class 'dict'> alpha 10.0\n  MAE vs tbl(odd) 0.0346 max 0.1835\n   000010 0.6422 0.7457\n   000001 0.5 0.6835\n   111101 0.8243 0.8243\n   001110 0.8834 0.8834\n   111110 0.8786 0.8397\n   001110 0.8834 0.8834\n",
+  "stderr": "",
+  "wall_seconds": 0.1646377509996455,
+  "code_sha256": "ebe3502353e71fca99188261335926c6e5327025a53d8947e473447ca471ab0b",
+  "evidence_sha256": "5b68a6cb7cd8fb12c3159e3e81b785f1433ef719be404e2559c7bd678ff62b9e",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

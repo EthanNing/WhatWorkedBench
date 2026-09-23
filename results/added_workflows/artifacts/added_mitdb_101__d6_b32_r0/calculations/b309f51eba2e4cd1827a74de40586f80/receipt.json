@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "HIGH n 21\nconst LOO rmse: 0.02535\ndeg1 ridge LOO (rmse,alpha): (np.float64(0.02034), 10)\ndeg2 ridge LOO (rmse,alpha): (np.float64(0.01829), 3)\ndeg3 ridge LOO (rmse,alpha): (np.float64(1e-05), 0.0)\ndeg4 ridge LOO (rmse,alpha): (np.float64(0.0), 0.0)\nLOW1 n 5 mean 0.3974 sd 0.0241\nLOW2 n 4 mean 0.6142 sd 0.0609\nMID n 4 mean 0.9404 sd 0.0222\n",
+  "stderr": "",
+  "wall_seconds": 0.11460616600015783,
+  "code_sha256": "5b30c4950bd157829c353befea5312ab7819edc6d083e3976f53a3f31d7c5ca7",
+  "evidence_sha256": "f924ca42438a862219b221801bd44e0ec84e1b347d11881986eda2a1ba21de8d",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

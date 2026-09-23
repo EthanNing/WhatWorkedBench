@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 42, in <module>\n    sel,_=forward(idx,maxterms=18)\n          ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 29, in forward\n    cur=loo(Av[:,sel])\n        ^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 26, in loo\n    b,_,_,_=np.linalg.lstsq(A,ytr,rcond=None)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/deps/numpy/linalg/_linalg.py\", line 2496, in lstsq\n    _assert_2d(a, b)\n  File \"/deps/numpy/linalg/_linalg.py\", line 189, in _assert_2d\n    raise LinAlgError('%d-dimensional array given. Array must be '\nnumpy.linalg.LinAlgError: 0-dimensional array given. Array must be two-dimensional\n",
+  "wall_seconds": 0.11486659300135216,
+  "code_sha256": "496466feb28c121db4204e5a36e20a58ba36d51fc42aa43d1568e19beae06e73",
+  "evidence_sha256": "a840142497c2b34d987d1718cf3bb58a6c4ac604fb847422dac999b037ec2a54",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

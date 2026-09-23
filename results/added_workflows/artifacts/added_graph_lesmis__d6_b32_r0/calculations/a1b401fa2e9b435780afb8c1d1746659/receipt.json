@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "quadratic in-sample max|r|=0.0208 rmse=0.00698 (in k units max 54.0)\n   000010 y=0.8082 pred=0.8289 r=-0.0208 (-54.0 k)\n   100010 y=0.8927 pred=0.8749 r=0.0178 (46.3 k)\n   000110 y=0.8750 pred=0.8631 r=0.0119 (31.1 k)\n   111111 y=0.9020 pred=0.8923 r=0.0096 (25.1 k)\n   010000 y=0.8837 pred=0.8744 r=0.0093 (24.3 k)\n   100111 y=0.9012 pred=0.9099 r=-0.0087 (-22.7 k)\n   011010 y=0.9000 pred=0.8919 r=0.0081 (21.1 k)\n   011111 y=0.9020 pred=0.9093 r=-0.0074 (-19.2 k)\n   111011 y=0.9012 pred=0.9073 r=-0.0061 (-15.9 k)\n   110101 y=0.8950 pred=0.8896 r=0.0054 (14.1 k)\n   111100 y=0.8950 pred=0.8897 r=0.0054 (13.9 k)\n   101110 y=0.8989 pred=0.9041 r=-0.0052 (-13.6 k)\ncoefs (k units):\n   1    +2193.10\n   A     +89.92\n   B     +81.13\n   C     +82.27\n   D     +89.00\n   E     -37.10\n   F     +70.90\n   AB    -41.95\n   AC    -33.51\n   AD    -43.54\n   AE    +29.75\n   AF    -44.90\n   BC    -29.31\n   BD    -33.63\n   BE     +8.59\n   BF    -34.81\n   CD    -39.40\n   CE    +21.17\n   CF    -26.34\n   DE     -0.07\n   DF    -11.33\n   EF    +31.00\n",
+  "stderr": "",
+  "wall_seconds": 0.11489102499945147,
+  "code_sha256": "883e8a75420839a545f96616b0e401474b4054ed5c18a2c9920ddda19c673ef5",
+  "evidence_sha256": "372f9f7816d1df5b54b20d0005d1b87b5bb316df100bb55c7ee7e295d50b0916",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

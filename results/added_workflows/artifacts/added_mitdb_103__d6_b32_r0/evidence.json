@@ -1,0 +1,188 @@
+{
+  "observations": [
+    {
+      "mask": "000000",
+      "utility": 0.8767123287671232
+    },
+    {
+      "mask": "111111",
+      "utility": 1.0
+    },
+    {
+      "mask": "110000",
+      "utility": 1.0
+    },
+    {
+      "mask": "101000",
+      "utility": 1.0
+    },
+    {
+      "mask": "100100",
+      "utility": 1.0
+    },
+    {
+      "mask": "100010",
+      "utility": 0.9873772791023843
+    },
+    {
+      "mask": "100001",
+      "utility": 1.0
+    },
+    {
+      "mask": "011000",
+      "utility": 1.0
+    },
+    {
+      "mask": "010100",
+      "utility": 0.8301886792452831
+    },
+    {
+      "mask": "010010",
+      "utility": 0.6901960784313725
+    },
+    {
+      "mask": "010001",
+      "utility": 1.0
+    },
+    {
+      "mask": "001100",
+      "utility": 1.0
+    },
+    {
+      "mask": "001010",
+      "utility": 0.5083032490974729
+    },
+    {
+      "mask": "001001",
+      "utility": 1.0
+    },
+    {
+      "mask": "000110",
+      "utility": 0.975
+    },
+    {
+      "mask": "000101",
+      "utility": 0.9564032697547684
+    },
+    {
+      "mask": "000011",
+      "utility": 0.9859943977591037
+    },
+    {
+      "mask": "001111",
+      "utility": 1.0
+    },
+    {
+      "mask": "010111",
+      "utility": 0.9957325746799431
+    },
+    {
+      "mask": "011011",
+      "utility": 0.8054919908466819
+    },
+    {
+      "mask": "011101",
+      "utility": 1.0
+    },
+    {
+      "mask": "011110",
+      "utility": 0.9617486338797814
+    },
+    {
+      "mask": "100111",
+      "utility": 1.0
+    },
+    {
+      "mask": "101011",
+      "utility": 0.6692015209125475
+    },
+    {
+      "mask": "101101",
+      "utility": 1.0
+    },
+    {
+      "mask": "101110",
+      "utility": 0.9957567185289957
+    },
+    {
+      "mask": "110011",
+      "utility": 1.0
+    },
+    {
+      "mask": "110101",
+      "utility": 1.0
+    },
+    {
+      "mask": "110110",
+      "utility": 1.0
+    },
+    {
+      "mask": "111001",
+      "utility": 1.0
+    },
+    {
+      "mask": "111010",
+      "utility": 0.5146198830409356
+    },
+    {
+      "mask": "111100",
+      "utility": 1.0
+    },
+    {
+      "mask": "101010",
+      "utility": 0.5064748201438849
+    },
+    {
+      "mask": "001011",
+      "utility": 0.6698382492863939
+    }
+  ],
+  "credits_remaining": 0,
+  "closed": false,
+  "calculation_calls_remaining": 4,
+  "session_seconds_elapsed": 476.1,
+  "session_seconds_remaining": 1323.9,
+  "task": {
+    "instance": "workflow_07",
+    "family": "beat_detection",
+    "dimensions": 6,
+    "factor_order": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "factors": {
+      "A": "second-order 0.5 Hz high-pass filter",
+      "B": "second-order 35 Hz low-pass filter",
+      "C": "squared first derivative instead of absolute amplitude",
+      "D": "120 ms moving-average integration",
+      "E": "median plus three scaled MADs instead of mean plus one standard deviation for peak height",
+      "F": "300 ms instead of 200 ms minimum peak distance"
+    },
+    "utility": "One-to-one event F1 within 100 ms, evaluating events in [1,299) seconds; additional 50/150 ms sensitivity. This is a declared development matching tolerance, not a clinical validation criterion.",
+    "data": {
+      "samples": 108000,
+      "sample_rate_hz": 360,
+      "seconds": 300,
+      "channel": "MLII",
+      "units": "mV",
+      "signal_quantiles": [
+        -0.56,
+        -0.37,
+        -0.29,
+        -0.2,
+        1.645
+      ]
+    },
+    "source_code": "def switches(mask):\n    if not isinstance(mask, str) or len(mask) != 6 or set(mask) - {\"0\", \"1\"}:\n        raise ValueError(\"Expected a six-bit configuration\")\n    return tuple(v == \"1\" for v in mask)\n\ndef detect_events(signal, sample_rate, mask):\n    a, b, c, d, e, f = switches(mask)\n    signal = np.asarray(signal, dtype=np.float64)\n    work = signal - np.median(signal)\n    if a:\n        work = sosfiltfilt(butter(2, .5, btype=\"highpass\", fs=sample_rate, output=\"sos\"), work)\n    if b:\n        work = sosfiltfilt(butter(2, 35., btype=\"lowpass\", fs=sample_rate, output=\"sos\"), work)\n    envelope = np.diff(work, prepend=work[0]) ** 2 if c else np.abs(work)\n    if d:\n        envelope = uniform_filter1d(envelope, size=max(1, round(.120 * sample_rate)), mode=\"nearest\")\n    if e:\n        center = np.median(envelope)\n        height = center + 3 * 1.4826 * np.median(np.abs(envelope - center))\n    else:\n        height = np.mean(envelope) + np.std(envelope)\n    candidates, _ = find_peaks(envelope, height=height,\n                               distance=max(1, round((.300 if f else .200) * sample_rate)))\n    radius = round(.075 * sample_rate)\n    aligned = []\n    for candidate in candidates:\n        low, high = max(0, candidate - radius), min(len(work), candidate + radius + 1)\n        aligned.append(low + int(np.argmax(np.abs(work[low:high]))))\n    # This offline workflow evaluates an interior interval to avoid filter edges.\n    result = np.array(sorted({p for p in aligned if sample_rate <= p < len(signal) - sample_rate}), dtype=np.int64)\n    if not np.isfinite(work).all():\n        raise ValueError(\"Nonfinite filtered signal\")\n    return result\n",
+    "source_name": "MIT-BIH record 103",
+    "options_origin": "authored native-operation configuration choices; no claimed reproduction of a named detector or learned graph model",
+    "reference_scope": "one fixed algorithm, source input, and evaluation cohort; no population or clinical-validity claim",
+    "source_instance": "mitdb_103",
+    "condition": "additional_six_factors",
+    "shared_code": "NumPy is np; signal operations are scipy.signal butter/find_peaks/sosfiltfilt and scipy.ndimage uniform_filter1d; graph operations use NetworkX; fitting uses sklearn LogisticRegression and StandardScaler. Numerical helper access is documented separately."
+  }
+}

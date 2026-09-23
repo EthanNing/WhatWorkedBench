@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "known exactly (12): ['000000', '000001', '000010', '000011', '000100', '000101', '001000', '001001', '010000', '010001', '100000', '100001'] 12\nn edges: 192\nbaseline I-opt design edgeMSE: None\niter 0 added 111110 edgeMSE 1049667839.4401 exact 17\niter 9 added 100100 edgeMSE 136251884.9672 exact 30\niter 18 added 001101 edgeMSE 985.4810 exact 51\nFINAL edgeMSE 183.5957 exact edges 67 /192\npurchase list (32): ['000010', '000100', '001000', '001010', '001100', '001101', '001111', '010000', '010011', '010101', '010110', '010111', '011000', '011001', '011010', '011111', '100000', '100010', '100011', '100100', '100110', '101001', '101110', '101111', '110001', '110010', '110100', '110111', '111000', '111011', '111101', '111110']\npopcount hist: Counter({2: 12, 3: 8, 4: 6, 1: 5, 5: 2, 0: 1}) F on: 15\nsuggest-list edgeMSE 188.6559 exact 68\n",
+  "stderr": "",
+  "wall_seconds": 1.0663957160013524,
+  "code_sha256": "57ab7d36ccd558b94b1b4f881a5b126a700eeb544597d7cc940f115fa61e62f8",
+  "evidence_sha256": "f65f9c56e00031d5081d413c34d57b7637f8b6c33866c2d870bddbe2daacb95c",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

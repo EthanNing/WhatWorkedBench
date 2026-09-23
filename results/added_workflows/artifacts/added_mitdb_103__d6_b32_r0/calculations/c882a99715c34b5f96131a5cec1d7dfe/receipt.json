@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "CDE+ABF              p=11 id=0.9070  deficit=0.1180  inv=0.1550  logit=0.5222\nCDE+ABF+BF           p=12 id=0.9070  deficit=0.1194  inv=0.1550  logit=0.5261\nCDE+ABF+ABFpairs     p=14 id=0.9039  deficit=0.1201  inv=0.1550  logit=0.5376\nCDE+ABF+BFinA        p=13 id=0.9070  deficit=0.1194  inv=0.1550  logit=0.5261\n",
+  "stderr": "",
+  "wall_seconds": 0.11478491999878315,
+  "code_sha256": "5e59cf77c6d83342c566d14c851f85ff70bd255d7915fc0ef458498699b0474a",
+  "evidence_sha256": "753e33cc6802440c2048818419800b6ee894c2e50d281a49b546cf0c10506014",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

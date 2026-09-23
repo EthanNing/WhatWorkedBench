@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "fixed design: (np.float64(1293126226.7565439), 16)\nrefined edgeMSE 205.339 exact 69\ndesign (34): ['000000', '000010', '000100', np.str_('000111'), '001000', np.str_('001010'), np.str_('001100'), np.str_('001101'), np.str_('001110'), '010000', np.str_('010100'), '010101', np.str_('010110'), np.str_('010111'), np.str_('011000'), '011011', np.str_('011100'), '100000', np.str_('100100'), np.str_('100101'), '100110', np.str_('101010'), np.str_('101011'), '101100', np.str_('101110'), np.str_('101111'), np.str_('110000'), np.str_('110010'), np.str_('110011'), np.str_('110111'), np.str_('111001'), np.str_('111010'), np.str_('111100'), '111111']\npurchases (32): ['000010', '000100', np.str_('000111'), '001000', np.str_('001010'), np.str_('001100'), np.str_('001101'), np.str_('001110'), '010000', np.str_('010100'), '010101', np.str_('010110'), np.str_('010111'), np.str_('011000'), '011011', np.str_('011100'), '100000', np.str_('100100'), np.str_('100101'), '100110', np.str_('101010'), np.str_('101011'), '101100', np.str_('101110'), np.str_('101111'), np.str_('110000'), np.str_('110010'), np.str_('110011'), np.str_('110111'), np.str_('111001'), np.str_('111010'), np.str_('111100')]\nhist Counter({3: 12, 2: 10, 1: 5, 4: 5, 0: 1, 5: 1}) Fon 12\ndeg1 crit 41.712\nexact edge list count by type: Counter({'both_obs': 50, 'obs+deduced': 19})\n",
+  "stderr": "",
+  "wall_seconds": 0.6659362319987849,
+  "code_sha256": "3ff33e258ca60ddf54d8e06bb59698a206a8bf356dc9f5fb653d6d14720f968c",
+  "evidence_sha256": "e6a49a2686945462e4777462237826068f303f43aacc917d77818397fc2a77e9",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

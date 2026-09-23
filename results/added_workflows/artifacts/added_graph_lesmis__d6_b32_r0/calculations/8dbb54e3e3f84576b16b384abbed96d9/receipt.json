@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "dictionary (33, 63)\nlasso 6fold mse 0.0002946\n  selected []\n  nz terms: [('A', np.float64(0.004)), ('B', np.float64(0.0012)), ('C', np.float64(0.0075)), ('D', np.float64(0.0058)), ('E', np.float64(-0.0048)), ('F', np.float64(0.0045)), ('AE', np.float64(0.004)), ('CE', np.float64(0.0014)), ('EF', np.float64(0.0049))]\nenet 6fold mse 0.0002952\n  selected []\n  nz terms: [('A', np.float64(0.004)), ('B', np.float64(0.0012)), ('C', np.float64(0.0074)), ('D', np.float64(0.0058)), ('E', np.float64(-0.0047)), ('F', np.float64(0.0045)), ('AE', np.float64(0.0039)), ('CE', np.float64(0.0014)), ('EF', np.float64(0.0049))]\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 50, in <module>\n    p=cross_val_predict(g,B,ytr,cv=KFold(33,shuffle=False,random_state=0))\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/deps/sklearn/model_selection/_split.py\", line 514, in __init__\n    super().__init__(n_splits=n_splits, shuffle=shuffle, random_state=random_state)\n  File \"/deps/sklearn/model_selection/_split.py\", line 365, in __init__\n    raise ValueError(\nValueError: Setting a random_state has no effect since shuffle is False. You should leave random_state to its default (None), or set shuffle=True.\n",
+  "wall_seconds": 2.877723631000663,
+  "code_sha256": "7b297fd7226161114c48208a8e01b1e32a88c8ab4e826e79ce7ebb38fd0e63ce",
+  "evidence_sha256": "247c0f89417fac0042fb14033e656296e5fb9e238d55c06c1be7830a9d3ddd50",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

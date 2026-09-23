@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "d1   LOO rms 0.05841  alpha 0.005623  p=7\nd2   LOO rms 0.06126  alpha 0.5623  p=22\nd2p  LOO rms 0.06898  alpha 0.5623  p=32\nd3   LOO rms 0.06842  alpha 0.3162  p=42\nknn k=1 LOO rms 0.09649\nknn k=2 LOO rms 0.06039\nknn k=3 LOO rms 0.05508\nknn k=4 LOO rms 0.05583\nknn k=5 LOO rms 0.05602\n",
+  "stderr": "",
+  "wall_seconds": 0.3651403490002849,
+  "code_sha256": "b6f86bdc5b31a1d50c035d8b25b4acf60bb01c390804ee1d818f66254bd7633f",
+  "evidence_sha256": "23e6e786a225a5d8a980810b015e1e01e5889d2bddd463d16484b7fa48163ae7",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "deduced: {'000001': 0.5, '100001': 0.755859375, '010001': 0.75341796875, '001001': 0.759765625, '000101': 0.759765625, '000011': 0.69482421875}\nn exact cells: 40\nunobserved (24): ['000110', '001010', '001110', '001111', '010010', '010011', '011010', '011100', '011101', '100010', '100100', '100111', '101001', '101100', '101110', '110000', '110010', '110011', '110100', '110101', '110111', '111000', '111011', '111101']\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 57, in <module>\n    print(\"deg\",deg,\"LOO rms %.5f alpha %.4g\"%(rms,w[0]*0+ (w[0])))\n                    ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\nTypeError: must be real number, not tuple\n",
+  "wall_seconds": 0.1658392620011,
+  "code_sha256": "f6a8e8230d21cbe6343a96e0c17b3bf4111ba06dcf86508ed845830549a28b44",
+  "evidence_sha256": "7a1c2d15f85385176c4e1ae0a010c1871f791cefd23bef49e8dc8c75194ac812",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

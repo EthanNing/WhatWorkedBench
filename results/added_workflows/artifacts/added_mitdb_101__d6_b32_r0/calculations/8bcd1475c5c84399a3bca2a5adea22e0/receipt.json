@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 19, in <module>\n    p=fit_surface(obs, degree=deg)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/job/wwb_helpers.py\", line 41, in fit_surface\n    observed,m=_observed(observations);masks,X=features(m,degree)\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/job/wwb_helpers.py\", line 11, in _observed\n    if not isinstance(observations,list) or not observations:raise ValueError('Supply nonempty list of mask/utility observations')\n                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Supply nonempty list of mask/utility observations\n",
+  "wall_seconds": 0.114681336999638,
+  "code_sha256": "295f320a764f30d7318407a83ae480202c38a620ea9c181af1ad2d376c2f262d",
+  "evidence_sha256": "2fd0a54ae85a75df8bd96f6ca5492736539271f33c808c78e389170530d984ae",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

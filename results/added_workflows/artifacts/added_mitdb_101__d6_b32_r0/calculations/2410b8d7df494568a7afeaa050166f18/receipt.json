@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "<class 'dict'> 7\nmask  deg1    deg2\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 23, in <module>\n    print(m, round(float(p1[m]),4), round(float(p2[m]),4))\n                         ~~^^^\nKeyError: '000000'\n",
+  "wall_seconds": 0.16454851900016365,
+  "code_sha256": "8942af11860e910490e537004fefe4fd1e921848f1801ec488a726299d8f8add",
+  "evidence_sha256": "4828dbbc1e3c23dcdd96543f488423bfc9ff3fc19da8266ed6baa39197046397",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

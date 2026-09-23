@@ -1,0 +1,17 @@
+{"event": "calculation", "number": 1, "returncode": 0, "elapsed": 55.70142768699952}
+{"event": "observe", "masks": ["000011", "000101", "000110", "001001", "001010", "001100", "001111", "010001", "010010", "010100", "010111", "011000", "011011", "011101", "011110", "100001", "100010", "100100", "100111", "101000", "101011", "101101", "101110", "110000", "110011", "110101", "110110", "111001", "111010", "111100", "111000", "000111"], "credits_spent": 32, "elapsed": 58.927797760999965}
+{"event": "calculation", "number": 2, "returncode": 0, "elapsed": 120.96607300399955}
+{"event": "calculation", "number": 3, "returncode": 0, "elapsed": 166.45182435199968}
+{"event": "calculation", "number": 4, "returncode": 1, "elapsed": 181.02480488399942}
+{"event": "calculation", "number": 5, "returncode": 0, "elapsed": 185.56417505799982}
+{"event": "calculation", "number": 6, "returncode": 0, "elapsed": 208.4442102359999}
+{"event": "calculation", "number": 7, "returncode": 0, "elapsed": 222.34017812099955}
+{"event": "calculation", "number": 8, "returncode": 0, "elapsed": 237.87449021599969}
+{"event": "calculation", "number": 9, "returncode": 0, "elapsed": 295.3843204139994}
+{"event": "calculation", "number": 10, "returncode": 0, "elapsed": 322.5086517029995}
+{"event": "calculation", "number": 11, "returncode": 0, "elapsed": 349.52534096899944}
+{"event": "calculation", "number": 12, "returncode": 1, "elapsed": 535.3633937219993}
+{"event": "calculation", "number": 13, "returncode": 1, "elapsed": 538.9706919029995}
+{"event": "calculation", "number": 14, "returncode": 1, "elapsed": 543.4035750509993}
+{"event": "calculation", "number": 15, "returncode": 0, "elapsed": 545.867915969}
+{"event": "submit", "kind": "agent_selected_public_helper", "elapsed": 571.169225779}

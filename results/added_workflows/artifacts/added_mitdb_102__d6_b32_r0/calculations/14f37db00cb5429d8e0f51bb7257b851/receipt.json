@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 15\n    Zfull=np.column_stack([np.ones(n)]+[colv(c,Z1[om]) for c in allterms]])\n                                                                         ^\nSyntaxError: closing parenthesis ']' does not match opening parenthesis '('\n",
+  "wall_seconds": 0.11439021000114735,
+  "code_sha256": "dbfdd8cc8645dac7e0cb05094221642acfada4b492fc78c90a97aaee2322078f",
+  "evidence_sha256": "0d45431135a558bdd3a7bd476f1dc3b10eb8d4c2cb7fca86216bcaa73525edb4",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

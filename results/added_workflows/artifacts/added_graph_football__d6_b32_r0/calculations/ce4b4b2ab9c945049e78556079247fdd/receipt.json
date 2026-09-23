@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 28, in <module>\n    err=[abs(P[m]-tbl[m]) for m in odd]\n             ~^^^\nKeyError: '000001'\n",
+  "wall_seconds": 0.16492826400008198,
+  "code_sha256": "df39a4c5200322f5f04ceb8abe1e109e5a3e30cd388e203a60132f7197ca37e0",
+  "evidence_sha256": "43e76c4bf400d595f2bc0ac4c670eefc3d66854c096c8585dc7bfb6f219ab8e2",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

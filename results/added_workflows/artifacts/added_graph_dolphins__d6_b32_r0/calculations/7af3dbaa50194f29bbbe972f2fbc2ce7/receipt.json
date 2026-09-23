@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "const      0.00574\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 38, in <module>\n    print(\"knn4       %.5f\"%loo(lambda t,x: knn(t,x,4)))\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 24, in loo\n    errs.append(pred(tr,allK[i])-allY[i])\n                ^^^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 38, in <lambda>\n    print(\"knn4       %.5f\"%loo(lambda t,x: knn(t,x,4)))\n                                            ^^^^^^^^^^\n  File \"/job/calculation.py\", line 28, in knn\n    d=np.abs(allM[tr]-xq).sum(1); o=np.argsort(d)[:k]; return allY[tr][o].mean()\n             ~~~~~~~~^~~\nnumpy._core._exceptions._UFuncNoLoopError: ufunc 'subtract' did not contain a loop with signature matching types (dtype('float64'), dtype('<U6')) -> None\n",
+  "wall_seconds": 0.11465373200007889,
+  "code_sha256": "f6e2d1ee6a9412af5ca4bb1fb94dacee72bd7e64dc1e3b41ae58b1f0d02f45ec",
+  "evidence_sha256": "73cd2ef3c9eaf16c7f630546f6c9744227bf3af16fa25b24ba01df41506f3792",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

@@ -1,0 +1,5 @@
+{
+  "upstream_http_status": 402,
+  "normalized_reason": "insufficient_balance",
+  "terminal_reason": "api_error"
+}

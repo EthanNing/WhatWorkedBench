@@ -1,0 +1,43 @@
+{
+  "instance": "workflow_03",
+  "family": "beat_detection",
+  "dimensions": 6,
+  "factor_order": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "factors": {
+    "A": "second-order 0.5 Hz high-pass filter",
+    "B": "second-order 35 Hz low-pass filter",
+    "C": "squared first derivative instead of absolute amplitude",
+    "D": "120 ms moving-average integration",
+    "E": "median plus three scaled MADs instead of mean plus one standard deviation for peak height",
+    "F": "300 ms instead of 200 ms minimum peak distance"
+  },
+  "utility": "One-to-one event F1 within 100 ms, evaluating events in [1,299) seconds; additional 50/150 ms sensitivity. This is a declared development matching tolerance, not a clinical validation criterion.",
+  "data": {
+    "samples": 108000,
+    "sample_rate_hz": 360,
+    "seconds": 300,
+    "channel": "MLII",
+    "units": "mV",
+    "signal_quantiles": [
+      -0.95,
+      -0.42,
+      -0.32,
+      -0.21,
+      1.105
+    ]
+  },
+  "source_code": "def switches(mask):\n    if not isinstance(mask, str) or len(mask) != 6 or set(mask) - {\"0\", \"1\"}:\n        raise ValueError(\"Expected a six-bit configuration\")\n    return tuple(v == \"1\" for v in mask)\n\ndef detect_events(signal, sample_rate, mask):\n    a, b, c, d, e, f = switches(mask)\n    signal = np.asarray(signal, dtype=np.float64)\n    work = signal - np.median(signal)\n    if a:\n        work = sosfiltfilt(butter(2, .5, btype=\"highpass\", fs=sample_rate, output=\"sos\"), work)\n    if b:\n        work = sosfiltfilt(butter(2, 35., btype=\"lowpass\", fs=sample_rate, output=\"sos\"), work)\n    envelope = np.diff(work, prepend=work[0]) ** 2 if c else np.abs(work)\n    if d:\n        envelope = uniform_filter1d(envelope, size=max(1, round(.120 * sample_rate)), mode=\"nearest\")\n    if e:\n        center = np.median(envelope)\n        height = center + 3 * 1.4826 * np.median(np.abs(envelope - center))\n    else:\n        height = np.mean(envelope) + np.std(envelope)\n    candidates, _ = find_peaks(envelope, height=height,\n                               distance=max(1, round((.300 if f else .200) * sample_rate)))\n    radius = round(.075 * sample_rate)\n    aligned = []\n    for candidate in candidates:\n        low, high = max(0, candidate - radius), min(len(work), candidate + radius + 1)\n        aligned.append(low + int(np.argmax(np.abs(work[low:high]))))\n    # This offline workflow evaluates an interior interval to avoid filter edges.\n    result = np.array(sorted({p for p in aligned if sample_rate <= p < len(signal) - sample_rate}), dtype=np.int64)\n    if not np.isfinite(work).all():\n        raise ValueError(\"Nonfinite filtered signal\")\n    return result\n",
+  "source_name": "MIT-BIH record 101",
+  "options_origin": "authored native-operation configuration choices; no claimed reproduction of a named detector or learned graph model",
+  "reference_scope": "one fixed algorithm, source input, and evaluation cohort; no population or clinical-validity claim",
+  "source_instance": "mitdb_101",
+  "condition": "additional_six_factors",
+  "shared_code": "NumPy is np; signal operations are scipy.signal butter/find_peaks/sosfiltfilt and scipy.ndimage uniform_filter1d; graph operations use NetworkX; fitting uses sklearn LogisticRegression and StandardScaler. Numerical helper access is documented separately."
+}

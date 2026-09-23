@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "factor 0 covered 7 /32\nfactor 1 covered 13 /32\nfactor 2 covered 7 /32\nfactor 3 covered 5 /32\nfactor 4 covered 5 /32\nfactor 5 covered 5 /32\ntotal pts 34\n",
+  "stderr": "",
+  "wall_seconds": 0.11478526000064448,
+  "code_sha256": "c8f9b84dd9016dc4abdc27c7e80b98b99e08cf64ead19e622caaefb98b74a475",
+  "evidence_sha256": "660f8b96d9e21ec934d31f72ca1cd23d4b59c3bb73559393bc176fdbac810d5e",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

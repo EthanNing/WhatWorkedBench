@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "deg1 blend lam=0.00 LOO rms 0.00553\ndeg1 blend lam=0.25 LOO rms 0.00589\ndeg1 blend lam=0.50 LOO rms 0.00626\ndeg1 blend lam=0.75 LOO rms 0.00666\ndeg1 blend lam=1.00 LOO rms 0.00707\ndeg2 blend lam=0.00 LOO rms 0.00553\ndeg2 blend lam=0.25 LOO rms 0.00737\ndeg2 blend lam=0.50 LOO rms 0.01020\ndeg2 blend lam=0.75 LOO rms 0.01340\ndeg2 blend lam=1.00 LOO rms 0.01677\nfit_surface type <class 'dict'>\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 54, in <module>\n    print(\"first:\",pred[:3] if hasattr(pred,'__getitem__') else pred)\n                   ~~~~^^^^\nKeyError: slice(None, 3, None)\n",
+  "wall_seconds": 7.6840001349992235,
+  "code_sha256": "e45cf65aa455d20db421c6c11b98f41e259d736da6dedb491f6f536062be1fdf",
+  "evidence_sha256": "4d6caa3f119abfb4a8bbaa8b3293e3f065c49330066203ed3e7b9ac310477ad3",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

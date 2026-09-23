@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "observed: 32\n\nMAIN EFFECTS (mean y | +1) - (mean y | -1):\nA 0.9479 0.9116 eff 0.0363\nB 0.9249 0.9347 eff -0.0098\nC 0.9034 0.9561 eff -0.0527\nD 0.9822 0.8774 eff 0.1048\nE 0.8806 0.979 eff -0.0984\nF 0.9633 0.8962 eff 0.0671\n\ndeg1: rank 7 rmse 0.1085\n  1      0.9298\n  A      0.0182\n  B     -0.0049\n  C     -0.0263\n  D      0.0524\n  E     -0.0492\n  F      0.0335\n\ndeg2: rank 22 rmse 0.0476\n  1      0.9298\n  A      0.0182\n  B     -0.0049\n  C     -0.0263\n  D      0.0524\n  E     -0.0492\n  F      0.0335\n  AB    -0.0037\n  AC    -0.0242\n  AD    -0.0009\n  AE    -0.0029\n  AF    -0.0228\n  BC     0.0117\n  BD    -0.0038\n  BE    -0.0047\n  BF     0.0168\n  CD     0.0388\n  CE    -0.0474\n  CF    -0.0026\n  DE     0.0580\n  DF    -0.0217\n  EF     0.0179\n\nmax |LOO resid| deg2: 0.27564098348581956\n[('100111', np.float64(1.0), np.float64(1.276)), ('011000', np.float64(1.0), np.float64(0.724)), ('011101', np.float64(1.0), np.float64(1.254)), ('100010', np.float64(0.987), np.float64(0.733)), ('111010', np.float64(0.515), np.float64(0.747)), ('000101', np.float64(0.956), np.float64(0.724)), ('001010', np.float64(0.508), np.float64(0.736)), ('110101', np.float64(1.0), np.float64(0.772))]\n",
+  "stderr": "",
+  "wall_seconds": 0.11470322999957716,
+  "code_sha256": "a23b34801701045b07f9441d6d4b872d6c1d382e022f6b27556975b6348b0dba",
+  "evidence_sha256": "28e96501bd5194429f53f87369e0329bdb8ca119484bd493e5a51ed467621477",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

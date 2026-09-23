@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "best HIGH model (rmse,deg,alpha): (np.float64(0.01829137101347504), 2, 3)\nregion means {'LOW1': np.float64(0.3974), 'LOW2': np.float64(0.6142), 'MID': np.float64(0.9404)}\n\nHIGH unobserved predictions:\n  000001 HIGH -> 0.9463\n  000010 HIGH -> 0.9056\n  001000 HIGH -> 0.9671\n  001101 HIGH -> 0.9917\n  010000 HIGH -> 0.9418\n  010011 HIGH -> 0.9455\n  011001 HIGH -> 0.9923\n  011100 HIGH -> 0.9993\n  100000 HIGH -> 0.9639\n  100011 HIGH -> 0.9791\n  100101 HIGH -> 0.9934\n  100110 HIGH -> 0.9789\n  101001 HIGH -> 0.9865\n  101100 HIGH -> 0.9851\n  110001 HIGH -> 0.9928\n  110010 HIGH -> 0.9658\n  110100 HIGH -> 0.9978\n  110111 HIGH -> 0.9866\n  111101 HIGH -> 0.9781\n\nOther unobserved:\n  000100 LOW1 -> 0.3974\n  001011 LOW2 -> 0.6142\n  001110 MID -> 0.9404\n  010101 LOW1 -> 0.3974\n  010110 LOW1 -> 0.3974\n  011010 LOW2 -> 0.6142\n  011111 MID -> 0.9404\n  101010 LOW2 -> 0.6142\n  101111 MID -> 0.9404\n  111011 LOW2 -> 0.6142\n  111110 MID -> 0.9404\n\ntotal preds 64\n",
+  "stderr": "",
+  "wall_seconds": 0.16512404500008415,
+  "code_sha256": "60cb11534120ed7ba27948760f99a03166737335f6f221dba8403683bb2d29bf",
+  "evidence_sha256": "93d1f486fe419cd057832d4c2b83733e268cd0b633e651d6190057c090c7f385",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

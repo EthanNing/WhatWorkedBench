@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "var y=0.0002837  mean y=0.8908\ndeg1 ridge 0.0002645\ndeg2 ridge 0.0003334\ndeg3 ridge 0.0002907\nknn2 dist 0.0002873\nknn3 dist 0.0001929\nknn4 dist 0.0002083\nknn5 dist 0.0002124\nknn6 dist 0.0002169\nknn8 dist 0.0002394\nknn4 unif 0.0002136\n",
+  "stderr": "",
+  "wall_seconds": 1.8218895979998706,
+  "code_sha256": "46db096f1a0bbb2c9a8bc5458b4a9f20fa6ed7566841e4857106056b142a5ab0",
+  "evidence_sha256": "cf2405a1f0245ca61f9ca3007b3cc2e7951f4a50e60ed65007dae33481d5a0d6",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

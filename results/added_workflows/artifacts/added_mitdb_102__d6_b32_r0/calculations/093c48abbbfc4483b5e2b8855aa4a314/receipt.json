@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "D26 edges 26 mean pred var (deg2) 0.7224 max 0.75\nD33 edges 33 mean pred var (deg2) 0.7703 max 0.9798\nD42 edges 42 mean pred var (deg2) 0.855 max 1.1649\nD55 edges 55 mean pred var (deg2) 0.9737 max 1.4876\n",
+  "stderr": "",
+  "wall_seconds": 0.16465312499985885,
+  "code_sha256": "df427fee4be73f1b0eb71f8464a5a00dff4bec2f042fe70cc12022fa7ab5f362",
+  "evidence_sha256": "5ebb357cf55552d64e26e7bbfa54cba93f1457206df3fb66900b048da3deb9e4",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "start LOO 0.1369\nadd (4,) LOO 0.1186\nadd (2, 3, 4) LOO 0.0964\nadd (2, 3) LOO 0.0773\nadd (2,) LOO 0.0658\nadd (3, 4) LOO 0.0588\nadd (2, 4) LOO 0.0562\nadd (1,) LOO 0.0535\nadd (1, 3, 4) LOO 0.0513\nadd (0, 3, 4) LOO 0.0482\nadd (0, 1, 3, 4) LOO 0.0437\nadd (0, 1) LOO 0.0388\nadd (0, 4) LOO 0.0334\nadd (1, 3, 4, 5) LOO 0.0289\nadd (0, 2, 3, 5) LOO 0.0265\nadd (0, 2, 3, 4, 5) LOO 0.0239\nadd (0, 1, 3, 4, 5) LOO 0.0217\nadd (2, 3, 5) LOO 0.0155\nadd (0, 1, 2, 3, 5) LOO 0.0148\nadd (0, 2, 3) LOO 0.0144\nadd (1, 2, 3, 4) LOO 0.014\nfinal terms [(4,), (2, 3, 4), (2, 3), (2,), (3, 4), (2, 4), (1,), (1, 3, 4), (0, 3, 4), (0, 1, 3, 4), (0, 1), (0, 4), (1, 3, 4, 5), (0, 2, 3, 5), (0, 2, 3, 4, 5), (0, 1, 3, 4, 5), (2, 3, 5), (0, 1, 2, 3, 5), (0, 2, 3), (1, 2, 3, 4)]\n",
+  "stderr": "",
+  "wall_seconds": 0.214847433999239,
+  "code_sha256": "3be15d5a5801578dab5b75c9e4aaea30411ef6faf86593ff8f1b050bebffd556",
+  "evidence_sha256": "034539b320454b79961301b8368ac24407b3d9b2c86776ba3ea950ed4c60f0a6",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

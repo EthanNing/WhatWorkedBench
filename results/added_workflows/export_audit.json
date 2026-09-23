@@ -1,0 +1,90 @@
+{
+  "complete": true,
+  "checked": 8,
+  "valid": 6,
+  "failed": 2,
+  "secret_occurrences": 0,
+  "missing_private_state": true,
+  "source_checks": [
+    {
+      "source": "mitdb_100__d6",
+      "valid": true,
+      "observations": 34,
+      "calculations": 15,
+      "provider_requests": 34,
+      "delivered_recovery": 0.4801935701248381,
+      "shared_gp_recovery": 0.6235330364144114,
+      "export_files": 39
+    },
+    {
+      "source": "graph_lesmis__d6",
+      "valid": true,
+      "observations": 34,
+      "calculations": 20,
+      "provider_requests": 29,
+      "delivered_recovery": 0.0,
+      "shared_gp_recovery": 0.18452479950460132,
+      "export_files": 49
+    },
+    {
+      "source": "mitdb_101__d6",
+      "valid": true,
+      "observations": 34,
+      "calculations": 15,
+      "provider_requests": 32,
+      "delivered_recovery": 0.514713240222914,
+      "shared_gp_recovery": 0.6422062814305552,
+      "export_files": 39
+    },
+    {
+      "source": "graph_adjnoun__d6",
+      "valid": true,
+      "observations": 34,
+      "calculations": 13,
+      "provider_requests": 33,
+      "delivered_recovery": 0.5280252701005635,
+      "shared_gp_recovery": 0.596346920681238,
+      "export_files": 35
+    },
+    {
+      "source": "mitdb_102__d6",
+      "valid": true,
+      "observations": 34,
+      "calculations": 20,
+      "provider_requests": 24,
+      "delivered_recovery": 0.24216799929747124,
+      "shared_gp_recovery": 0.4522252277138177,
+      "export_files": 49
+    },
+    {
+      "source": "graph_football__d6",
+      "valid": true,
+      "observations": 34,
+      "calculations": 13,
+      "provider_requests": 31,
+      "delivered_recovery": 0.05294617736085727,
+      "shared_gp_recovery": 0.23385247716005775,
+      "export_files": 35
+    },
+    {
+      "source": "mitdb_103__d6",
+      "valid": false,
+      "observations": 34,
+      "calculations": 16,
+      "provider_requests": 19,
+      "delivered_recovery": null,
+      "shared_gp_recovery": 0.5844110766813576,
+      "export_files": 40
+    },
+    {
+      "source": "graph_dolphins__d6",
+      "valid": false,
+      "observations": 34,
+      "calculations": 19,
+      "provider_requests": 29,
+      "delivered_recovery": null,
+      "shared_gp_recovery": 0.36352665323847033,
+      "export_files": 46
+    }
+  ]
+}

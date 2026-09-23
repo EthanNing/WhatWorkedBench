@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 43, in <module>\n    Xh=design(hidx,terms); yh=np.array([obs[m] for m in hidx])\n       ^^^^^^^^^^^^^^^^^^\n  File \"/job/calculation.py\", line 30, in design\n    return np.column_stack([np.prod([xvec(m)[j] for j in S]) for S in terms])\n                                          ^\nNameError: name 'm' is not defined\n",
+  "wall_seconds": 0.11457034700015356,
+  "code_sha256": "f80cfafaa7d946c65e4ffb05ef9ded287a532e4336da40ed8c23c8a33f6fcfd1",
+  "evidence_sha256": "a34fa30f09663e444043de9583e603999eece75b0415678beb2056485975d641",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

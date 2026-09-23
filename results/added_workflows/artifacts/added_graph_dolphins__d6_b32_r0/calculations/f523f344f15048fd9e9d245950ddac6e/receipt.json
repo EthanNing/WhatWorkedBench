@@ -1,0 +1,12 @@
+{
+  "returncode": 1,
+  "timed_out": false,
+  "stdout": "lasso deg2 a=0.001 rms 0.00574\nlasso deg2 a=0.003 rms 0.00574\nlasso deg2 a=0.010 rms 0.00574\nlasso deg2 a=0.030 rms 0.00574\nlasso deg3 a=0.001 rms 0.00574\nlasso deg3 a=0.003 rms 0.00574\nlasso deg3 a=0.010 rms 0.00574\nlasso deg3 a=0.030 rms 0.00574\nRF d3 rms 0.00678\nRF d6 rms 0.00698\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/job/entry.py\", line 6, in <module>\n    exec(compile(open('/job/resource_entry.py').read(),'/job/resource_entry.py','exec'),globals())\n  File \"/job/resource_entry.py\", line 29, in <module>\n    exec(compile(open('/job/calculation.py').read(),'/job/calculation.py','exec'),globals())\n  File \"/job/calculation.py\", line 56, in <module>\n    diffs=[abs(pr[m]-obs[m]) for m in allK]\n               ~~~~~^~~~~~~\nTypeError: unsupported operand type(s) for -: 'str' and 'float'\n",
+  "wall_seconds": 10.746505735000028,
+  "code_sha256": "6b08f88f7543fe09ae6eba40593a6ec9117398b7e831d4d2e5c6445b2909bbdc",
+  "evidence_sha256": "613b9273a8fc2bf92e8401c661194387c3860cd9f371f7aca18b9075152b7e55",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

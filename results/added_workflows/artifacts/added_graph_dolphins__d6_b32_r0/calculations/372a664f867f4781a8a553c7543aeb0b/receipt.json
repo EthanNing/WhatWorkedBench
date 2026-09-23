@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "34 34\nsug len 30 30\ngreedy edgeMSE 224.744 exact 70\nsug edgeMSE 371.013 exact 60\nq5 size 35\nq5obs 35\nQ5 edgeMSE 216000568.009 exact 84\nrefined edgeMSE 145.907 exact 74\nrefined purchase list: ['000110', '000111', '001000', '001010', '001100', '001111', '010000', '010011', '010101', '010110', '010111', '011000', '011001', '011010', '011101', '100000', '100010', '100011', '100100', '100101', '100110', '101001', '101010', '101111', '110001', '110010', '110100', '110111', '111000', '111011', '111101', '111110']\nhist Counter({2: 14, 3: 10, 4: 4, 1: 3, 5: 2, 0: 1})\ndeg1 crit greedy: 34.144  sug: 60.151  Q5: 145.435\n",
+  "stderr": "",
+  "wall_seconds": 0.2654728659999819,
+  "code_sha256": "ffe0e07f1ff99722af4f0b191a015172e6baf3d3889f82bfa79b6b44a36c5d6a",
+  "evidence_sha256": "a0dcc0e594c20ac3a391af9a798656d12acdc67a14edb96067b134f406341760",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

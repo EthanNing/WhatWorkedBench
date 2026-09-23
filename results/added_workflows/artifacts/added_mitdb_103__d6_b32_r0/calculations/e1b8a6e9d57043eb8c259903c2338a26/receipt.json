@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "suggest_experiments:\n count 3 -> ['000001', '001110', '010000']\n count 6 -> ['000001', '001110', '010000', '011111', '100011', '100101']\n\ntop-uncertainty unobserved cells (ensemble spread):\n   000010 preds [0.869 0.774 0.808] spread 0.095\n   001011 preds [0.645 0.733 0.699] spread 0.088\n   010110 preds [0.936 0.894 0.861] spread 0.075\n   010000 preds [0.913 0.872 0.839] spread 0.073\n   100101 preds [1.    0.934 0.967] spread 0.066\n   010101 preds [0.957 0.893 0.926] spread 0.064\n   110010 preds [0.896 0.832 0.865] spread 0.064\n   101111 preds [1.    0.939 0.973] spread 0.061\n   011100 preds [0.943 1.    0.985] spread 0.057\n   110100 preds [0.926 0.948 0.981] spread 0.055\n\nCDE+ABF preds for all unobserved:\n   000001 0.989\n   000010 0.869\n   000100 0.9\n   000111 1.0\n   001000 0.953\n   001011 0.645\n   001101 1.0\n   001110 0.943\n   010000 0.913\n   010011 0.926\n   010101 0.957\n   010110 0.936\n   011001 1.0\n   011010 0.568\n   011100 0.943\n   011111 1.0\n   100000 0.959\n   100011 0.972\n   100101 1.0\n   100110 0.982\n   101001 1.0\n   101010 0.614\n   101100 0.99\n   101111 1.0\n   110001 1.0\n   110010 0.896\n   110100 0.926\n   110111 1.0\n   111000 0.98\n   111011 0.671\n   111101 1.0\n   111110 0.969\n",
+  "stderr": "",
+  "wall_seconds": 0.1648880279990408,
+  "code_sha256": "555dccf6df7710df5984965bd9802f7cc8096f78ab227bbca5aef67a8902738f",
+  "evidence_sha256": "419a66ee489ae25266d2665f2b60927692d599d8a4a9b1c16225c326b1febdb2",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

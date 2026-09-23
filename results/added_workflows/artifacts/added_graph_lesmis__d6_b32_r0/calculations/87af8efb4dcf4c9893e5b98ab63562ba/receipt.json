@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "mains     0.0002789\neint      0.0002817\nefint     0.000261\nstrat     0.0002398\ndeg2      0.0002646\ndeg3      0.0002978\n",
+  "stderr": "",
+  "wall_seconds": 0.5156323960000009,
+  "code_sha256": "07414ad1337c8d0ee693ea41b4262cee0e597fbba70ba9695b76380ee209e48a",
+  "evidence_sha256": "7dfc449ee477c385eba9a03b4912b8352251e6a3bff4a5a5c88acec9df92a4eb",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "Restricted LOO (popcount>=2 cells):\nn   rms 0.01728 alpha 1e-05\nd1  rms 0.02661 alpha 1e-05\nd2  rms 0.02555 alpha 1\nd3  rms 0.04006 alpha 0.5623\nknn k=2 restricted rms 0.00730\nknn k=3 restricted rms 0.00921\nknn k=4 restricted rms 0.02347\nknn k=5 restricted rms 0.01908\nknn k=6 restricted rms 0.01902\nd2 worst: [('000001', np.float64(0.1488)), ('100000', np.float64(-0.1314)), ('000100', np.float64(-0.1269)), ('010000', np.float64(-0.1267)), ('001000', np.float64(-0.112)), ('000010', np.float64(-0.1116)), ('000000', np.float64(0.0862)), ('001001', np.float64(-0.0857))]\nd3 worst: [('000001', np.float64(0.1511)), ('100000', np.float64(-0.1365)), ('000100', np.float64(-0.12)), ('010000', np.float64(-0.1183)), ('111111', np.float64(-0.1161)), ('001000', np.float64(-0.1093)), ('000000', np.float64(0.1056)), ('010001', np.float64(-0.1016))]\n",
+  "stderr": "",
+  "wall_seconds": 0.41625817800013465,
+  "code_sha256": "40bb4a7b7a4ad07464ee5e605e6ea41fccdfca67566f261bdfbfa3bc7cac9099",
+  "evidence_sha256": "38357fc24c22d4eefad7e17e7a2353e4a31c1a43ddb1caa264b17740a9e729af",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

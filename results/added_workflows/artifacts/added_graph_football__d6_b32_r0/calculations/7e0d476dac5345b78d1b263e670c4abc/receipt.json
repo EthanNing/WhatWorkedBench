@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "main type <class 'dict'>\n keys sample ['predictions', 'degree', 'ridge_alpha']\npair type <class 'dict'>\n keys sample ['predictions', 'degree', 'ridge_alpha']\n",
+  "stderr": "",
+  "wall_seconds": 0.16469012499965174,
+  "code_sha256": "1849d5140b0444aeebc7a1a938ef62afdd05e16d4f98ecea8c17afb580d25fe8",
+  "evidence_sha256": "4a6f59c6fdd6b18f0b82e6b25753f6f244e46f3fb1150321589b774108b38061",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}

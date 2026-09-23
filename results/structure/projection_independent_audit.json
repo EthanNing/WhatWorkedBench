@@ -1,0 +1,75 @@
+{
+  "episodes": 8,
+  "observed_classes": 174,
+  "native_truth_class_conflicts": 0,
+  "observation_conflicts": 0,
+  "independent_grouping_and_edge_scoring": true,
+  "submitted_mean": 0.3379526083510611,
+  "projected_mean": 0.5070164875927677,
+  "rows": [
+    {
+      "instance": "concrete",
+      "arm": "code",
+      "submitted_recovery": 0.6796951189316905,
+      "projected_recovery": 0.8230662443002614,
+      "submitted_effect_mae": 0.003961317730314003,
+      "projected_effect_mae": 0.0021881990096646264
+    },
+    {
+      "instance": "concrete",
+      "arm": "rules",
+      "submitted_recovery": 0.645908934280965,
+      "projected_recovery": 0.7482524334846316,
+      "submitted_effect_mae": 0.0043791627904648,
+      "projected_effect_mae": 0.003113446462241251
+    },
+    {
+      "instance": "wine",
+      "arm": "rules",
+      "submitted_recovery": 0.21272975112020354,
+      "projected_recovery": 0.2904537558829283,
+      "submitted_effect_mae": 0.10719400350224484,
+      "projected_effect_mae": 0.0966111734631332
+    },
+    {
+      "instance": "wine",
+      "arm": "code",
+      "submitted_recovery": 0.0,
+      "projected_recovery": 0.0,
+      "submitted_effect_mae": 0.14520817178303036,
+      "projected_effect_mae": 0.14070307540368063
+    },
+    {
+      "instance": "astronaut",
+      "arm": "code",
+      "submitted_recovery": 0.0,
+      "projected_recovery": 0.41532499762447317,
+      "submitted_effect_mae": 0.04123024071033301,
+      "projected_effect_mae": 0.023862494336387166
+    },
+    {
+      "instance": "astronaut",
+      "arm": "rules",
+      "submitted_recovery": 0.3336104945210263,
+      "projected_recovery": 0.7448476592542297,
+      "submitted_effect_mae": 0.027197529799822793,
+      "projected_effect_mae": 0.010413599454781009
+    },
+    {
+      "instance": "scifact",
+      "arm": "rules",
+      "submitted_recovery": 0.5235581930001392,
+      "projected_recovery": 0.5491534288607985,
+      "submitted_effect_mae": 0.03986118480210609,
+      "projected_effect_mae": 0.037719776529982034
+    },
+    {
+      "instance": "scifact",
+      "arm": "code",
+      "submitted_recovery": 0.30811837495446437,
+      "projected_recovery": 0.4850333813348191,
+      "submitted_effect_mae": 0.057885812940696925,
+      "projected_effect_mae": 0.04308433737750152
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "stdout": "deg1 edge-MAE vs structural 0.0142  max 0.0382  obs-cells-exact: True\ndeg2 edge-MAE vs structural 0.0139  max 0.0461  obs-cells-exact: True\n",
+  "stderr": "",
+  "wall_seconds": 0.16478379199998017,
+  "code_sha256": "d6943087b8fc1f800b4ade58ef79e9883fa35a0bd00015593182e61ac615f75e",
+  "evidence_sha256": "ada5fca68211159da748898d4c99dce60f10167c239e2e6e9d38547ed75a1e5e",
+  "hidden_data_mounted": false,
+  "network": "none",
+  "cpu_affinity_limit": 2
+}
