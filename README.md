@@ -48,7 +48,6 @@ python scripts/run_baseline.py --task scifact --budget 8 --method gp-effect --ou
 python -m pytest
 python scripts/audit_results.py
 python scripts/audit_structure.py
-python scripts/audit_added.py
 ```
 
 ## Tasks
@@ -82,7 +81,7 @@ The [protocol guide](guides/evaluation.md) defines these metrics and the agent/e
 
 The numerical tools include main-effect ridge, pair-interaction ridge, and Gaussian-process inference with grid-variance or effect-variance acquisition. Code-aware GP inference supports visible parameter equivalences in the paired six-option tasks.
 
-The release records **4,206 numerical-control executions** and **124 agent attempts across all eight workflow families**. The 108-episode core study has 94 valid artifacts; a separate eight-episode structure diagnostic has eight, and the added beat/graph cohort has six valid artifacts from eight attempts.
+The release records **4,206 numerical-control executions** across eight workflow families and **108 core agent episodes**, including 94 valid prediction artifacts. A separate, complete eight-episode structure diagnostic tests how agents use visible program equivalences.
 
 | Comparison | Effect recovery before → after |
 | --- | --- |
@@ -90,9 +89,8 @@ The release records **4,206 numerical-control executions** and **124 agent attem
 | Additional Flash cohort, B=8; delivered table → shared GP | 0.621 → 0.720 |
 | Paired six-option tasks, B=20; pair ridge → code-aware GP | 0.248 → 0.462 |
 | Structure diagnostic; submitted table → post-hoc code-equivalence projection | 0.338 → 0.507 |
-| Added beat/graph workflows, B=32; valid agent table → same-observation GP | 0.303 → 0.455 |
 
-Shared inference and the post-hoc projection reuse the same acquired observations. The code-aware GP comparison changes acquisition and inference. The added-workflow cohort records six valid tables and two upstream service interruptions after complete measurement. Cohort and source details are preserved in [results](results/).
+Shared inference and the post-hoc projection reuse the same acquired observations. The code-aware GP comparison changes acquisition and inference. Cohort and source details are preserved in [results](results/).
 
 ## Native replay
 
