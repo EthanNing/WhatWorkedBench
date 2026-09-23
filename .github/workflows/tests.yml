@@ -14,3 +14,5 @@ jobs:
       - run: python -m pytest
       - run: python scripts/run_baseline.py --task scifact --budget 8 --output output/smoke
       - run: python scripts/audit_results.py
+      - run: python scripts/audit_structure.py
+      - run: python scripts/audit_added.py
